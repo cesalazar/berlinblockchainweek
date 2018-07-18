@@ -1,0 +1,28 @@
+$button-color = #3EAF7C
+$button-shadow = 0 6px 5px #C6C6C6
+
+.button
+  background-color $button-color
+  border 1px solid $button-color
+  border-radius 5px
+  color white
+  display inline-block
+  padding 0.5em 0
+
+  &:hover
+    box-shadow $button-shadow
+
+  a, a:hover
+    color white
+    padding 0.5rem 0.5em 0.5em
+    text-decoration none !important
+
+    &>svg
+      margin-left 0.25rem
+
+  .icon.outbound
+    color #fff
+    display inline-block
+    height 1.0rem
+    vertical-align top
+    width 1.0rem
