@@ -8,10 +8,11 @@
     <div v-for="speaker in $page.frontmatter.speakers">
 
       <!-- Picture -->
-      <img v-if="speaker.picture"
-        :src="'/assets/img/' + speaker.picture"
-        :alt="speaker.name"
-      />
+      <!-- TODO: fix picture path (not loading) -->
+      <!-- <img v&#45;if="speaker.picture" -->
+      <!--   :src="'/assets/img/' + speaker.picture" -->
+      <!--   :alt="speaker.name" -->
+      <!-- /> -->
 
       <!-- Name -->
       <h4>{{ speaker.name }}</h4>
@@ -28,7 +29,6 @@
           <ExternalLink v-if="speaker.companyURL"
             :url="speaker.companyURL"
             :caption="speaker.company"
-            indicator="true"
           />
           <span v-else>
             {{ speaker.company }}
@@ -36,22 +36,29 @@
         </span>
       </h5>
 
-      <!-- TODO: include icons -->
-      <!-- Twitter -->
-      <ExternalLink v-if="speaker.twitter"
-        :url="'https://twitter.com/' + speaker.twitter"
-        :caption="speaker.twitter"
-      />
-
-      &nbsp;
-
-      <!-- Personal website -->
-      <ExternalLink v-if="speaker.website" :url="speaker.website" :caption="speaker.website"/>
-
       <!-- Bio -->
       <p v-if="speaker.bio">
         {{ speaker.bio }}
       </p>
+
+      <!-- Links-->
+      <div>
+        <!-- TODO: include icons (twitter, website) -->
+        <!-- Twitter -->
+        <ExternalLink v-if="speaker.twitter"
+          :url="'https://twitter.com/' + speaker.twitter"
+          :caption="'@' + speaker.twitter"
+        />
+
+        &nbsp;
+
+        <!-- Personal website -->
+        <ExternalLink v-if="speaker.website"
+          :url="speaker.website"
+          :caption="removeProtocol(speaker.website)"
+        />
+      </div>
+
     </div>
   </div>
 </template>
@@ -60,7 +67,14 @@
 import ExternalLink from '../Utils/ExternalLink.vue'
 
 export default {
-  components: { ExternalLink }
+  components: { ExternalLink },
+  methods: {
+    removeProtocol (url) {
+      if (!url) return
+      url = url.split(/https?:\/\//)
+      return url[1]
+    }
+  }
 }
 </script>
 
@@ -70,11 +84,26 @@ export default {
   display flex
   flex-direction row
   flex-wrap wrap
+  justify-content space-between
 
-  div
-    /* padding 1em */
-    margin 1em
-    flex-basis 45%
+  &>div
+    box-sizing border-box
+    border 1px solid lighten(#999999, 80%)
+    padding 1em
+    margin-top 2em
+    flex 0 1 22em
+    display flex
+    flex-direction column
+
+    img
+      margin 0 auto
+      max-height 5em
+
+    &>div:nth-last-child(1)
+      margin-top auto
+
+    &:nth-last-child(1)
+      margin-bottom 1.5em
 
   h5
     margin-top -1em
