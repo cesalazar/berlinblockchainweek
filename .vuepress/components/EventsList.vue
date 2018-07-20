@@ -15,13 +15,17 @@
       <p>{{ event.frontmatter.description }}</p>
 
       <!-- Date and time -->
-      <p>{{ event.frontmatter.date }} @ {{ event.frontmatter.time }}</p>
+      <DateTime :date="event.frontmatter.date" :time="event.frontmatter.time"/>
+      <!-- <p>{{ event.frontmatter.date }} @ {{ event.frontmatter.time }}</p> -->
     </div>
   </div>
 </template>
 
 <script>
+import DateTime from './Event/DateTime.vue'
+
 export default {
+  components: { DateTime },
   computed: {
     events () {
       return this.$site.pages
