@@ -8,7 +8,7 @@
     <div v-for="event in events" v-if="event.frontmatter.title">
       <!-- Event's name -->
       <h2>
-        <a :href="event.path">{{ event.frontmatter.title }}</a>
+        <a :href="$withBase(event.path)">{{ event.frontmatter.title }}</a>
       </h2>
 
       <!-- Event's description -->
@@ -16,7 +16,6 @@
 
       <!-- Date and time -->
       <DateTime :date="event.frontmatter.date" :time="event.frontmatter.time"/>
-      <!-- <p>{{ event.frontmatter.date }} @ {{ event.frontmatter.time }}</p> -->
     </div>
   </div>
 </template>
