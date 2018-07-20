@@ -1,3 +1,9 @@
+<!--
+  Original source: https://codepen.io/javiercf/pen/GviKy
+  Adapted by: Carlos E. Salazar <ce.salazar@gmail.com>
+  License: MIT
+-->
+
 <template>
   <table>
 
