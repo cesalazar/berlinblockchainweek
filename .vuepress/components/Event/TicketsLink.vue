@@ -1,7 +1,10 @@
+<!--
+  Created by: Carlos E. Salazar <ce.salazar@gmail.com>
+  License: MIT
+-->
+
 <template>
-  <div>
-    <hr />
-    
+  <div class="ticket--container">
     <!-- Link to ticket sale -->
     <span v-if="$page.frontmatter.tickets" class="button">
       <a :href="$page.frontmatter.tickets" target="_blank" rel="noopener noreferrer">
@@ -19,6 +22,9 @@
 </template>
 
 <style lang="stylus">
+.ticket--container
+  margin-top 1.5em
+
 .ticket--price
   margin-left 1em
 

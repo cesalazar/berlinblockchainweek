@@ -1,8 +1,17 @@
+<!--
+  Created by: Carlos E. Salazar <ce.salazar@gmail.com>
+  License: MIT
+-->
+
 <template>
   <div class="speakers--container">
     <div v-for="speaker in $page.frontmatter.speakers">
+
       <!-- Picture -->
-      <img v-if="speaker.picture" :src="speaker.picture" :alt="speaker.name" />
+      <img v-if="speaker.picture"
+        :src="'/assets/img/' + speaker.picture"
+        :alt="speaker.name"
+      />
 
       <!-- Name -->
       <h4>{{ speaker.name }}</h4>
@@ -16,23 +25,28 @@
           &nbsp;&#8226;&nbsp;
 
           <!-- Company's website -->
-          <a v-if="speaker.companyURL" :href="speaker.companyURL" target="_blank" rel="noopener noreferrer">
+          <ExternalLink v-if="speaker.companyURL"
+            :url="speaker.companyURL"
+            :caption="speaker.company"
+            indicator="true"
+          />
+          <span v-else>
             {{ speaker.company }}
-          </a>
-          <span v-else>{{ speaker.company }}</span>
+          </span>
         </span>
       </h5>
 
       <!-- TODO: include icons -->
       <!-- Twitter -->
-      <a v-if="speaker.twitter" :href="'https://twitter.com/'+speaker.twitter" target="_blank" rel="noopener noreferrer">
-        {{ speaker.twitter }}
-      </a>&nbsp;
+      <ExternalLink v-if="speaker.twitter"
+        :url="'https://twitter.com/' + speaker.twitter"
+        :caption="speaker.twitter"
+      />
+
+      &nbsp;
 
       <!-- Personal website -->
-      <a v-if="speaker.website" :href="speaker.website" target="_blank" rel="noopener noreferrer">
-        {{ speaker.website }}
-      </a>
+      <ExternalLink v-if="speaker.website" :url="speaker.website" :caption="speaker.website"/>
 
       <!-- Bio -->
       <p v-if="speaker.bio">
@@ -41,6 +55,14 @@
     </div>
   </div>
 </template>
+
+<script>
+import ExternalLink from '../Utils/ExternalLink.vue'
+
+export default {
+  components: { ExternalLink }
+}
+</script>
 
 <style lang="stylus">
 .speakers--container
