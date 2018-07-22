@@ -6,8 +6,12 @@
 <template>
   <div class="ticket--container">
     <!-- Ticket price -->
-    <span class="ticket--price" v-if="$page.frontmatter.price > 0">
-      <b>{{ "Cost: " + $page.frontmatter.price + "€" }}</b> 
+    <span class="ticket--price">
+      <b>
+        Cost:&nbsp;
+        <span v-if="$page.frontmatter.price > 0">{{ $page.frontmatter.price }} €</span>
+        <span v-else>Free</span>
+      </b>
     </span>
 
     <!-- Link to ticket sale -->
