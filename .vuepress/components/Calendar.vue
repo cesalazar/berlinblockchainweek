@@ -29,7 +29,7 @@
         <!-- Each day column -->
         <td v-for="d in firstDay + 6" v-if="d >= firstDay">
           <span v-for="event in checkEvents(d,t)" v-if="event != null">
-            <a :href="event.path">{{ event.name }}</a>
+            <a :href="$withBase(event.path)">{{ event.name }}</a>
           </span>
         </td>
       </tr>
