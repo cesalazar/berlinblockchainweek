@@ -5,10 +5,11 @@
 
 <template>
   <div class="events--container">
-    <div v-for="event in events" v-if="event.frontmatter.title">
+    <!-- TODO: this 'v-if' probably should be a category, instead of the name -->
+    <div v-for="event in events" v-if="event.frontmatter.name">
       <!-- Event's name -->
       <h2>
-        <a :href="$withBase(event.path)">{{ event.frontmatter.title }}</a>
+        <a :href="$withBase(event.path)">{{ event.frontmatter.name }}</a>
       </h2>
 
       <!-- Event's description -->
