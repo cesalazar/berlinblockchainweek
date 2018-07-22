@@ -18,15 +18,20 @@
       </tr>
     </thead>
 
-    <tbody v-for="n in 22" v-if="n > 8">
+    <tbody v-for="t in lastHour" v-if="t >= firstHour">
 
       <tr>
-        <td class="hour" rowspan="4"><span>{{ n }}:00</span></td>
-        <td v-for="n in 7"></td>
-      </tr>
+        <!-- Hour column -->
+        <td class="hour" rowspan="4">
+          <span>{{ t < 10 ? '0' + t : t }}:00</span>
+        </td>
 
-      <tr v-for="n in 3">
-        <td v-for="n in 7"></td>
+        <!-- Each day column -->
+        <td v-for="d in firstDay + 6" v-if="d >= firstDay">
+          <span v-for="event in checkEvents(d,t)" v-if="event != null">
+            <a :href="event.path">{{ event.name }}</a>
+          </span>
+        </td>
       </tr>
 
     </tbody>
@@ -37,6 +42,11 @@
 <script>
 export default {
   data: () => ({
+    // First calendar day of the event (September 5)
+    firstDay: 5,
+    // Hours without the leading zero nor trailing minutes
+    firstHour: 9,
+    lastHour: 22,
     dayNames: [
       'Wednesday',
       'Thursday',
@@ -46,29 +56,69 @@ export default {
       'Monday', 
       'Tuesday',
     ],
-    days: []
+    days: [],
+    events: [],
   }),
 
-  mounted () {
-    // First calendar day of the event (September 5)
-    let dayNumber = 5
-
-    this.dayNames.map(dayName => {
-      this.days.push({
-        number: dayNumber,
-        longName: dayName,
+  methods: {
+    checkEvents (day, hour) {
+      return this.events.map(event => {
+        if (event.day === day && event.hour === hour)
+          return event
       })
+    },
 
-      dayNumber++
-    })
+    getDays () {
+      let dayNumber = this.firstDay
+
+      this.dayNames.map(dayName => {
+        this.days.push({
+          number: dayNumber,
+          longName: dayName,
+        })
+
+        dayNumber++
+      })
+    },
+
+    getEvents () {
+      const pages = this.$site.pages
+
+      pages.map(event => {
+        let path = event.path
+        let fm = event.frontmatter
+
+        if (fm.name) {
+          let day = fm.date.split('T')[0]
+          day = day.split('-')[2]
+          if (Number(day) < 10) day = day.substring(1)
+
+          let hour = fm.time.split(':')[0]
+          if (Number(hour) < 10) hour = hour.substring(1)
+
+          this.events.push({
+            path: path,
+            name: fm.name,
+            date: fm.date,
+            time: fm.time,
+            day: Number(day),
+            hour: Number(hour),
+          })
+        }
+      })
+    }
+  },
+
+  mounted () {
+    this.getDays()
+    this.getEvents()
   }
 }
 </script>
 
 <style lang="stylus">
-$blue = #626E7E
-$light = lighten($blue, 90%)
-$light2 = darken($light, 6%)
+$headerColor = #626E7E
+$light = lighten($headerColor, 90%)
 
 table
   width 100%
@@ -81,7 +131,7 @@ table
   thead
     tr
       th
-        background $blue
+        background $headerColor
         color $light
         padding 0.5em
         overflow hidden
@@ -105,7 +155,7 @@ table
 
           &.active
             background $light
-            color $blue
+            color $headerColor
 
         .long
           display none
@@ -121,37 +171,31 @@ table
     tr
       background $light
 
-      &:nth-child(even)
-        background $light2
-
-      &:nth-child(4n+0)
-        td
-          border-bottom 1px solid $blue
-        
       td
         text-align center
         vertical-align middle
         border none
-        border-left 1px solid $blue
+        border-left 1px solid $headerColor
         position relative
         height 12px
-        cursor pointer
+        border-bottom 1px solid lighten($headerColor, 60%)
+        padding 0
 
         &:last-child
-          border-right 1px solid $blue
+          border-right 1px solid $headerColor
 
         &.hour
           font-size 1.6em
           padding 0
-          color $blue
+          color $headerColor
           background #fff
-          border-bottom 1px solid $blue
+          border-bottom 1px solid $headerColor
           border-collapse separate
           min-width 100px
-          cursor default
 
-          span
-            display block
+        span
+          display block
+          padding 0.5em 0
 
   @media(max-width:60em)
     thead
@@ -173,6 +217,7 @@ table
               -webkit-transform rotate(270deg)
               -moz-transform rotate(270deg)
 
+        /* TODO: fix media queries */
         /* @media(max-width:27em){ */
         /*         thead{ */
         /*               tr{ */
