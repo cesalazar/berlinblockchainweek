@@ -19,10 +19,9 @@
     </thead>
 
     <tbody v-for="t in lastHour" v-if="t >= firstHour">
-
       <tr>
         <!-- Hour column -->
-        <td class="hour" rowspan="4">
+        <td class="hour">
           <span>{{ t < 10 ? '0' + t : t }}:00</span>
         </td>
 
@@ -33,7 +32,6 @@
           </span>
         </td>
       </tr>
-
     </tbody>
 
   </table>
@@ -68,7 +66,7 @@ export default {
       })
     },
 
-    getDays () {
+    setDays () {
       let dayNumber = this.firstDay
 
       this.dayNames.map(dayName => {
@@ -110,7 +108,7 @@ export default {
   },
 
   mounted () {
-    this.getDays()
+    this.setDays()
     this.getEvents()
   }
 }
@@ -177,7 +175,6 @@ table
         border none
         border-left 1px solid $headerColor
         position relative
-        height 12px
         border-bottom 1px solid lighten($headerColor, 60%)
         padding 0
 
