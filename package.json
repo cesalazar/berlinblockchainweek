@@ -1,0 +1,19 @@
+{
+  "name": "berlinblockchainweek",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cesalazar/berlinblockchainweek.git",
+  "author": "Carlos E. Salazar <ce.salazar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesalazar/berlinblockchainweek/issues"
+  },
+  "homepage": "https://cesalazar.github.com/berlinblockchainweek",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^0.12.0"
+  }
+}
