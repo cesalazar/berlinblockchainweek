@@ -1,6 +1,7 @@
 <!--
   Original source: https://codepen.io/javiercf/pen/GviKy
   Adapted by: Carlos E. Salazar <ce.salazar@gmail.com>
+  Repository: https://github.com/cesalazar/berlinblockchainweek
   License: MIT
 -->
 
