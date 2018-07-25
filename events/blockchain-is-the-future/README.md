@@ -70,7 +70,7 @@ speakers:
 
     # TODO: include recommended sizes
     # TODO: solve picture path (not loading)
-    picture: search.83621669.svg
+    # picture:
 
     # The bio is a single line. 
     # Linebreaks are ignored, but they _must_ start with two spaces.
