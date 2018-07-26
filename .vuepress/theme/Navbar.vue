@@ -4,7 +4,7 @@
     <router-link :to="$localePath" class="home-link">
       <img class="logo"
         v-if="$site.themeConfig.logo"
-        :src="$withBase($site.themeConfig.logo)">
+        :src="$withBase(logo)">
       <span class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }">
@@ -33,6 +33,9 @@ export default {
     },
     isAlgoliaSearch () {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    },
+    logo () {
+      return require('./../public/logo_berlinblockchainweek.png')
     }
   }
 }
