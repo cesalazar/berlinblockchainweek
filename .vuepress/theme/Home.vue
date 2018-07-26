@@ -10,15 +10,28 @@
         <NavLink class="action-button" :item="actionLink"/>
       </p>
     </div>
+    <Content custom/>
     <div class="features" v-if="data.features && data.features.length">
+      <div class="title">
+        <h2>Venues</h2>
+      </div>
       <div class="feature" v-for="feature in data.features">
         <h2>{{ feature.title }}</h2>
         <p>{{ feature.details }}</p>
       </div>
     </div>
-    <Content custom/>
+    <hr />
+    <div class="hero">
+      <p class="action" v-if="data.actionText && data.actionLink">
+      <NavLink class="action-button" :item="actionLink"/>
+      </p>
+    </div>
     <div class="footer" v-if="data.footer">
-      {{ data.footer }}
+      <span v-for="link in data.footer">
+        <a href="link.url">
+          {{ link.text }}
+        </a>
+      </span>
     </div>
   </div>
 </template>
@@ -77,6 +90,11 @@ export default {
       &:hover
         background-color lighten($accentColor, 10%)
   .features
+    .title
+      width 100%
+      text-align center
+      h2
+        border-bottom 0 none
     border-top 1px solid $borderColor
     padding 1.2rem 0
     margin-top 2.5rem
@@ -102,6 +120,8 @@ export default {
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)
+    span
+      padding 0 1em
 
 @media (max-width: $MQMobile)
   .home
