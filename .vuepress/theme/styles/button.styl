@@ -1,16 +1,13 @@
-$button-color = #3EAF7C
-$button-shadow = 0 6px 5px #C6C6C6
-
 .button
-  background-color $button-color
-  border 1px solid $button-color
+  background-color $accentColor
   border-radius 5px
   color white
   display inline-block
   padding 0.5em 0
+  transition background-color .1s ease
 
   &:hover
-    box-shadow $button-shadow
+    background-color lighten($accentColor, 10%)
 
   a, a:hover
     color white
