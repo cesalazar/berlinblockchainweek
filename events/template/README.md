@@ -140,21 +140,7 @@ speakers:
       amend its protocol.
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
-sidebar: auto
 ---
 <!-- ### DON'T MAKE CHANGES BELOW THIS LINE! ### -->
 
-# {{ $page.frontmatter.name }}
-  <Event-Synopsis/>
-
-## Speakers
-  <Event-Speakers/>
-
-## Date
-  <Event-DateTime/>
-
-## Location
-  <Event-MapLink/>
-
-## Tickets
-  <Event-TicketsLink/>
+<Event-Content/>
