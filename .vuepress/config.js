@@ -11,7 +11,8 @@ module.exports = {
         text: 'Calendar',
         link: '/calendar/'
       },
-    ]
+    ],
+    logo: 'logo_berlinblockchainweek.png'
   },
   // TODO: fix path of assets (not loading)
   // chainWebpack: (config, isServer) => {
