@@ -32,7 +32,11 @@
         <p>{{ event.frontmatter.description }}</p>
 
         <!-- Date and time -->
-        <DateTime :date="event.frontmatter.date" :time="event.frontmatter.time">
+        <DateTime :date="event.frontmatter.date"
+          :endDate="event.frontmatter.endDate"
+          :time="event.frontmatter.time"
+          :endTime="event.frontmatter.endTime"
+        >
           <Badge :text="event.frontmatter.category"/>
         </DateTime>
       </div>
