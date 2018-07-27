@@ -3,16 +3,14 @@
 ### INSTRUCTIONS ###
 ####################
 # This file is a template to create new events. In order to use it, duplicate
-# the whole folder (/template) as a new folder (I.E. /my-event-name) inside of
-# the /events folder, using for the folder name _only_:
-# - lowecase letters
+# this file using a new name (I.E. /my-event-name),using for the name _only_:
+# - lowercase letters
 # - hyphens/dashes (-) instead of spaces
-# - alphanumeric charaters ('a' to 'z', '0' to '9')
+# - alphanumeric characters ('a' to 'z', '0' to '9')
 # and edit the README.md file inside that new folder just created.
 #
 # The name of the folder will be used on the URL: https://xxx.com/my-event-name.
 #
-# _Don't_ rename the new file (README.md), only edit its content.
 # Every line starting with a hash symbol (#) is a comment. It will be ignored
 # and can be safely removed.
 ###############
@@ -28,11 +26,11 @@ title: Open Source Incentivization and Sustainability with OSCoin
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: "Goals: Understand the problems that OScoin is trying to solve in
-  open-source. Content details: What we are building and the general problem
-  of open source incentivization. Incentivization and governance models we
-  imagine for Open Source. Technical aspects of the platform we intend to
-  build. Self-amending core language we call radicle."
+description: 'Goals: Understand the problems that OScoin is trying to solve in
+  open-source. Content details: What we are building and the general problem of
+  open source incentivization. Incentivization and governance models we imagine
+  for Open Source. Technical aspects of the platform we intend to build.
+  Self-amending core language we call radicle.'
 
 
 #####################
@@ -50,12 +48,12 @@ name: Open Source Incentivization and Sustainability with OSCoin
 synopsis:
   -
     'Goals: Understand the problems that OScoin is trying to solve in
-    open-source.'
-  - 
+      open-source.'
+  -
     'Content details: What we are building and the general problem of open
-    source incentivization. Incentivization and governance models we imagine
-    for Open Source. Technical aspects of the platform we intend to build.
-    Self-amending core language we call radicle.' 
+      source incentivization. Incentivization and governance models we imagine
+      for Open Source. Technical aspects of the platform we intend to build.
+      Self-amending core language we call radicle.'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -64,21 +62,22 @@ date: 2018-09-07
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '14:00'
+time: '18:00'
+endTime: '20:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: http://oscoin.io/
+# tickets:
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: 
+venue: OSCoin Office 
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Pfuelstraße 5, 10997, Berlin
+address: Pfuelstraße 5, 10997 Berlin. Germany 
 
 # The category of the event. Valid options:
 # - conference
@@ -87,8 +86,7 @@ address: Pfuelstraße 5, 10997, Berlin
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: event
-
+category: event 
 
 #################
 ### SPEAKERS ####
