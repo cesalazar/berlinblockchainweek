@@ -42,6 +42,7 @@
 
 <script>
 import DateTime from './Event/DateTime.vue'
+import { capitalizeWord } from './../theme/util.js'
 
 export default {
   components: { DateTime },
@@ -89,15 +90,14 @@ export default {
       })
       if (count === 0) this.days.splice(-1, 1)
     },
+    capitalizeWord (word) {
+      return capitalizeWord(word)
+    }
   },
   mounted () {
     this.setEvents()
     this.setDays()
   }
-}
-
-function capitalizeWord (word) {
-  return word.charAt(0).toUpperCase() + word.slice(1)
 }
 
 function setEventDay (date) {

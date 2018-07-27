@@ -6,6 +6,9 @@
 
 <template>
   <div>
+    <div class="category">
+      <Badge :text="capitalizeWord(data.category)"/>
+    </div>
     <h1 id="name">{{ data.name }}</h1>
     <Synopsis/>
 
@@ -37,6 +40,7 @@ import MapLink from './MapLink'
 import Speakers from './Speakers'
 import Synopsis from './Synopsis'
 import TicketsLink from './TicketsLink'
+import { capitalizeWord } from './../../theme/util.js'
 
 export default {
   components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink },
@@ -44,11 +48,18 @@ export default {
     data () {
       return this.$page.frontmatter
     }
+  },
+  methods: {
+    capitalizeWord (word) {
+      return capitalizeWord(word)
+    }
   }
 }
 </script>
 
 <style lang="stylus">
+.category
+  text-align right
 h2
   margin-top 1.5em
 </style>
