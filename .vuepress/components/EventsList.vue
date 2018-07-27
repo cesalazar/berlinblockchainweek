@@ -16,7 +16,7 @@
     </h1>
 
     <div v-for="day in days" :key="day">
-      <h3>
+      <h3 class="date-sticky">
         <DateTime :date="day"/>
       </h3>
 
@@ -118,7 +118,15 @@ function addDays (date, days) {
 </script>
 
 <style lang="stylus">
+@require './../theme/styles/config.styl'
+
 .events--container
+  .date-sticky
+    position sticky
+    top $navbarHeight
+    background #FFF
+    .datetime
+      padding-top 5px
   .action-button
     cursor pointer
     display inline-block
