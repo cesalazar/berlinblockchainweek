@@ -5,8 +5,9 @@
 -->
 
 <template>
-  <p>
+  <p class="datetime">
     {{ datetime }}
+    <slot></slot>
   </p>
 </template>
 
@@ -42,13 +43,12 @@ export default {
     datetime () {
       let date = this.date || this.$page.frontmatter.date
       date = new Date(date)
-
       let day = this.dayNames[date.getDay()]
       let month = this.monthNames[date.getMonth()]
-
       let time = this.time || this.$page.frontmatter.time
-
-      return `${day}, ${date.getDate()} ${month} @ ${time}`
+      let datetime = `${day}, ${date.getDate()} ${month}`
+      if (time) datetime += ` @ ${time}`
+      return datetime
     }
   }
 }
