@@ -3,16 +3,14 @@
 ### INSTRUCTIONS ###
 ####################
 # This file is a template to create new events. In order to use it, duplicate
-# the whole folder (/template) as a new folder (I.E. /my-event-name) inside of
-# the /events folder, using for the folder name _only_:
-# - lowecase letters
+# this file using a new name (I.E. /my-event-name),using for the name _only_:
+# - lowercase letters
 # - hyphens/dashes (-) instead of spaces
-# - alphanumeric charaters ('a' to 'z', '0' to '9')
+# - alphanumeric characters ('a' to 'z', '0' to '9')
 # and edit the README.md file inside that new folder just created.
 #
 # The name of the folder will be used on the URL: https://xxx.com/my-event-name.
 #
-# _Don't_ rename the new file (README.md), only edit its content.
 # Every line starting with a hash symbol (#) is a comment. It will be ignored
 # and can be safely removed.
 ###############
@@ -23,13 +21,12 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: ETHBERLIN
+title: 'ETH BERLIN - Ethereum Hackathon'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search 
-  engines and used to show a description on /events.
+description: 4th Hackathon of the ETH Global series.
 
 
 #####################
@@ -37,7 +34,7 @@ description: This is a talk about blockchain. This field is indexed by search
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: ETHBERLIN
+name: 'ETH BERLIN - Ethereum Hackathon'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -46,36 +43,57 @@ name: ETHBERLIN
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    Short synopsis of the event goes here. This is the first paragraph.
+    4th Hackathon of the ETH Global series.
   -
-    Dolor officiis aliquam eligendi adipisci debitis. Accusamus quis ratione 
-      perferendis esse nam. Vero itaque quidem molestias id quo? Deleniti ipsum
-      nobis magni illum quos architecto omnis Modi reprehenderit inventore!
+    ETHBerlin is committed to inclusion, diversity, education, and above all,
+      to the Ethereum Community improvement. We will not sell any tickets for
+      this event.
   -
-    This is the third paragraph. Add more as needed...
+    'Some tickets will be available for free for things such as Day 1:
+      conferences, or the Day 2 workshops. We will release separate applications
+      in due time.'
+  -
+    Volunteers, Speakers, Sponsors and Hackers will have access to all events
+      (although they will need to sign up for some due to capacity 
+      restrictions)
+ 
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
 date: 2018-09-07
+# Leave this field if your event is held only during one day.
+endDate: 2018-09-09
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '09:00'
+startTime: '12:00'
+endTime: '24:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: https://www.ethberlin.com
+tickets: 
+-
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Factory Mitte and Görlitzer
+venue: 
+  -
+    Factory Berlin 1
+  -
+    Factory Berlin 2
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Skalitzer Strasse 85-86, 10997 Berlin, Germany
+address: 
+  -
+    Rheinsberger Straße 76/77. 10115 Berlin, Germany
+  -
+    Lohmühlenstraße 65,12435 Berlin, Germany
+# -
+# 2 venues
 
 # The category of the event. Valid options:
 # - conference
@@ -84,7 +102,7 @@ address: Skalitzer Strasse 85-86, 10997 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: hackathon
+category: hackathon 
 
 
 #################
