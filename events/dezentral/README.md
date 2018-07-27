@@ -1,23 +1,4 @@
 ---
-####################
-### INSTRUCTIONS ###
-####################
-# This file is a template to create new events. In order to use it, duplicate
-# the whole folder (/template) as a new folder (I.E. /my-event-name) inside of
-# the /events folder, using for the folder name _only_:
-# - lowecase letters
-# - hyphens/dashes (-) instead of spaces
-# - alphanumeric charaters ('a' to 'z', '0' to '9')
-# and edit the README.md file inside that new folder just created.
-#
-# The name of the folder will be used on the URL: https://xxx.com/my-event-name.
-#
-# _Don't_ rename the new file (README.md), only edit its content.
-# Every line starting with a hash symbol (#) is a comment. It will be ignored
-# and can be safely removed.
-###############
-
-
 ###########
 ### SEO ###
 ###########
@@ -30,8 +11,7 @@ title: Dezentral
 # Linebreaks are ignored, but they _must_ start with two spaces.
 description: Dezentral aims to be an inclusive blockchain conference, while 
   bringing newcomers, builders and longtime hodlers from all over the world 
-  together in the heart of Berlin. With over 800 attendees, including founders
-  of prime projects and partners of tier 1 funds.
+  together in the heart of Berlin.
 
 
 #####################
@@ -48,9 +28,9 @@ name: Dezentral
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    Dezentral aims to be an inclusive blockchain conference, while 
-      bringing newcomers, builders and longtime hodlers from all over the world 
-      together in the heart of Berlin.  
+    Dezentral aims to be an inclusive blockchain conference, while bringing
+      newcomers, builders and longtime hodlers from all over the world together
+      in the heart of Berlin.
   -
     With over 800 attendees, including founders of prime projects and partners
       of tier 1 funds.
@@ -62,21 +42,21 @@ date: 2018-09-06
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '20:00'
+# time: '20:00'
 
 # The URL where to adquire the tickets. Can be left empty.
 tickets: https://www.dezentral.io/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0
+price: varies
 
 # The name of the venue where the event will be held. Can be left empty.
-venue:
+venue: KOSMOS Berlin 
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Karl-Marx-Allee 131A, 10243 Berlin
+address: Karl-Marx-Allee 131A, 10243 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
