@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  props: ['date', 'time'],
+  props: ['date', 'endDate', 'time', 'endTime'],
   data: () => ({
     dayNames: [
       'Sunday',
@@ -41,13 +41,39 @@ export default {
   }),
   computed: {
     datetime () {
+      // First date of the event
       let date = this.date || this.$page.frontmatter.date
+        || this.$page.frontmatter.startDate
       date = new Date(date)
+
+      // Set the names for both the day and the month
       let day = this.dayNames[date.getDay()]
       let month = this.monthNames[date.getMonth()]
-      let time = this.time || this.$page.frontmatter.time
+
+      // The full date
       let datetime = `${day}, ${date.getDate()} ${month}`
+
+      // Last date of the event
+      let endDate = this.endDate || this.$page.frontmatter.endDate
+
+      // Set the end date only if defined and different from start date
+      if (endDate) {
+        endDate = new Date(endDate)
+        if (endDate.toJSON() !== date.toJSON()) {
+          day = this.dayNames[endDate.getDay()]
+          datetime += ` - ${day}, ${endDate.getDate()} ${month}`
+        }
+      }
+
+      // Starting time
+      let time = this.time || this.$page.frontmatter.time
+        || this.$page.frontmatter.startTime
       if (time) datetime += ` @ ${time}`
+
+      // Ending time
+      let endTime = this.endTime || this.$page.frontmatter.endTime
+      if ((endTime && time) && (endTime !== time)) datetime += `-${endTime}`
+
       return datetime
     }
   }
