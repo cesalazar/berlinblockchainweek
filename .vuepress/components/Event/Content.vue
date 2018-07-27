@@ -6,6 +6,9 @@
 
 <template>
   <div>
+    <div class="category">
+      <Badge :text="capitalizeWord(data.category)"/>
+    </div>
     <h1 id="name">{{ data.name }}</h1>
     <Synopsis/>
 
@@ -55,6 +58,8 @@ export default {
 </script>
 
 <style lang="stylus">
+.category
+  text-align right
 h2
   margin-top 1.5em
 </style>
