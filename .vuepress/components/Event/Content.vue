@@ -37,12 +37,18 @@ import MapLink from './MapLink'
 import Speakers from './Speakers'
 import Synopsis from './Synopsis'
 import TicketsLink from './TicketsLink'
+import { capitalizeWord } from './../../theme/util.js'
 
 export default {
   components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink },
   computed: {
     data () {
       return this.$page.frontmatter
+    }
+  },
+  methods: {
+    capitalizeWord (word) {
+      return capitalizeWord(word)
     }
   }
 }
