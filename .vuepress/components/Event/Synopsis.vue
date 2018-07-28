@@ -6,8 +6,15 @@
 
 <template>
   <div>
-    <p v-for="paragraph in $page.frontmatter.synopsis">
-      {{ paragraph }}
+    <p v-for="content in $page.frontmatter.synopsis">
+      <ul v-if="content.list">
+        <li v-for="item in content.list">
+          {{ item }}
+        </li>
+      </ul>
+      <span v-else>
+        {{ content }}
+      </span>
     </p>
   </div>
 </template>
