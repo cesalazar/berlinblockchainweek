@@ -87,7 +87,7 @@ export default {
         let path = event.path
         let fm = event.frontmatter
 
-        if (fm.name) {
+        if (fm.name && fm.time) {
           let day = fm.date.split('T')[0]
           day = day.split('-')[2]
           if (Number(day) < 10) day = day.substring(1)
