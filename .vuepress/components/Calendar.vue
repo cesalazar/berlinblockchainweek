@@ -28,7 +28,7 @@
 
         <!-- Each day column -->
         <td v-for="d in firstDay + 6" v-if="d >= firstDay">
-          <span v-for="event in checkEvents(d,t)" v-if="event != null">
+          <span v-for="event in checkEvents(d,t)" v-if="event">
             <a :href="$withBase(event.path)">{{ event.name }}</a>
           </span>
         </td>
@@ -88,20 +88,15 @@ export default {
         let fm = event.frontmatter
 
         if (fm.name && fm.time) {
-          let day = fm.date.split('T')[0]
-          day = day.split('-')[2]
-          if (Number(day) < 10) day = day.substring(1)
-
-          let hour = fm.time.split(':')[0]
-          if (Number(hour) < 10) hour = hour.substring(1)
+          let day = new Date(fm.date).getDate()
+          let hour = Number(fm.time.split(':')[0])
 
           this.events.push({
             path: path,
             name: fm.name,
-            date: fm.date,
             time: fm.time,
-            day: Number(day),
-            hour: Number(hour),
+            day,
+            hour,
           })
         }
       })
