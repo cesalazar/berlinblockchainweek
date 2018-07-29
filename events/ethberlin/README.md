@@ -26,7 +26,9 @@ title: 'ETH BERLIN - Ethereum Hackathon'
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: 4th Hackathon of the ETH Global series.
+description: 4th Hackathon of the ETH Global series. ETHBerlin is committed to
+  inclusion, diversity, education, and above all, to the Ethereum Community
+  improvement.
 
 
 #####################
@@ -55,7 +57,7 @@ synopsis:
   -
     Volunteers, Speakers, Sponsors and Hackers will have access to all events
       (although they will need to sign up for some due to capacity 
-      restrictions)
+      restrictions).
  
 
 # The date should be in the format year-month-day (ISO 8601).
@@ -71,8 +73,7 @@ startTime: '12:00'
 endTime: '24:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: 
--
+tickets: https://ethberlin.com/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -81,19 +82,17 @@ price: 0
 # The name of the venue where the event will be held. Can be left empty.
 venue: 
   -
-    Factory Berlin 1
+    Factory Mitte
   -
-    Factory Berlin 2
+    Factory Görlitzer Park
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
 address: 
   -
-    Rheinsberger Straße 76/77. 10115 Berlin, Germany
+    Rheinsberger Straße 76, 10115 Berlin, Germany
   -
-    Lohmühlenstraße 65,12435 Berlin, Germany
-# -
-# 2 venues
+    Lohmühlenstraße 65, 12435 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
