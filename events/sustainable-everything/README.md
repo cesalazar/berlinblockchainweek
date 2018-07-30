@@ -1,30 +1,11 @@
 ---
-####################
-### INSTRUCTIONS ###
-####################
-# This file is a template to create new events. In order to use it, duplicate
-# the whole folder (/template) as a new folder (I.E. /my-event-name) inside of
-# the /events folder, using for the folder name _only_:
-# - lowecase letters
-# - hyphens/dashes (-) instead of spaces
-# - alphanumeric charaters ('a' to 'z', '0' to '9')
-# and edit the README.md file inside that new folder just created.
-#
-# The name of the folder will be used on the URL: https://xxx.com/my-event-name.
-#
-# _Don't_ rename the new file (README.md), only edit its content.
-# Every line starting with a hash symbol (#) is a comment. It will be ignored
-# and can be safely removed.
-###############
-
-
 ###########
 ### SEO ###
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Sustainable Everything - When blockchain, supply chain, and inclusive
-  financing come together
+title: 'Sustainable Everything - When blockchain, supply chain, and inclusive
+financing come together'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
@@ -38,8 +19,8 @@ description: In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Sustainable Everything - When blockchain, supply chain, and inclusive
-  financing come together
+name: 'Sustainable Everything - When blockchain, supply chain, and inclusive
+  financing come together'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -48,17 +29,17 @@ name: Sustainable Everything - When blockchain, supply chain, and inclusive
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    "In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard are
-    hosting an evening of cross-pollination and discussion around the impact
-    of blockchain technology in supply chains. To what extent is blockchain
-    innovation a driver for sustainability and inclusive financing in
-    international trade? Blockchain not only allows more secure and
-    transparent transactions, immutable traceability and reputation, but also
-    provides the infrastructure on top of which to build inclusive financial
-    instruments. We have invited progressive companies and institutions
-    working on the frontiers of their fields: Provenance, Einhorn, GIZ
-    (Blockchain Lab) and Token Economy, for an evening of vibrant
-    discussion."
+    'In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard are
+      hosting an evening of cross-pollination and discussion around the impact
+      of blockchain technology in supply chains. To what extent is blockchain
+      innovation a driver for sustainability and inclusive financing in
+      international trade? Blockchain not only allows more secure and
+      transparent transactions, immutable traceability and reputation, but also
+      provides the infrastructure on top of which to build inclusive financial
+      instruments. We have invited progressive companies and institutions
+      working on the frontiers of their fields: Provenance, Einhorn, GIZ
+      (Blockchain Lab) and Token Economy, for an evening of vibrant
+      discussion.'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28

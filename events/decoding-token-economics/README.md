@@ -1,21 +1,4 @@
 ---
-####################
-### INSTRUCTIONS ###
-####################
-# This file is a template to create new events. In order to use it, duplicate
-# this file using a new name (I.E. /my-event-name),using for the name _only_:
-# - lowercase letters
-# - hyphens/dashes (-) instead of spaces
-# - alphanumeric characters ('a' to 'z', '0' to '9')
-# and edit the README.md file inside that new folder just created.
-#
-# The name of the folder will be used on the URL: https://xxx.com/my-event-name.
-#
-# Every line starting with a hash symbol (#) is a comment. It will be ignored
-# and can be safely removed.
-###############
-
-
 ###########
 ### SEO ###
 ###########
