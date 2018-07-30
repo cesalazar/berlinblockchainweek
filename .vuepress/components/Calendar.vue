@@ -90,14 +90,26 @@ export default {
         if (fm.name && fm.time) {
           let day = new Date(fm.date).getDate()
           let hour = Number(fm.time.split(':')[0])
+          let duration = 1
+          let i = 0
 
-          this.events.push({
-            path: path,
-            name: fm.name,
-            time: fm.time,
-            day,
-            hour,
-          })
+          // When the event spans more than one day
+          if (fm.endDate) {
+            if (fm.endDate !== fm.date) {
+              let endDay = new Date(fm.endDate).getDate()
+              duration = (endDay - day) + 1
+            }
+          }
+
+          for (i; i < duration; i++){
+            this.events.push({
+              path: path,
+              name: fm.name,
+              time: fm.time,
+              day: day + i,
+              hour,
+            })
+          }
         }
       })
     }
