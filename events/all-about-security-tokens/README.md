@@ -48,17 +48,19 @@ synopsis:
   -
     'Topics to discuss:'
   -
-    '* What security tokens are'
-  -
-    '* The benefits of security tokens'
-  -
-    '* Advantages for companies and early stage startups over traditional VC round and  traditional equities'
-  -
-    '* Present the competitive landscape of different solutions & players: Issuers, platforms, secondary exchanges, existing tokenized securities or funds, liquidity providers'
-  -
-    '* As liquidity remains one of the biggest roadblocks to widespread adoption of security token. We can focus on liquidity providers and  security token exchanges especially'
-  -
-    '* Opportunities for the future growth: what do we expect to happen in the  security tokens field in 2019'
+    list:
+    - What security tokens are
+    - The benefits of security tokens
+    - Advantages for companies and early stage startups over traditional VC
+        round and  traditional equities
+    - 'Present the competitive landscape of different solutions & players:
+        Issuers, platforms, secondary exchanges, existing tokenized securities
+        or funds, liquidity providers'
+    - As liquidity remains one of the biggest roadblocks to widespread
+        adoption of security token. We can focus on liquidity providers and
+        security token exchanges especially
+    - 'Opportunities for the future growth: what do we expect to happen in the
+        security tokens field in 2019'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28

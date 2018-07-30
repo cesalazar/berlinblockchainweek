@@ -69,7 +69,7 @@ endDate: 2018-09-09
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-startTime: '12:00'
+time: '12:00'
 endTime: '24:00'
 
 # The URL where to adquire the tickets. Can be left empty.

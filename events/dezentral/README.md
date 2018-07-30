@@ -42,7 +42,8 @@ date: 2018-09-06
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-# time: '20:00'
+time: '10:00'
+endTime: '19:00'
 
 # The URL where to adquire the tickets. Can be left empty.
 tickets: https://www.dezentral.io/

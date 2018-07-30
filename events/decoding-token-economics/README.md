@@ -55,15 +55,13 @@ synopsis:
   -
     'We will cover a wide range of topics including:'
   -
-    '- How tokens can incentivize global collaboration'
-  -
-    '- What types of businesses and environments provide the best climate for
-      tokenization'
-  -
-    '- Best practices and models for token engineering frameworks'
-  -
-    '- How to align your business goals to design a token economy'
- 
+    list:
+    - How tokens can incentivize global collaboration
+    - What types of businesses and environments provide the best climate for
+        tokenization
+    - Best practices and models for token engineering frameworks
+    - How to align your business goals to design a token economy
+   
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
