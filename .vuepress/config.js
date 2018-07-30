@@ -1,5 +1,8 @@
 module.exports = {
-  base: '/berlinblockchainweek/',
+  // Use the name of the repo if the content is served from GitHub Pages
+  // base: '/berlinblockchainweek/',
+  // Leave the base as '/' if serving the content from a custom domain
+  base: '/',
   title: 'Berlin Blockchain Week',
   themeConfig: {
     nav: [
