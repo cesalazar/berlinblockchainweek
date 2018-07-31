@@ -2,8 +2,15 @@
 home: true
 actionText: View the Events →
 actionLink: /events/
-description: Berlin Blockchain Week is a community-organized initiative. We have no single owner. It is an agnostic movement based on the premise that self-organization is the backbone of the ecosystem. We invite projects, individuals and anyone interested in fruitful and educational discussions to join us. 
+
+description: Berlin Blockchain Week is a community-organized initiative. We
+  have no single owner. It is an agnostic movement based on the premise that
+  self-organization is the backbone of the ecosystem. We invite projects,
+  individuals and anyone interested in fruitful and educational discussions to
+  join us. 
+
 tagline: All the events on a single place
+
 features:
 - title: Full Node
   details: Berlin’s Blockchain hub. With over 20 blockchain startups, Full
@@ -54,9 +61,17 @@ footer:
 
 <hr /><br />
 
-Berlin Blockchain Week is a community-organized initiative. We have no single owner. It is an agnostic movement based on the premise that self-organization is the backbone of the ecosystem. We invite projects, individuals and anyone interested in fruitful and educational discussions to join us. 
+Berlin Blockchain Week is a community-organized initiative. We have no single
+owner. It is an agnostic movement based on the premise that self-organization
+is the backbone of the ecosystem. We invite projects, individuals and anyone
+interested in fruitful and educational discussions to join us. 
 
-Berlin Blockchain Week is committed to reduce the noise from the market and focus on education, in order to push mass adoption via providing first hand information about the industry. 
+Berlin Blockchain Week is committed to reduce the noise from the market and
+focus on education, in order to push mass adoption via providing first hand
+information about the industry. 
 
-Our concept is simple: keep it educational, try to be as cost friendly for the community as you can (bearing in mind, we all need to pay bills - so not all events are free!) and to create a welcoming environment, so interested parties at any knowledge level feel comfortable to join.
+Our concept is simple: keep it educational, try to be as cost friendly for the
+community as you can (bearing in mind, we all need to pay bills - so not all
+events are free!) and to create a welcoming environment, so interested parties
+at any knowledge level feel comfortable to join.
 <br />
