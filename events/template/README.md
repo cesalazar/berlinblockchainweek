@@ -5,9 +5,9 @@
 # This file is a template to create new events. In order to use it, duplicate
 # the whole folder (/template) as a new folder (I.E. /my-event-name) inside of
 # the /events folder, using for the folder name _only_:
-# - lowecase letters
+# - lowercase letters
 # - hyphens/dashes (-) instead of spaces
-# - alphanumeric charaters ('a' to 'z', '0' to '9')
+# - alphanumeric characters ('a' to 'z', '0' to '9')
 # and edit the README.md file inside that new folder just created.
 #
 # The name of the folder will be used on the URL: https://xxx.com/my-event-name.
@@ -25,10 +25,10 @@
 # Ideally this is the same as the name of the event.
 title: Sample Template
 
-# Description for this event. This will be rendered as a <meta> tag in the HTML, 
+# Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search 
+description: This is a talk about blockchain. This field is indexed by search
   engines and used to show a description on /events.
 
 
@@ -48,7 +48,7 @@ synopsis:
   -
     Short synopsis of the event goes here. This is the first paragraph.
   -
-    Dolor officiis aliquam eligendi adipisci debitis. Accusamus quis ratione 
+    Dolor officiis aliquam eligendi adipisci debitis. Accusamus quis ratione
       perferendis esse nam. Vero itaque quidem molestias id quo? Deleniti ipsum
       nobis magni illum quos architecto omnis Modi reprehenderit inventore!
   -
@@ -63,7 +63,7 @@ date: 2018-09-05
 # Example: '18:00'
 time: '20:00'
 
-# The URL where to adquire the tickets. Can be left empty.
+# The URL where to akquire the tickets. Can be left empty.
 tickets: https://eventbrite.com/my-event
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
@@ -80,7 +80,7 @@ address: Skalitzer Strasse 85-86, 10997 Berlin, Germany
 # The category of the event. Valid options:
 # - conference
 # - event
-# - hackaton
+# - hackathon
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
@@ -116,9 +116,9 @@ speakers:
     # The full URL, including http(s)://. Can be left empty.
     website: https://cesalazar.com
 
-    # The bio is a single line. 
+    # The bio is a single line.
     # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: Here goes Carlos' description. Amet corporis laudantium obcaecati 
+    bio: Here goes Carlos' description. Amet corporis laudantium obcaecati
       perferendis reiciendis rem perferendis. Magni qui reiciendis explicabo.
   -
     name: Vitalik Buterin
