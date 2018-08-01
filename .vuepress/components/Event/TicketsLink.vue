@@ -8,18 +8,18 @@
   <div class="ticket--container">
     <!-- Ticket price -->
     <span class="ticket--price">
-      <b>
-        Cost:&nbsp;
-        <span v-if="$page.frontmatter.price > 0">{{ $page.frontmatter.price }} €</span>
-        <span v-else>Free</span>
-      </b>
+      Cost:&nbsp;
+      <span v-if="$page.frontmatter.price > 0">
+        {{ $page.frontmatter.price }} €
+      </span>
+      <span v-else>Free</span>
     </span>
 
     <!-- Link to ticket sale -->
     <span v-if="$page.frontmatter.tickets" class="button">
       <ExternalLink
         :url="$page.frontmatter.tickets"
-        caption="Tickets"
+        caption="Website"
         indicator="true"
       />
     </span>
