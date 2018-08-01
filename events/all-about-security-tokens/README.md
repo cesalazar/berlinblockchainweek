@@ -6,10 +6,10 @@
 # Ideally this is the same as the name of the event.
 title: All About Security Tokens
 
-# Description for this event. This will be rendered as a <meta> tag in the HTML, 
+# Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search 
+description: This is a talk about blockchain. This field is indexed by search
   engines and used to show a description on /events.
 
 
@@ -50,21 +50,21 @@ date: 2018-09-05
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '10:00'
+time: '19:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: 
+tickets: https://www.eventbrite.com/e/all-about-security-tokens-tickets-48412538205
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 5
+price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue:
+venue: rent24
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address:
+address: Potsdamer Strasse 182, 10783 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
@@ -87,27 +87,27 @@ category: panel
 speakers:
 # -
 #   # Required.
-#   name: 
+#   name:
 #
 #   # Can be left empty.
-#   title: 
+#   title:
 #
 #   # Can be left empty.
-#   company: 
+#   company:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   companyURL: 
+#   companyURL:
 #
 #   # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
 #   # Can be left empty.
-#   twitter: 
+#   twitter:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   website: 
+#   website:
 #
-#   # The bio is a single line. 
+#   # The bio is a single line.
 #   # Linebreaks are ignored, but they _must_ start with two spaces.
-#   bio: 
+#   bio:
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
