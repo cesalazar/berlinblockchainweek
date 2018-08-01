@@ -9,8 +9,9 @@ title: 'LedgerZ: Plasma Fraud Proof Challenge (with Cryptokitties rewards)'
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search
-  engines and used to show a description on /events.
+description: In this workshop we will work with Johann Barbie on Plasma by
+  example, for scaling and merkle-proofing DApps. True challengers will gain
+  Cryptokitties!
 
 
 #####################
@@ -26,17 +27,20 @@ name: 'LedgerZ: Plasma Fraud Proof Challenge (with Cryptokitties rewards)'
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  -   'Details'
   -
-      In this workshop we will work with Johann Barbie on Plasma by example, for scaling and merkle-proofing DApps. True challengers will gain Cryptokitties!
-  -   'Agenda:'
+    In this workshop we will work with Johann Barbie on Plasma by example, for
+      scaling and merkle-proofing DApps. True challengers will gain
+      Cryptokitties!
+  -
+    'Agenda:'
   -
     list:
     - Intro to Plasma, Classic vs Cash
     - Merkle-trees and merkle-proofs
     - Interactive session to create and submit proofs.
-    - Payout of crpyto-asset prices to fastest proofs
-  -   'Notes:'
+    - Payout of crypto-asset prices to fastest proofs
+  -
+    'Notes:'
   -  
    list:
     - You will want to bring your laptop, blockchain knowledge and dev-skills
@@ -68,7 +72,7 @@ address: Ackerstraße 29, 10115 Berlin, Germany
 # The category of the event. Valid options:
 # - conference
 # - event
-# - hackaton
+# - hackathon
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
@@ -86,10 +90,10 @@ category: workshop
 speakers:
   -
     # Required.
-    name: Johann
+    name: Johann Barbie
 
     # Can be left empty.
-    title: Lead Link of the Research Circle at Parsec Labs
+    title: Lead Link of the Research Circle
 
     # Can be left empty.
     company: Parsec Labs
@@ -106,7 +110,9 @@ speakers:
 
     # The bio is a single line.
     # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: Johann is the Lead Link of the Research Circle at Parsec Labs, where he focuses on Plasma research. His research aims at enabling smart contract execution on Plasma chains.
+    bio: Johann is the Lead Link of the Research Circle at Parsec Labs, where
+      he focuses on Plasma research. His research aims at enabling smart
+      contract execution on Plasma chains.
 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
