@@ -10,11 +10,16 @@
 # - alphanumeric characters ('a' to 'z', '0' to '9')
 # and edit the README.md file inside that new folder just created.
 #
-# The name of the folder will be used on the URL: https://xxx.com/my-event-name.
+# The name of the folder will be used on the URL. Example:
+# https://blockchainweek.berlin/my-event-name
 #
 # _Don't_ rename the new file (README.md), only edit its content.
+# _Don't_ remove any text before the colons at the beginning of each line,
+# only edit what is after the colon. Example:
+# Don't remove the word nor colon on 'description:'
+#
 # Every line starting with a hash symbol (#) is a comment. It will be ignored
-# and can be safely removed.
+# and can be safely removed, including these instructions.
 ###############
 
 
@@ -57,11 +62,16 @@ synopsis:
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
 date: 2018-09-05
+# The date when the event ends. Can be left empty or set to the same day the
+# event starts.
+endDate: 2018-09-05
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
 time: '20:00'
+# Time when the event ends. Can be left empty.
+endTime: '22:00'
 
 # The URL where to akquire the tickets. Can be left empty.
 tickets: https://eventbrite.com/my-event
