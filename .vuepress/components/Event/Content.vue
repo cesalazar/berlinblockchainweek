@@ -29,7 +29,7 @@
     </div>
 
     <div id="tickets" v-if="data.tickets">
-      <h2>Tickets</h2>
+      <h2>More information</h2>
       <TicketsLink/>
     </div>
   </div>
