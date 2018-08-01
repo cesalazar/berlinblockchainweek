@@ -11,7 +11,10 @@ npm run build
 cd .vuepress/dist
 
 # include the custom domain for the GitHub Page
-cp ../.github_config/CNAME .
+cp ../.github/CNAME .
+
+# include the README for the banch
+cp -r ../.github .
 
 git init
 git add -A
