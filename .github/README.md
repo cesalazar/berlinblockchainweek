@@ -7,3 +7,10 @@ interested in fruitful and educational discussions to join us.
 
 This repository contains the code for the website, which can be reached at
 [blockchainweek.berlin](https://blockchainweek.berlin/).
+
+## Contributing
+
+Please read the
+[Wiki](https://github.com/cesalazar/berlinblockchainweek/wiki/Contributing)
+for instructions on how to add an event. Same process applies to modify the
+theme, functionality, or any other part of the website.
