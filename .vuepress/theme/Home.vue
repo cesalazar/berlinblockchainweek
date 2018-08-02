@@ -28,7 +28,7 @@
     </div>
     <div class="footer" v-if="data.footer">
       <span v-for="link in data.footer">
-        <a href="link.url">
+        <a :href="link.url">
           {{ link.text }}
         </a>
       </span>

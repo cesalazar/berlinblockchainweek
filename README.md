@@ -49,14 +49,14 @@ features:
 
 footer:
   -
-    url: /legal/imprint/
-    text: Imprint
-  -
     url: /legal/privacy-policy/
     text: Privacy policy
-  -
-    url: /legal/terms-and-conditions/
-    text: Terms and conditions
+#  -
+#    url: /legal/imprint/
+#    text: Imprint
+#  -
+#    url: /legal/terms-and-conditions/
+#    text: Terms and conditions
 ---
 
 <hr /><br />
