@@ -52,7 +52,7 @@ time: '18:30'
 endTime: '21:30'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets:
+tickets: https://www.eventbrite.com/e/sustainable-everything-when-blockchain-supply-chain-and-inclusive-financing-come-together-tickets-48687181671
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
