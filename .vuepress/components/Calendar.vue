@@ -87,7 +87,7 @@ export default {
         let path = event.path
         let fm = event.frontmatter
 
-        if (fm.name && fm.time) {
+        if (fm.name && fm.time && fm.name !== 'Sample Template') {
           let day = new Date(fm.date).getDate()
           let hour = Number(fm.time.split(':')[0])
           let duration = 1

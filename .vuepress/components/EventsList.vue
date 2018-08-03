@@ -60,7 +60,8 @@ export default {
   methods: {
     setEvents () {
       let events = this.$site.pages.map(event => {
-        if (event.frontmatter.name) {
+        let eventName = event.frontmatter.name
+        if (eventName && eventName !== 'Sample Template') {
           let category = event.frontmatter.category
           event.frontmatter.category = capitalizeWord(category)
           event.day = setEventDay(event.frontmatter.date)
