@@ -50,7 +50,7 @@ tickets: https://www.dezentral.io/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: varies
+price: 50-150
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: KOSMOS Berlin 
