@@ -32,10 +32,18 @@ synopsis:
     'Goals: Understand the problems that OScoin is trying to solve in
       open-source.'
   -
-    'Content details: What we are building and the general problem of open
-      source incentivization. Incentivization and governance models we imagine
-      for Open Source. Technical aspects of the platform we intend to build.
-      Self-amending core language we call radicle.'
+    'Content details:'
+  -
+    list:
+    -
+      What we are building and the general problem of open
+        source incentivization
+    -
+      Incentivization and governance models we imagine for Open Source
+    -
+      Technical aspects of the platform we intend to build
+    -
+      Self-amending core language we call radicle
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
