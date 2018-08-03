@@ -12,8 +12,7 @@ title: Open Source Incentivization and Sustainability with OSCoin
 description: 'Goals: Understand the problems that OScoin is trying to solve in
   open-source. Content details: What we are building and the general problem of
   open source incentivization. Incentivization and governance models we imagine
-  for Open Source. Technical aspects of the platform we intend to build.
-  Self-amending core language we call radicle.'
+  for Open Source.'
 
 
 #####################
