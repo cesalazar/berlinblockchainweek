@@ -9,8 +9,9 @@ title: All About Security Tokens
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search
-  engines and used to show a description on /events.
+description: 'Topics to discuss: What security tokens are. The benefits of
+  security tokens. Advantages for companies and early stage startups over
+  traditional VC round and traditional equities.'
 
 
 #####################
