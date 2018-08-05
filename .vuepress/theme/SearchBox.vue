@@ -150,7 +150,7 @@ export default {
     color transparent
     cursor pointer
     outline none
-    background #000 url(../dist/assets/img/search.svg) no-repeat 8px center
+    background #000 url('~/search.svg') no-repeat 8px center
     border solid 1px #000
     padding 9px
     border-radius 10em
@@ -178,7 +178,7 @@ export default {
     // padding 0 0.5rem 0 2rem
     // outline none
     // transition all .2s ease
-    // background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
+    // background #fff url('~/search.svg') 0.6rem 0.5rem no-repeat
     // background-size 1rem
     // &:focus
     //   cursor auto
