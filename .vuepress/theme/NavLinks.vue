@@ -15,7 +15,7 @@
       target="_blank"
       rel="noopener noreferrer">
       {{ repoLabel }}
-      <OutboundLink/>
+      <!-- <OutboundLink/> -->
     </a>
   </nav>
 </template>
@@ -103,18 +103,20 @@ export default {
 .nav-links
   display inline-block
   a
-    line-height 1.4rem
-    color inherit
+    line-height 1.8rem
+    color #fff
+    border-bottom: 1px solid #000
+    transition: border-bottom .2s ease-in-out
     &:hover, &.router-link-active
       color $accentColor
   .nav-item
     cursor pointer
     position relative
     display inline-block
-    margin-left 1.5rem
+    margin-right 1.5rem
     line-height 2rem
   .repo-link
-    margin-left 1.5rem
+    margin-right 1.5rem
 
 @media (max-width: $MQMobile)
   .nav-links
@@ -124,9 +126,9 @@ export default {
 @media (min-width: $MQMobile)
   .nav-links a
     &:hover, &.router-link-active
-      color $textColor
-  .nav-item > a:not(.external)
-    &:hover, &.router-link-active
-      margin-bottom -2px
-      border-bottom 2px solid lighten($accentColor, 8%)
+      color inherit
+      border-bottom 1px solid #f1003e
+  // .nav-item > a
+  //   &:hover, &.router-link-active
+  //     border-bottom 1px solid #f1003e
 </style>

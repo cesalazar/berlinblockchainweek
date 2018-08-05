@@ -2,19 +2,22 @@
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <router-link :to="$localePath" class="home-link">
-      <img class="logo"
+      <!-- <img class="logo"
         v-if="$site.themeConfig.logo"
-        :src="$withBase(logo)">
-      <span class="site-name"
+        :src="$withBase(logo)"> -->
+      <a href="index.html">
+        <img class="logo" src="../dist/assets/img/logo.png" alt="Logo">
+      </a>
+      <!-- <span class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }">
         {{ $siteTitle }}
-      </span>
+      </span> -->
     </router-link>
     <div class="links">
+      <NavLinks class="can-hide"/>
       <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia"/>
       <SearchBox v-else-if="$site.themeConfig.search !== false"/>
-      <NavLinks class="can-hide"/>
     </div>
   </header>
 </template>
@@ -45,30 +48,36 @@ export default {
 @import './styles/config.styl'
 
 .navbar
-  padding 0.7rem 1.5rem
+  padding 0.9rem 3.5rem
   line-height $navbarHeight - 1.4rem
   position relative
   a, span, img
     display inline-block
   .logo
-    height $navbarHeight - 1.4rem
+    height $navbarHeight - 1.8rem
     min-width $navbarHeight - 1.4rem
     margin-right 0.8rem
     vertical-align top
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $textColor
+    color #fff
     position relative
   .links
     font-size 0.9rem
     position absolute
-    right 1.5rem
+    right 3.5rem
     top 0.7rem
 
 @media (max-width: $MQMobile)
   .navbar
-    padding-left 4rem
+    padding 0.9rem 1.5rem 0.9rem 4rem
+    .links
+      right 1.5rem
+    .logo
+      height 2rem
+      min-width 2rem
+    
     .can-hide
       display none
 </style>

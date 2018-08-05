@@ -125,7 +125,7 @@ function addDays (date, days) {
   .date-sticky
     position sticky
     top $navbarHeight
-    background #FFF
+    background #000
     .datetime
       padding-top 5px
   .action-button
@@ -144,4 +144,21 @@ function addDays (date, days) {
       font-size 1.3em
   div
     margin 2em 0 4em
+    
+.action-button
+  &:hover
+    text-decoration: none !important
+    
+.datetime
+  color: rgba(255, 255, 255, 0.8)
+  
+h3 > .datetime
+  opacity: 1
+  color: #fff
+  
+h2
+  border-bottom: none
+  
+.events--container > div
+  border-bottom 1px solid rgba(255, 255, 255, .3)
 </style>

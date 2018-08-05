@@ -73,15 +73,17 @@ function resolveOpenGroupIndex (route, items) {
 @import './styles/config.styl'
 
 .sidebar
+  background-color: #000 !important
+  border: none !important
   ul
     padding 0
     margin 0
     list-style-type none
   a
     display inline-block
+    transition: color .3s ease-in-out
   .nav-links
     display none
-    border-bottom 1px solid $borderColor
     padding 0.5rem 0 0.75rem 0
     a
       font-weight 600
