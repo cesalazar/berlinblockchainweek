@@ -138,6 +138,8 @@ export default {
 <style lang="stylus">
 @import './styles/config.styl'
 
+$border-radius = 5px
+
 .search-box
   display inline-block
   position relative
@@ -153,43 +155,28 @@ export default {
     background #000 url('~/search.svg') no-repeat 8px center
     border solid 1px #000
     padding 9px
-    border-radius 10em
+    border-radius $border-radius
     transition all .5s
     font-size: 12px
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button
       display none
     &:focus
-      width 130px
+      /* width 130px */
+      width 11em
       padding-left 32px
       color #fff
       background-color #000
       border-color #f1003e
       cursor auto
-      box-shadow 0 0 5px rgba(109,207,246,.5)
-    // cursor text
-    // width 10rem
-    // color lighten($textColor, 25%)
-    // display inline-block
-    // border 1px solid darken($borderColor, 10%)
-    // border-radius 2rem
-    // font-size 0.9rem
-    // line-height 2rem
-    // padding 0 0.5rem 0 2rem
-    // outline none
-    // transition all .2s ease
-    // background #fff url('~/search.svg') 0.6rem 0.5rem no-repeat
-    // background-size 1rem
-    // &:focus
-    //   cursor auto
-    //   border-color $accentColor
+      /* box-shadow 0 0 5px rgba(109,207,246,.5) */
   .suggestions
-    background #fff
-    width 20rem
+    background #000
+    width 25rem
     position absolute
-    top 1.5rem
-    border 1px solid darken($borderColor, 10%)
-    border-radius 6px
+    top 1.7rem
+    border 1px solid lighten(#000, 20%)
+    border-radius $border-radius
     padding 0.4rem
     list-style-type none
     &.align-right
@@ -197,7 +184,7 @@ export default {
   .suggestion
     line-height 1.4
     padding 0.4rem 0.6rem
-    border-radius 4px
+    border-radius $border-radius
     cursor pointer
     a
       color lighten($textColor, 35%)
@@ -207,22 +194,9 @@ export default {
         font-size 0.9em
         margin-left 0.25em
     &.focused
-      background-color #f3f4f5
+      background-color lighten(#000, 5%)
       a
         color $accentColor
-
-// @media (max-width: $MQNarrow)
-//   .search-box
-//     input
-//       cursor pointer
-//       width 0
-//       border-color transparent
-//       position relative
-//       left 1rem
-//       &:focus
-//         cursor text
-//         left 0
-//         width 10rem
 
 @media (max-width: $MQNarrow) and (min-width: $MQMobile)
   .search-box
