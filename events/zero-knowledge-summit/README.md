@@ -29,15 +29,13 @@ synopsis:
   -
     'Join us in Berlin on Sept 5th for the Zero Knowledge Summit - ZK0x02.'
   -
-    In this event, we will be focusing on zero knowledge topics, latest
+    This event will be focusing on zero knowledge topics, latest
       zk-snark applications and privacy. This one-day event is a “no-pitch”
-      event, and will only feature topic oriented talks and workshops. We are
-      looking to invite primarily privacy researchers, practitioners,
-      influencers, and developers working on zero knowledge topics. If you fall
-      into these categories, please do sign-up below.
+      event, and will only feature topic oriented talks and workshops. Attendees will consist primarily of privacy  researchers, practitioners, influencers, and developers working on zero knowledge topics. If you fall
+      into these categories, please follow the links to the application form here: <http://www.zeroknowledge.fm/summit>
   -
     Unfortunately space is very limited, and so we encourage you apply early.
-      It is hosted by the ZeroKnowledge Podcast.
+      It is hosted by the ZeroKnowledge Podcast - <zeroknowledge.fm>
 
 
 # The date should be in the format year-month-day (ISO 8601).
