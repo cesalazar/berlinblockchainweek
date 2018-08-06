@@ -49,14 +49,22 @@ name: RChain Devcon3
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  -    RCon3 brings together network validators, dApp developers, investors, and researchers learning how to work with the RChain platform and participate in the launch of the RChain testnet.
-  -    RCon3 features four knowledge tracks - RChain technology, blockchain solutions, research, and developing with RChain. There will be hands-on workshops in these areas. Presenters, panelists, and workshop leaders will deliver nearly 50 hours of programming. Additionally, space will be available for participants to network and collaborate.
-  -    Program highlights include
-  -    Introductory sessions and deep dives into key components of the RChain platform. including -  Rholang, consensus, storage, and communications.
-  -    Practical workshops for dApp developers. Learn from sessions working with Rholang and become familiar with the architecture and design patterns of the RChain platform.
-  -    Launch of the RChain testnet. If you are interested in participating in the launch of mainnet later in 2018, plan to participate in the launch of testnet at RCon3. The program includes informational sessions and workshops for validators and investors on proof of stake economics, infrastructure requirements, and system engineering.
-  -    Demonstration of the Rhoc/Rev swap. The Rhoc/Rev swap will coincide with the launch of the RChain mainnet later in 2018. Investors and token holders wanting to ensure their REV will be available at the launch of the RChain mainnet should participate.
-  -    Key signing parties. On-site key signing parties for participants during this event will allow mainnet genesis to be verified and secured by a broad community.
+  -    
+    RCon3 brings together network validators, dApp developers, investors, and researchers learning how to work with the RChain platform and participate in the launch of the RChain testnet.
+  -    
+    RCon3 features four knowledge tracks - RChain technology, blockchain solutions, research, and developing with RChain. There will be hands-on workshops in these areas. Presenters, panelists, and workshop leaders will deliver nearly 50 hours of programming. Additionally, space will be available for participants to network and collaborate.
+  -    
+    Program highlights include
+  -    
+    Introductory sessions and deep dives into key components of the RChain platform. including -  Rholang, consensus, storage, and communications.
+  -    
+    Practical workshops for dApp developers. Learn from sessions working with Rholang and become familiar with the architecture and design patterns of the RChain platform.
+  -    
+    Launch of the RChain testnet. If you are interested in participating in the launch of mainnet later in 2018, plan to participate in the launch of testnet at RCon3. The program includes informational sessions and workshops for validators and investors on proof of stake economics, infrastructure requirements, and system engineering.
+  -    
+    Demonstration of the Rhoc/Rev swap. The Rhoc/Rev swap will coincide with the launch of the RChain mainnet later in 2018. Investors and token holders wanting to ensure their REV will be available at the launch of the RChain mainnet should participate.
+  -    
+    Key signing parties. On-site key signing parties for participants during this event will allow mainnet genesis to be verified and secured by a broad community.
 
 
 # The date should be in the format year-month-day (ISO 8601).
@@ -73,8 +81,8 @@ time: '08:50'
 # Time when the event ends. Can be left empty.
 endTime: '17:30'
 
-# The URL where to akquire the tickets. Can be left empty.
-tickets: https://eventbrite.com/my-event
+# The URL where to aquire the tickets. Can be left empty.
+tickets: https://developer.rchain.coop/conference
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -107,15 +115,13 @@ category: conference
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
   -
-   name: Greg Meredith
-   title: President
-   company: RChain
-   companyURL: https://RChain.Coop
-   twitter: leithaus
-   website:
-   bio: Greg is the President of The RChain Cooperative. Previously he has worked as Principal Architect of Microsoft's BizTalk Process Orchestration, Principal Architect of Microsoft's Highwire offering as well as Principal Architect of ATM Network management solution for ATT/NCR and Co-designer and developer of MCC's Rosette/ESS technology.
-
-
+    name: Greg Meredith
+    title: President
+    company: RChain
+    companyURL: https://RChain.Coop
+    twitter: leithaus
+    website:
+    bio: Greg is the President of The RChain Cooperative. Previously he has worked as Principal Architect of Microsoft's BizTalk Process Orchestration, Principal Architect of Microsoft's Highwire offering as well as Principal Architect of ATM Network management solution for ATT/NCR and Co-designer and developer of MCC's Rosette/ESS technology.
   -
     # Required.
     name: Vlad Zamfir
