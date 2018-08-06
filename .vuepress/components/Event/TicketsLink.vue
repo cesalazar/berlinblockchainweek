@@ -8,11 +8,7 @@
   <div class="ticket--container">
     <!-- Ticket price -->
     <span class="ticket--price">
-      Cost:&nbsp;
-      <span v-if="$page.frontmatter.price > 0">
-        {{ $page.frontmatter.price }} €
-      </span>
-      <span v-else>Free</span>
+      Cost:&nbsp;{{ price }}
     </span>
 
     <!-- Link to ticket sale -->
@@ -30,7 +26,17 @@
 import ExternalLink from '../Utils/ExternalLink'
 
 export default {
-  components: { ExternalLink }
+  components: { ExternalLink },
+  computed: {
+    price () {
+      let price = this.$page.frontmatter.price
+      if (!price || price === 0) {
+        return 'Free'
+      }
+      price += ' €'
+      return price
+    }
+  }
 }
 </script>
 
