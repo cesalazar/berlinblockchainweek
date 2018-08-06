@@ -88,7 +88,7 @@ export default {
         let fm = event.frontmatter
 
         if (fm.name && fm.time && fm.name !== 'Sample Template') {
-          let day = new Date(fm.date).getDate()
+          let day = new Date(fm.date).getUTCDate()
           let hour = Number(fm.time.split(':')[0])
           let duration = 1
           let i = 0
@@ -96,7 +96,7 @@ export default {
           // When the event spans more than one day
           if (fm.endDate) {
             if (fm.endDate !== fm.date) {
-              let endDay = new Date(fm.endDate).getDate()
+              let endDay = new Date(fm.endDate).getUTCDate()
               duration = (endDay - day) + 1
             }
           }
