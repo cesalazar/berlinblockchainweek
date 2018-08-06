@@ -22,7 +22,7 @@
       <DateTime/>
     </div>
 
-    <div id="address" v-if="data.address">
+    <div id="address" v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
       <MapLink/>

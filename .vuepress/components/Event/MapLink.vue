@@ -11,7 +11,7 @@
         {{ venue.name }}<br/>
       </span>
 
-      <ExternalLink
+      <ExternalLink v-if="venue.address"
         :url="'https://www.google.com/maps/place/' + venue.address"
         :caption="venue.address"
         :indicator="'true'"
@@ -36,7 +36,7 @@ export default {
           count++
           return {
             name: venue,
-            address: addresses[count]
+            address: addresses[count] || null
           }
         })
       }
