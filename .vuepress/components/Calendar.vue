@@ -44,8 +44,8 @@ export default {
     // First calendar day of the event (September 5)
     firstDay: 5,
     // Hours without the leading zero nor trailing minutes
-    firstHour: 9,
-    lastHour: 22,
+    firstHour: 8,
+    lastHour: 20,
     dayNames: [
       'Wednesday',
       'Thursday',
