@@ -36,16 +36,23 @@ features:
     and adoption. The Berlin DevHub focuses on accelerating blockchain
     technology across the energy sector.
 
-- title: Co.up
-  details: 'Co.up is a community event space located in the heart of Berlin
-    Kreuzberg which provides event and workshop spaces for the Berlin tech and
-    creative community.'
-
 - title: Oscoin Office
   details: Backed by Blue Yard capital, oscoin aims to build a decentralized
     network between open source software and developers that would allow for a
     fair economy for the development and maintenance of the world’s open source
     software, independent of gatekeepers.
+
+- title: Co.up
+  details: 'Co.up is a community event space located in the heart of Berlin
+    Kreuzberg which provides event and workshop spaces for the Berlin tech and
+    creative community.'
+
+- title: rent24
+  details: As one of the leading coworking and coliving providers, rent24 offers
+    their members not only workspaces and accommodation, but also lounge areas,
+    meeting rooms and event space. rent24's mission is to provide inspirational
+    environments that promote both creativity and productivity, and encourage
+    their community to share.
 
 footer:
   -
