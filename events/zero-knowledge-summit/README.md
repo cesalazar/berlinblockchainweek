@@ -9,9 +9,10 @@ title: Zero Knowledge Summit
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: In this event, we will be focusing on zero knowledge topics,
-  latest zk-snark applications and privacy. This one-day event is a “no-pitch”
-  event, and will only feature topic oriented talks and workshops. 
+description: This event will focus on zero knowledge topics, latest zkSNARK 
+    applications and privacy. Attendees will consist primarily of privacy  
+    researchers, practitioners, influencers, and developers working on zero 
+    knowledge topics.
 
 #####################
 ### EVENT DETAILS ###
@@ -29,13 +30,15 @@ synopsis:
   -
     'Join us in Berlin on Sept 5th for the Zero Knowledge Summit - ZK0x02.'
   -
-    This event will be focusing on zero knowledge topics, latest
-      zk-snark applications and privacy. This one-day event is a “no-pitch”
-      event, and will only feature topic oriented talks and workshops. Attendees will consist primarily of privacy  researchers, practitioners, influencers, and developers working on zero knowledge topics. If you fall
-      into these categories, please follow the links to the application form here: <http://www.zeroknowledge.fm/summit>
-  -
+    This event will focus on zero knowledge topics, latest zkSNARK applications 
+    and privacy. This one-day event is a “no- pitch” event, and will only feature
+    topic oriented talks and workshops. Attendees will consist primarily of 
+    privacy  researchers, practitioners, influencers, and developers working on
+    zero knowledge topics. If you fall into these categories, please follow the 
+    links to the application form here: <http://www.zeroknowledge.fm/summit>
+
     Unfortunately space is very limited, and so we encourage you apply early.
-      It is hosted by the ZeroKnowledge Podcast - <zeroknowledge.fm>
+    It is hosted by the ZeroKnowledge Podcast - <zeroknowledge.fm>
 
 
 # The date should be in the format year-month-day (ISO 8601).
