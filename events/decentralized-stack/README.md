@@ -17,7 +17,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Decentralized Stack. Developers Meetup.
+title: Decentralized Stack. Developers Meetup
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -32,7 +32,7 @@ description: This event is targeted at technical discussions around the
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Decentralized Stack. Developers Meetup.
+name: Decentralized Stack. Developers Meetup
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -68,7 +68,7 @@ endDate: 2018-09-10
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '17:45'
+time: '18:00'
 # Time when the event ends. Can be left empty.
 endTime: '21:00'
 
