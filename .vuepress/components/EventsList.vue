@@ -146,12 +146,12 @@ export default {
 
 function setEventDay (date) {
   let day = new Date(date)
-  return day.getDay()
+  return day.getUTCDay()
 }
 
 function addDays (date, days) {
   let nextDay = new Date(date)
-  nextDay = nextDay.setDate(date.getDate() + days)
+  nextDay = nextDay.setDate(date.getUTCDate() + days)
   return new Date(nextDay)
 }
 
