@@ -15,7 +15,7 @@
 ###########
 ### SEO ###
 ###########
-title: Security Unconf by SecurETH
+title: Ethereum Security Unconf (ETHSecurity)
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -29,7 +29,7 @@ description: Gathering of the Ethereum Security Community. This initiative is
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: Security Unconf by SecurETH
+name: Ethereum Security Unconf (ETHSecurity)
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -56,7 +56,7 @@ time: '8:00'
 endTime: '22:00'
 
 # The URL where to akquire the tickets. Can be left empty.
-tickets: https://ethereum-magicians.org/t/wiki-gathering-of-security-community/433
+tickets:
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -88,29 +88,6 @@ category:  workshop
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
-  -
-    # Required.
-    name: Bryant Eisenbach
-
-    # Can be left empty.
-    title:
-
-    # Can be left empty.
-    company: SecurETH 
-
-    # The full URL, including http(s)://. Can be left empty.
-    companyURL: https://secureth.org/
-
-    # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
-    # Can be left empty.
-    twitter: fubuloubu
-
-    # The full URL, including http(s)://. Can be left empty.
-    website: 
-
-    # The bio is a single line.
-    # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
