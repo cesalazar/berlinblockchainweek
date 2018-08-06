@@ -143,22 +143,46 @@ export default {
   position relative
   margin-right 0.5rem
   input
-    cursor text
-    width 10rem
-    color lighten($textColor, 25%)
-    display inline-block
-    border 1px solid darken($borderColor, 10%)
-    border-radius 2rem
-    font-size 0.9rem
-    line-height 2rem
-    padding 0 0.5rem 0 2rem
+    position: relative
+    top: -2px
+    width 15px
+    padding-left 10px
+    color transparent
+    cursor pointer
     outline none
-    transition all .2s ease
-    background #fff url(./search.svg) 0.6rem 0.5rem no-repeat
-    background-size 1rem
+    background #000 url('~/search.svg') no-repeat 8px center
+    border solid 1px #000
+    padding 9px
+    border-radius 10em
+    transition all .5s
+    font-size: 12px
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button
+      display none
     &:focus
+      width 130px
+      padding-left 32px
+      color #fff
+      background-color #000
+      border-color #f1003e
       cursor auto
-      border-color $accentColor
+      box-shadow 0 0 5px rgba(109,207,246,.5)
+    // cursor text
+    // width 10rem
+    // color lighten($textColor, 25%)
+    // display inline-block
+    // border 1px solid darken($borderColor, 10%)
+    // border-radius 2rem
+    // font-size 0.9rem
+    // line-height 2rem
+    // padding 0 0.5rem 0 2rem
+    // outline none
+    // transition all .2s ease
+    // background #fff url('~/search.svg') 0.6rem 0.5rem no-repeat
+    // background-size 1rem
+    // &:focus
+    //   cursor auto
+    //   border-color $accentColor
   .suggestions
     background #fff
     width 20rem
@@ -187,18 +211,18 @@ export default {
       a
         color $accentColor
 
-@media (max-width: $MQNarrow)
-  .search-box
-    input
-      cursor pointer
-      width 0
-      border-color transparent
-      position relative
-      left 1rem
-      &:focus
-        cursor text
-        left 0
-        width 10rem
+// @media (max-width: $MQNarrow)
+//   .search-box
+//     input
+//       cursor pointer
+//       width 0
+//       border-color transparent
+//       position relative
+//       left 1rem
+//       &:focus
+//         cursor text
+//         left 0
+//         width 10rem
 
 @media (max-width: $MQNarrow) and (min-width: $MQMobile)
   .search-box

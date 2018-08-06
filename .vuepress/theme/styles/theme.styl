@@ -14,7 +14,7 @@ html, body
   margin 0
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-size 16px
@@ -30,9 +30,10 @@ body
   left 0
   right 0
   height $navbarHeight
-  background-color #fff
+  background-color #000
+  color: #fff
   box-sizing border-box
-  border-bottom 1px solid $borderColor
+  border-bottom 1px solid #000
 
 .sidebar-mask
   position fixed
@@ -181,6 +182,9 @@ th, td
       top 0
     .custom-layout
       padding-top 0
+      
+.page
+  background: #000
 
 
 @media (min-width: ($MQMobile + 1px))
