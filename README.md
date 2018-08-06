@@ -7,7 +7,7 @@ description: Berlin Blockchain Week is a community-organized initiative. We
   have no single owner. It is an agnostic movement based on the premise that
   self-organization is the backbone of the ecosystem. We invite projects,
   individuals and anyone interested in fruitful and educational discussions to
-  join us. 
+  join us.
 
 tagline: 5-11 September 2018
 
@@ -64,11 +64,11 @@ footer:
 Berlin Blockchain Week is a community-organized initiative. We have no single
 owner. It is an agnostic movement based on the premise that self-organization
 is the backbone of the ecosystem. We invite projects, individuals and anyone
-interested in fruitful and educational discussions to join us. 
+interested in fruitful and educational discussions to join us.
 
 Berlin Blockchain Week is committed to reduce the noise from the market and
 focus on education, in order to push mass adoption via providing first hand
-information about the industry. 
+information about the industry.
 
 Our concept is simple: keep it educational, try to be as cost friendly for the
 community as you can (bearing in mind, we all need to pay bills - so not all
