@@ -38,6 +38,7 @@ synopsis:
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
 date: 2018-09-06
+endDate: 2018-09-06
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
@@ -53,7 +54,7 @@ tickets: https://www.dezentral.io/
 price: 50-150
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: KOSMOS Berlin 
+venue: KOSMOS Berlin
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
@@ -78,6 +79,29 @@ category: conference
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
+  -
+    name: Kathleen Breitmann
+    title: CEO
+    company: Tezos
+  -
+    name: Jan Xie
+    title: CTO
+    company: Nervos
+  -
+    name: Xinshu Dong
+    title: CEO
+    company: Zilliqa
+  -
+    name: Ryan King
+    title: CEO
+    company: FOAM
+  -
+    name: Haseeb Qureshi
+    company: Metastable
+  -
+    name: Nader Al-Naji
+    title: CEO
+    company: Basis
 # -
 #   # Required.
 #   name: 
