@@ -90,6 +90,7 @@ export default {
   flex-direction row
   flex-wrap wrap
   justify-content space-between
+  margin-bottom 3em
 
   &>div
     box-sizing border-box
@@ -106,9 +107,6 @@ export default {
 
     &>div:nth-last-child(1)
       margin-top auto
-
-    &:nth-last-child(1)
-      margin-bottom 1.5em
 
   h5
     margin-top -1em
