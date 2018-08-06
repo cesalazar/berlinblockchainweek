@@ -78,6 +78,29 @@ category: conference
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
+  -
+    name: Kathleen Breitmann
+    title: CEO
+    company: Tezos
+  - 
+    name: Jan Xie
+    title: CTO
+    company: Nervos
+  -
+    name: Xinshu Dong
+    title: CEO
+    company: Zilliqa
+  - 
+    name: Ryan King
+    title: CEO
+    company: FOAM
+  - 
+    name: Haseeb Qureshi
+    company: Metastable
+  - 
+    name: Nader Al-Naji
+    title: CEO
+    company: Basis
 # -
 #   # Required.
 #   name: 
