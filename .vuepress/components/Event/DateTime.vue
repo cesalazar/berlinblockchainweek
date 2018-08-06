@@ -43,15 +43,14 @@ export default {
     datetime () {
       // First date of the event
       let date = this.date || this.$page.frontmatter.date
-        || this.$page.frontmatter.startDate
       date = new Date(date)
 
       // Set the names for both the day and the month
-      let day = this.dayNames[date.getDay()]
-      let month = this.monthNames[date.getMonth()]
+      let day = this.dayNames[date.getUTCDay()]
+      let month = this.monthNames[date.getUTCMonth()]
 
       // The full date
-      let datetime = `${day}, ${date.getDate()} ${month}`
+      let datetime = `${day}, ${date.getUTCDate()} ${month}`
 
       // Last date of the event
       let endDate = this.endDate || this.$page.frontmatter.endDate
@@ -60,14 +59,13 @@ export default {
       if (endDate) {
         endDate = new Date(endDate)
         if (endDate.toJSON() !== date.toJSON()) {
-          day = this.dayNames[endDate.getDay()]
-          datetime += ` - ${day}, ${endDate.getDate()} ${month}`
+          day = this.dayNames[endDate.getUTCDay()]
+          datetime += ` - ${day}, ${endDate.getUTCDate()} ${month}`
         }
       }
 
       // Starting time
       let time = this.time || this.$page.frontmatter.time
-        || this.$page.frontmatter.startTime
       if (time) datetime += ` @ ${time}`
 
       // Ending time
