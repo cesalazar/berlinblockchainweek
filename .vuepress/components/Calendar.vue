@@ -45,7 +45,7 @@ export default {
     firstDay: 5,
     // Hours without the leading zero nor trailing minutes
     firstHour: 8,
-    lastHour: 20,
+    lastHour: 22,
     dayNames: [
       'Wednesday',
       'Thursday',
