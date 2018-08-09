@@ -47,7 +47,7 @@ features:
     Kreuzberg which provides event and workshop spaces for the Berlin tech and
     creative community.'
 
-- title: rent24
+- title: rent24/Black Unicorn
   details: As one of the leading coworking and coliving providers, rent24 offers
     their members not only workspaces and accommodation, but also lounge areas,
     meeting rooms and event space. rent24's mission is to provide inspirational
