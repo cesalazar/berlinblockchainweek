@@ -54,6 +54,12 @@ features:
     environments that promote both creativity and productivity, and encourage
     their community to share.
 
+- title: Ocean Protocol Office
+  details: Ocean Protocol is a decentralized data exchange protocol to unlock
+    data for AI. Ocean Protocol aims to unlock data, for more equitable outcomes
+    for users of data, using a thoughtful application of both technology and
+    governance.
+
 footer:
   -
     url: /legal/privacy-policy/
