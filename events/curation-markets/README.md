@@ -33,7 +33,8 @@ title: Curation Markets
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is an expert-level discussion of the ever growing applications for blockchain-powered curation.
+description: This is an expert-level discussion of the ever growing
+  applications for blockchain-powered curation.
 
 
 #####################
@@ -50,11 +51,14 @@ name: Curation Markets
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    This event will feature two brand-new projects that use curation markets and TCRs to organize the information of tomorrow's internet.
+    This event will feature two brand-new projects that use curation markets
+      and TCRs to organize the information of tomorrow's internet.
   -
-    We will hear a 20-minute talk from each founder and then discuss the token economics together in a panel format.
+    We will hear a 20-minute talk from each founder and then discuss the token
+      economics together in a panel format.
   -
-    Both projects are still fresh and more or less under the radar, but we will publish more details here soon!
+    Both projects are still fresh and more or less under the radar, but we
+      will publish more details here soon!
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -71,7 +75,7 @@ time: '19:00'
 endTime: '21:30'
 
 # The URL where to akquire the tickets. Can be left empty.
-tickets: https://www.meetup.com/Curation-Markets-Berlin/events/253650020/
+tickets: https://www.meetup.com/curation-markets-berlin/events/253650020/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -103,47 +107,37 @@ category: event
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
-  -
-    # Required.
-    name: TBD
-
-    # Can be left empty.
-    title: 
-
-    # Can be left empty.
-    company: 
-
-    # The full URL, including http(s)://. Can be left empty.
-    companyURL: 
-
-    # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
-    # Can be left empty.
-    twitter: 
-
-    # The full URL, including http(s)://. Can be left empty.
-    website: 
-
-    # The bio is a single line.
-    # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: 
-  -
-  #   name: Vitalik Buterin
-  #   title: Co-founder
-  #   company: Ethereum
-  #   companyURL: https://ethereum.org/
-  #   twitter: VitalikButerin
-  #   website: https://vitalik.ca
-  #   bio: Vitalik Buterin is a Russian-Canadian programmer and writer primarily
-  #     known as a co-founder of Ethereum and as a co-founder of Bitcoin Magazine.
+# -
+#   # Required.
+#   name: TBD
+#
+#   # Can be left empty.
+#   title: 
+#
+#   # Can be left empty.
+#   company: 
+#
+#   # The full URL, including http(s)://. Can be left empty.
+#   companyURL: 
+#
+#   # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
+#   # Can be left empty.
+#   twitter: 
+#
+#   # The full URL, including http(s)://. Can be left empty.
+#   website: 
+#
+#   # The bio is a single line.
+#   # Linebreaks are ignored, but they _must_ start with two spaces.
+#   bio: 
   # -
-  #   name: Kathleen Breitman
-  #   title: CEO
-  #   company: Tezos
-  #   companyURL: https://tezos.com/
-  #   twitter: breitwoman
-  #   website: http://kathleenbreitman.com
-  #   bio: Co-founder at Tezos, a fresh implementation of a blockchain which can
-  #     amend its protocol.
+  #   name: 
+  #   title: 
+  #   company: 
+  #   companyURL: 
+  #   twitter: 
+  #   website: 
+  #   bio: 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
