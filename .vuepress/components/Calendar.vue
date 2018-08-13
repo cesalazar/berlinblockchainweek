@@ -6,7 +6,7 @@
 -->
 
 <template>
-  <div class="responsive-table fixed-table-container" id="fixed-table-container-1">
+  <div>
       <table>
         <thead>
           <tr>
@@ -28,9 +28,9 @@
 
             <!-- Each day column -->
             <td v-for="d in firstDay + 6" v-if="d >= firstDay">
-              <span v-for="event in checkEvents(d,t)" v-if="event">
+              <div v-for="event in checkEvents(d,t)" v-if="event">
                 <a :href="$withBase(event.path)">{{ event.name }}</a>
-              </span>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -120,174 +120,110 @@ export default {
     this.getEvents()
   }
 }
-
-
-
 </script>
 
 <style lang="stylus">
+@import '../theme/styles/config.styl'
 $headerColor = #000
-$light = lighten($headerColor, 90%)
-
-.page-edit
-  margin: 0 !important
-
-.content
-  padding: 0 !important
+$borderColor = #222
+$thickBorder = 2px solid $borderColor
+$thinBorder = 1px solid $borderColor
+$backgroundColor = #151515
+$lightColor = lighten($headerColor, 90%)
   
-.responsive-table
-  overflow-x: auto
-  position: relative
-
 table
-  font-family: Montserrat
   width 100%
   display inline-table
   border-spacing 0
   border-collapse separate
   margin-bottom 2em
-  position relative
-  overflow-x visible
+  overflow-x auto
   thead
     tr
       th
         background $headerColor
-        color $light
-        padding 20px 0
+        color $lightColor
+        padding 1em 0
         overflow hidden
-        border: none
-        border-top: 1px solid #222
+        border none
+        border-top $thinBorder
         span
-          font-size: 24px
-          font-weight: 400
-        span:first-child
-          font-size: 32px
-          font-weight: 500
+          font-size 24px
+          font-weight 400
         .day
-          font-size 1.2em
-          margin-right: 5px
-
+          font-size 32px
+          font-weight 500
+          margin-right 5px
           &.active
-            background $light
+            background $lightColor
             color $headerColor
-
         .long
           display none
-
-        i
-          vertical-align middle
-          font-size 2em
         
   tbody
     tr
-      background #151515
-
+      background $backgroundColor
       td
         text-align left
-        vertical-align top
+        vertical-align middle
         border none
-        border-left 2px solid #222
-        position relative
-        border-bottom 2px solid #222
-        padding 0
-        padding: 10px
-        width: 100px
+        border-bottom $thickBorder
+        border-left $thickBorder
+        padding 10px
+        width 100px
         a
+          display block
           color #fff
-          font-size: 16px
-          font-weight: 400
-          font-family: Montserrat
-          transition: .3s ease-in-out
-          &:hover
-            text-decoration: none !important
-            color #f1003e
-
+          font-size 16px
+          font-weight 400
+          font-family Montserrat
+          transition .3s ease-in-out
         &:last-child
-          border-right 1px solid $headerColor
-
+          border-right $thinBorder
         &.hour
           font-size 1.6em
-          padding 0
           color #fff
-          background #151515
-          border-bottom 2px solid #222
+          border-bottom $thickBorder
           border-collapse separate
           min-width 100px
           text-align center
           vertical-align middle
-          padding: 15px 0
+          padding 15px 0
+        div
+          margin 0.5em 0
+        div + div
+          &:before
+            border-top $thickBorder
+            padding-top 0.6em
+            display block
+            margin 0 auto
+            width 90%
+            content ' '
 
   @media(max-width:60em)
-  
-    .hour
-      font-size: 1.3em !important
-      min-width: 40px !important
-    .day
-      font-size: 20px !important
-    .long, .short
-      font-size: 18px !important
-
     thead
       tr
         th
           .long
+            font-size 18px
             display none
           .short
+            font-size 18px
             display block
           .day
-            margin: 0
+            font-size 20px
+            margin 0
 
     tbody
       tr
         td
-          padding: 7px
-          min-width: 90px !important
+          padding 7px
           a
-            font-size: 12px
+            font-size 12px
           &.hour
+            font-size 1.3em
+            min-width 40px
             span
-              // transform rotate(270deg)
-              // -webkit-transform rotate(270deg)
-              // -moz-transform rotate(270deg)
-              writing-mode: vertical-rl
-              transform: rotate(180deg)
-
-        /* TODO: fix media queries */
-        /* @media(max-width:27em){ */
-        /*         thead{ */
-        /*               tr{ */
-        /*                     th{ */
-        /*                           font-size: 65%; */
-        /*                           .day{ */
-        /*                                 display: block; */
-        /*                                 font-size: 1.2em; */
-        /*                                 border-radius: 50%; */
-        /*                                             width: 20px; */
-        /*                                 height: 20px; */
-        /*                                 margin: 0 auto 5px; */
-        /*                                 padding: 5px; */
-        /*  */
-        /*                                 &.active{ */
-        /*                                     background: @light; */
-        /*                                       color: @blue; */
-        /*                                 } */
-        /*                           } */
-        /*                     } */
-        /*               } */
-        /*         } */
-        /*         tbody{ */
-        /*               tr{ */
-        /*                     td{ */
-        /*                           &.hour{ */
-        /*                                 font-size: 1.7em; */
-        /*                                 span{ */
-        /*                                   transform:translateY(16px)rotate(270deg); */
-        /*       -webkit-transform:translateY(16px)rotate(270deg); */
-        /*       -moz-transform:translateY(16px)rotate(270deg); */
-        /*                                 } */
-        /*                           } */
-        /*     } */
-        /*               } */
-        /*         } */
-        /*   } */
+              writing-mode vertical-rl
+              transform rotate(180deg)
 </style>
