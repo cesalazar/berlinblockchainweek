@@ -19,12 +19,14 @@
       <h4>{{ speaker.name }}</h4>
 
       <!-- Job title -->
-      <h5 v-if="speaker.title">
+      <h5 v-if="speaker.title || speaker.company">
         {{ speaker.title }}
 
         <!-- Company -->
         <span v-if="speaker.company">
-          &nbsp;&#8226;&nbsp;
+          <span v-if="speaker.title && speaker.company">
+            &nbsp;&#8226;&nbsp;
+          </span>
 
           <!-- Company's website -->
           <ExternalLink v-if="speaker.companyURL"
@@ -43,7 +45,7 @@
       </p>
 
       <!-- Links-->
-      <div>
+      <div v-if="speaker.twitter || speaker.website">
         <!-- TODO: include icons (twitter, website) -->
         <!-- Twitter -->
         <ExternalLink v-if="speaker.twitter"
@@ -51,7 +53,9 @@
           :caption="'@' + speaker.twitter"
         />
 
-        &nbsp;
+        <span v-if="speaker.twitter && speaker.website">
+          &nbsp;
+        </span>
 
         <!-- Personal website -->
         <ExternalLink v-if="speaker.website"
@@ -86,6 +90,7 @@ export default {
   flex-direction row
   flex-wrap wrap
   justify-content space-between
+  margin-bottom 3em
 
   &>div
     box-sizing border-box
@@ -102,9 +107,6 @@ export default {
 
     &>div:nth-last-child(1)
       margin-top auto
-
-    &:nth-last-child(1)
-      margin-bottom 1.5em
 
   h5
     margin-top -1em

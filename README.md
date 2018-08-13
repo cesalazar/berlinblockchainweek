@@ -7,7 +7,7 @@ description: Berlin Blockchain Week is a community-organized initiative. We
   have no single owner. It is an agnostic movement based on the premise that
   self-organization is the backbone of the ecosystem. We invite projects,
   individuals and anyone interested in fruitful and educational discussions to
-  join us. 
+  join us.
 
 tagline: 5-11 September 2018
 
@@ -36,16 +36,29 @@ features:
     and adoption. The Berlin DevHub focuses on accelerating blockchain
     technology across the energy sector.
 
-- title: Co.up
-  details: 'Co.up is a community event space located in the heart of Berlin
-    Kreuzberg which provides event and workshop spaces for the Berlin tech and
-    creative community.'
-
 - title: Oscoin Office
   details: Backed by Blue Yard capital, oscoin aims to build a decentralized
     network between open source software and developers that would allow for a
     fair economy for the development and maintenance of the world’s open source
     software, independent of gatekeepers.
+
+- title: Co.up
+  details: 'Co.up is a community event space located in the heart of Berlin
+    Kreuzberg which provides event and workshop spaces for the Berlin tech and
+    creative community.'
+
+- title: rent24/Black Unicorn
+  details: As one of the leading coworking and coliving providers, rent24 offers
+    their members not only workspaces and accommodation, but also lounge areas,
+    meeting rooms and event space. rent24's mission is to provide inspirational
+    environments that promote both creativity and productivity, and encourage
+    their community to share.
+
+- title: Ocean Protocol Office
+  details: Ocean Protocol is a decentralized data exchange protocol to unlock
+    data for AI. Ocean Protocol aims to unlock data, for more equitable outcomes
+    for users of data, using a thoughtful application of both technology and
+    governance.
 
 footer:
   -
@@ -64,11 +77,11 @@ footer:
 Berlin Blockchain Week is a community-organized initiative. We have no single
 owner. It is an agnostic movement based on the premise that self-organization
 is the backbone of the ecosystem. We invite projects, individuals and anyone
-interested in fruitful and educational discussions to join us. 
+interested in fruitful and educational discussions to join us.
 
 Berlin Blockchain Week is committed to reduce the noise from the market and
 focus on education, in order to push mass adoption via providing first hand
-information about the industry. 
+information about the industry.
 
 Our concept is simple: keep it educational, try to be as cost friendly for the
 community as you can (bearing in mind, we all need to pay bills - so not all

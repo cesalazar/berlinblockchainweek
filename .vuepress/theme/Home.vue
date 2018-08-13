@@ -77,7 +77,7 @@ export default {
     max-width 960px
     margin 0px auto
   &_main
-    background url('../dist/assets/img/main-bg.jpg')
+    background url('~/main-bg.jpg')
     background-size cover
     background-position left bottom
     background-repeat no-repeat
@@ -99,7 +99,7 @@ export default {
       border-bottom none
       margin 0 0 38px 0
   &_features
-    background url('../dist/assets/img/features-bg.jpg')
+    background url('~/features-bg.jpg')
     background-size cover
     background-position left top
     background-repeat no-repeat
