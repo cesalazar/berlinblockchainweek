@@ -129,6 +129,9 @@ export default {
 $headerColor = #000
 $light = lighten($headerColor, 90%)
 
+.page-edit
+  margin: 0 !important
+
 .content
   padding: 0 !important
   
