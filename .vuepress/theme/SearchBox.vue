@@ -153,7 +153,7 @@ export default {
     background #000 url(../dist/assets/img/search.svg) no-repeat 8px center
     border solid 1px #000
     padding 9px
-    border-radius 10em
+    border-radius 10em !important
     transition all .5s
     font-size: 12px
     &::-webkit-search-decoration,

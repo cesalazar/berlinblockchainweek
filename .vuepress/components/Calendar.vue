@@ -6,36 +6,36 @@
 -->
 
 <template>
-  <table>
+  <div class="responsive-table fixed-table-container" id="fixed-table-container-1">
+      <table>
+        <thead>
+          <tr>
+            <th class="hour"></th>
+            <th v-for="day in days" :key="day.number">
+              <span class="day">{{ day.number }}</span>
+              <span class="long">{{ day.longName }}</span>
+              <span class="short">{{ day.longName.substring(0, 3) }}</span>
+            </th>
+          </tr>
+        </thead>
 
-    <thead>
-      <tr>
-        <th></th>
-        <th v-for="day in days" :key="day.number">
-          <span class="day">{{ day.number }}</span>
-          <span class="long">{{ day.longName }}</span>
-          <span class="short">{{ day.longName.substring(0, 3) }}</span>
-        </th>
-      </tr>
-    </thead>
+        <tbody v-for="t in lastHour" v-if="t >= firstHour">
+          <tr>
+            <!-- Hour column -->
+            <td class="hour">
+              <span>{{ t < 10 ? '0' + t : t }}:00</span>
+            </td>
 
-    <tbody v-for="t in lastHour" v-if="t >= firstHour">
-      <tr>
-        <!-- Hour column -->
-        <td class="hour">
-          <span>{{ t < 10 ? '0' + t : t }}:00</span>
-        </td>
-
-        <!-- Each day column -->
-        <td v-for="d in firstDay + 6" v-if="d >= firstDay">
-          <span v-for="event in checkEvents(d,t)" v-if="event">
-            <a :href="$withBase(event.path)">{{ event.name }}</a>
-          </span>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
+            <!-- Each day column -->
+            <td v-for="d in firstDay + 6" v-if="d >= firstDay">
+              <span v-for="event in checkEvents(d,t)" v-if="event">
+                <a :href="$withBase(event.path)">{{ event.name }}</a>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </template>
 
 <script>
@@ -120,44 +120,49 @@ export default {
     this.getEvents()
   }
 }
+
+
+
 </script>
 
 <style lang="stylus">
-$headerColor = #626E7E
+$headerColor = #000
 $light = lighten($headerColor, 90%)
 
+.content
+  padding: 0 !important
+  
+.responsive-table
+  overflow-x: auto
+  position: relative
+
 table
+  font-family: Montserrat
   width 100%
   display inline-table
   border-spacing 0
   border-collapse separate
-  table-layout fixed
   margin-bottom 2em
-
+  position relative
+  overflow-x visible
   thead
     tr
       th
         background $headerColor
         color $light
-        padding 0.5em
+        padding 20px 0
         overflow hidden
-        border none
-
-        &:first-child
-          border-radius 3px 0 0 0
-         
-        &:last-child
-          border-radius 0 3px 0 0
-
+        border: none
+        border-top: 1px solid #222
+        span
+          font-size: 24px
+          font-weight: 400
+        span:first-child
+          font-size: 32px
+          font-weight: 500
         .day
-          display block
           font-size 1.2em
-          border-radius 50%
-          width 30px
-          height 30px
-          margin 0 auto 5px
-          padding 5px
-          line-height 1.8
+          margin-right: 5px
 
           &.active
             background $light
@@ -166,25 +171,33 @@ table
         .long
           display none
 
-        .short
-          display block
-
         i
           vertical-align middle
           font-size 2em
         
   tbody
     tr
-      background $light
+      background #151515
 
       td
-        text-align center
-        vertical-align middle
+        text-align left
+        vertical-align top
         border none
-        border-left 1px solid $headerColor
+        border-left 2px solid #222
         position relative
-        border-bottom 1px solid lighten($headerColor, 60%)
+        border-bottom 2px solid #222
         padding 0
+        padding: 10px
+        width: 100px
+        a
+          color #fff
+          font-size: 16px
+          font-weight: 400
+          font-family: Montserrat
+          transition: .3s ease-in-out
+          &:hover
+            text-decoration: none !important
+            color #f1003e
 
         &:last-child
           border-right 1px solid $headerColor
@@ -192,35 +205,49 @@ table
         &.hour
           font-size 1.6em
           padding 0
-          color $headerColor
-          background #fff
-          border-bottom 1px solid $headerColor
+          color #fff
+          background #151515
+          border-bottom 2px solid #222
           border-collapse separate
           min-width 100px
-
-        span
-          display block
-          padding 0.5em 0
+          text-align center
+          vertical-align middle
+          padding: 15px 0
 
   @media(max-width:60em)
+  
+    .hour
+      font-size: 1.3em !important
+      min-width: 40px !important
+    .day
+      font-size: 20px !important
+    .long, .short
+      font-size: 18px !important
+
     thead
       tr
         th
           .long
             display none
-          
-
           .short
             display block
+          .day
+            margin: 0
 
     tbody
       tr
         td
+          padding: 7px
+          min-width: 90px !important
+          a
+            font-size: 12px
           &.hour
             span
-              transform rotate(270deg)
-              -webkit-transform rotate(270deg)
-              -moz-transform rotate(270deg)
+              // transform rotate(270deg)
+              // -webkit-transform rotate(270deg)
+              // -moz-transform rotate(270deg)
+              writing-mode: vertical-rl
+              transform: rotate(180deg)
 
         /* TODO: fix media queries */
         /* @media(max-width:27em){ */
