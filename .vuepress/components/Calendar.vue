@@ -157,8 +157,10 @@ table
           &.active
             background $lightColor
             color $headerColor
-        .long
+        .short
           display none
+        .long
+          display block
         
   tbody
     tr
@@ -204,15 +206,14 @@ table
     thead
       tr
         th
+          .day
+            font-size 20px
+            margin 0
           .long
-            font-size 18px
             display none
           .short
             font-size 18px
             display block
-          .day
-            font-size 20px
-            margin 0
 
     tbody
       tr
