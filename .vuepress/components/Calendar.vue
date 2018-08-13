@@ -7,35 +7,35 @@
 
 <template>
   <div>
-      <table>
-        <thead>
-          <tr>
-            <th class="hour"></th>
-            <th v-for="day in days" :key="day.number">
-              <span class="day">{{ day.number }}</span>
-              <span class="long">{{ day.longName }}</span>
-              <span class="short">{{ day.longName.substring(0, 3) }}</span>
-            </th>
-          </tr>
-        </thead>
+    <table>
+      <thead>
+        <tr>
+          <th class="hour"></th>
+          <th v-for="day in days" :key="day.number">
+            <span class="day">{{ day.number }}</span>
+            <span class="long">{{ day.longName }}</span>
+            <span class="short">{{ day.longName.substring(0, 3) }}</span>
+          </th>
+        </tr>
+      </thead>
 
-        <tbody v-for="t in lastHour" v-if="t >= firstHour">
-          <tr>
-            <!-- Hour column -->
-            <td class="hour">
-              <span>{{ t < 10 ? '0' + t : t }}:00</span>
-            </td>
+      <tbody v-for="t in lastHour" v-if="t >= firstHour">
+        <tr>
+          <!-- Hour column -->
+          <td class="hour">
+            <span>{{ t < 10 ? '0' + t : t }}:00</span>
+          </td>
 
-            <!-- Each day column -->
-            <td v-for="d in firstDay + 6" v-if="d >= firstDay">
-              <div v-for="event in checkEvents(d,t)" v-if="event">
-                <a :href="$withBase(event.path)">{{ event.name }}</a>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+          <!-- Each day column -->
+          <td v-for="d in firstDay + 6" v-if="d >= firstDay">
+            <div v-for="event in checkEvents(d,t)" v-if="event">
+              <a :href="$withBase(event.path)">{{ event.name }}</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
