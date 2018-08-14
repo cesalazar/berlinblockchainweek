@@ -138,7 +138,7 @@ export default {
 <style lang="stylus">
 @import './styles/config.styl'
 
-$border-radius = 5px
+$border-radius = 10px
 
 .search-box
   display inline-block
