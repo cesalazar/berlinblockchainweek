@@ -91,38 +91,38 @@ category: workshop
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
-#  -
-#    name: Dimitri De Jonghe 
-#    title: Head of Product and Research
-#    company: Ocean Protocol
-#    companyURL:https://oceanprotocol.com/
-#    twitter: 
-#    website: 
-#    bio: 
-#  -
-#    name: Trent McConaghy
-#    title: Founder
-#    company: Ocean Protocol
-#    companyURL:https://oceanprotocol.com/
-#    twitter: 
-#    website: 
-#    bio: 
-#  -
-#    name: Mohit Anand 
-#    title: Director of Blockchain Strategy Consultancy 
-#    company: OST
-#    companyURL:https://ost.com/
-#    twitter: 
-#    website: 
-#    bio: 
-#  -
-#    name: Benjamin Bollen
-#    title: Founder and Chief Blockchain Strategist
-#    company: OST 
-#    companyURL:https://ost.com/
-#    twitter: 
-#    website: 
-#    bio: 
+  -
+    name: Dimitri De Jonghe 
+    title: Head of Product and Research
+    company: Ocean Protocol
+    companyURL: https://oceanprotocol.com/
+    twitter: 
+    website: 
+    bio: 
+  -
+    name: Trent McConaghy
+    title: Founder
+    company: Ocean Protocol
+    companyURL: https://oceanprotocol.com/
+    twitter: 
+    website: 
+    bio: 
+  -
+    name: Mohit Anand 
+    title: Director of Blockchain Strategy Consultancy 
+    company: OST
+    companyURL: https://ost.com/
+    twitter: 
+    website: 
+    bio: 
+  -
+    name: Benjamin Bollen
+    title: Founder and Chief Blockchain Strategist
+    company: OST 
+    companyURL: https://ost.com/
+    twitter: 
+    website: 
+    bio: 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
