@@ -165,8 +165,6 @@ export default {
     p
       color #fff
       margin 15px 0
-      font-size 16px
-      font-weight 300
   .footer
     padding 0.9rem 3.9rem
     background #000

@@ -8,16 +8,18 @@
 @require './button'
 @require './calendar'
 @require './badge'
+@require './fonts'
 
 html, body
   padding 0
   margin 0
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-size 16px
+  font-weight normal
   color $textColor
   background: #000
 
@@ -79,7 +81,7 @@ body
     max-width 100%
 
 a
-  font-weight 500
+  font-weight bold
   color $accentColor
   text-decoration none
 
@@ -104,11 +106,11 @@ blockquote
 ul, ol
   padding-left 1.2em
 
-strong
-  font-weight 600
+strong, b
+  font-weight bold
 
 h1, h2, h3, h4, h5, h6
-  font-weight 600
+  font-weight bold
   line-height 1.25
   .content:not(.custom) > &
     margin-top (0.5rem - $navbarHeight)
