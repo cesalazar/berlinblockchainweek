@@ -59,7 +59,7 @@ time: '13:00'
 endTime: '17:00'
 
 # The URL where to acquire the tickets. Can be left empty.
-tickets:
+tickets: https://www.meetup.com/de-DE/Token-Engineering/events/253174971/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -92,10 +92,34 @@ category: workshop
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
 #  -
-#    name: 
-#    title: 
-#    company: 
-#    companyURL:
+#    name: Dimitri De Jonghe 
+#    title: Head of Product and Research
+#    company: Ocean Protocol
+#    companyURL:https://oceanprotocol.com/
+#    twitter: 
+#    website: 
+#    bio: 
+#  -
+#    name: Trent McConaghy
+#    title: Founder
+#    company: Ocean Protocol
+#    companyURL:https://oceanprotocol.com/
+#    twitter: 
+#    website: 
+#    bio: 
+#  -
+#    name: Mohit Anand 
+#    title: Director of Blockchain Strategy Consultancy 
+#    company: OST
+#    companyURL:https://ost.com/
+#    twitter: 
+#    website: 
+#    bio: 
+#  -
+#    name: Benjamin Bollen
+#    title: Founder and Chief Blockchain Strategist
+#    company: OST 
+#    companyURL:https://ost.com/
 #    twitter: 
 #    website: 
 #    bio: 
