@@ -6,7 +6,7 @@
 -->
 
 <template>
-  <div>
+  <div ref="wrapper">
     <table>
       <thead>
         <tr>
@@ -112,39 +112,67 @@ export default {
           }
         }
       })
+    },
+
+    setWrapperHeight () {
+      let body = document.getElementsByTagName('body')[0]
+      let offset = document.getElementsByTagName('header')[0].offsetHeight
+      let wrapper = this.$refs.wrapper
+      let wrapperHeight = window.innerHeight - offset
+      wrapper.style.height = `${wrapperHeight}px`
+      wrapper.style.overflow = 'auto'
+      body.style.overflow = 'hidden'
+    },
+
+    addListeners () {
+      this.$refs.wrapper.addEventListener('scroll', scrollHeaders)
+      window.addEventListener('resize', this.setWrapperHeight)
     }
   },
 
   mounted () {
     this.setDays()
     this.getEvents()
+    this.setWrapperHeight()
+    this.addListeners()
+  },
+
+  beforeDestroy () {
+    let body = document.getElementsByTagName('body')[0]
+    body.style.overflow = 'auto'
   }
 }
+
+const scrollHeaders = function () {
+  let translate = `translate(0,${this.scrollTop}px)`
+  this.querySelector('thead').style.transform = translate
+  this.querySelector('thead').style.zIndex = 2
+}
+
 </script>
 
 <style lang="stylus">
 @import '../theme/styles/config.styl'
+
 $headerColor = #000
 $borderColor = #222
 $thickBorder = 2px solid $borderColor
 $thinBorder = 1px solid $borderColor
 $backgroundColor = #151515
 $lightColor = lighten($headerColor, 90%)
-  
+
 table
   width 100%
   display inline-table
   border-spacing 0
   border-collapse separate
-  margin-bottom 2em
-  overflow-x auto
+  margin 0 0 2em
   thead
     tr
       th
         background $headerColor
         color $lightColor
         padding 1em 0
-        overflow hidden
         border none
         border-top $thinBorder
         span
