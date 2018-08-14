@@ -1,6 +1,5 @@
 <template>
   <header class="navbar">
-    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <router-link :to="$localePath" class="home-link">
       <img class="logo" :src="$withBase(logo)" alt="Logo">
     </router-link>
@@ -9,6 +8,7 @@
       <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia"/>
       <SearchBox v-else-if="$site.themeConfig.search !== false"/>
     </div>
+    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
   </header>
 </template>
 
@@ -46,7 +46,7 @@ export default {
   .logo
     height $navbarHeight - 1.8rem
     min-width $navbarHeight - 1.4rem
-    margin-right 0.8rem
+    margin-right 0
     vertical-align top
   .site-name
     font-size 1.3rem
@@ -61,9 +61,9 @@ export default {
 
 @media (max-width: $MQMobile)
   .navbar
-    padding 0.9rem 1.5rem 0.9rem 4rem
+    padding 0.9rem 1.5rem
     .links
-      right 1.5rem
+      right 3.5rem
     .logo
       height 2rem
       min-width 2rem

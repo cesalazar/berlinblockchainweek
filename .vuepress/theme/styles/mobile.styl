@@ -1,6 +1,6 @@
 @require './config'
 
-$mobileSidebarWidth = $sidebarWidth * 0.82
+$mobileSidebarWidth = 50%
 
 // narrow desktop / iPad
 @media (max-width: $MQNarrow)
@@ -15,14 +15,14 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
   .sidebar
     top 0
     padding-top $navbarHeight
-    transform translateX(-100%)
+    transform translateX(200%)
     transition transform .2s ease
   .page
     padding-left 0
   .theme-container
     &.sidebar-open
       .sidebar
-        transform translateX(0)
+        transform translateX(100%)
     &.no-navbar
       .sidebar
         padding-top: 0
