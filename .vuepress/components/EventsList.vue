@@ -15,6 +15,25 @@
       </a>
     </h1>
 
+    <div class="filters">
+      <span>
+        <label>
+          <input name="category" type="radio" value="All" checked
+            @click="filterEvents('All')"
+          />
+          <span>All</span>
+        </label>
+      </span>
+      <span v-for="category in categories">
+        <label>
+          <input name="category" type="radio" :value="category"
+            @click="filterEvents(category)"
+          />
+          <span>{{ category }}s</span>
+        </label>
+      </span>
+    </div>
+
     <div v-for="day in days" :key="day">
       <h3 class="date-sticky">
         <DateTime :date="day"/>
@@ -54,6 +73,7 @@ export default {
     firstDay: new Date('2018-09-05'),
     duration: 7,
     descending: false,
+    categories: [],
     events: [],
     days: [],
   }),
@@ -62,17 +82,40 @@ export default {
       let events = this.$site.pages.map(event => {
         let eventName = event.frontmatter.name
         if (eventName && eventName !== 'Sample Template') {
-          let category = event.frontmatter.category
-          event.frontmatter.category = capitalizeWord(category)
+          let category = capitalizeWord(event.frontmatter.category)
+          event.frontmatter.category = category
+          this.setFilter(category)
           event.day = setEventDay(event.frontmatter.date)
           return event
         }
       })
       // Remove nulls
-      events = events.filter((event) => event != null)
+      events = events.filter(event => event)
       // Sort by date
       events = events.sort((a, b) => a.day - b.day)
       this.events = events
+    },
+    setFilter (category) {
+      let categories = this.categories
+      if (categories.indexOf(category) === -1) {
+        categories.push(category)
+        categories.sort((a, b) => {
+          if(a < b) return -1
+          if(a > b) return 1
+          return 0
+        })
+      }
+    },
+    filterEvents (category) {
+      this.setEvents()
+      if (category !== 'All') {
+        this.events = this.events.filter(event => {
+          return event.frontmatter.category === category
+        })
+      }
+      this.days = []
+      this.setDays()
+      if (this.descending) this.days.reverse()
     },
     reverseDates () {
       this.descending = !this.descending
@@ -95,30 +138,26 @@ export default {
       })
       if (count === 0) this.days.splice(-1, 1)
     },
-    capitalizeWord (word) {
-      return capitalizeWord(word)
-    }
   },
   mounted () {
-    this.setEvents()
-    this.setDays()
+    this.filterEvents('All')
   }
 }
 
 function setEventDay (date) {
   let day = new Date(date)
-  return day.getDay()
+  return day.getUTCDay()
 }
 
 function addDays (date, days) {
   let nextDay = new Date(date)
-  nextDay = nextDay.setDate(date.getDate() + days)
+  nextDay = nextDay.setDate(date.getUTCDate() + days)
   return new Date(nextDay)
 }
 
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 @require './../theme/styles/config.styl'
 
 .events--container
@@ -131,6 +170,7 @@ function addDays (date, days) {
       font-size 16px
       color #f1003e
       text-transform uppercase
+
   .action-button
     cursor pointer
     display inline-block
@@ -143,18 +183,16 @@ function addDays (date, days) {
     box-sizing border-box
     float right
     margin-top 4px
+    &:hover
+      text-decoration: none !important
     span
       font-size 1.3em
   div
     margin 2em 0 4em
-    
+  
 .action-button
   &:hover
     text-decoration: none !important
-    
-.datetime
-  color: rgba(255, 255, 255, 0.7)
-  font-size 14px
   
 h3 > .datetime
   opacity: 1
@@ -171,8 +209,29 @@ h2
     &:hover
       text-decoration: none !important
       color #f1003e
+
+  &>div
+    border-bottom 1px solid rgba(255, 255, 255, .3)
+    
+  .datetime
+    color: rgba(255, 255, 255, 0.7)
+    font-size 14px
+  
+  .filters
+    margin-bottom 0
+    border-bottom 0 none
+    display: flex
+    justify-content space-between
+    flex-wrap wrap
+  label
+    margin-right 1em
+    cursor pointer
+    input
+      margin-top -3px
+      vertical-align middle
+      cursor pointer
       
-@media(max-width:600px)
+  @media(max-width:600px)
   .filters
     flex-direction column
     > span

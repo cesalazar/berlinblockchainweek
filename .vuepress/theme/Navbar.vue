@@ -2,17 +2,7 @@
   <header class="navbar">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
     <router-link :to="$localePath" class="home-link">
-      <!-- <img class="logo"
-        v-if="$site.themeConfig.logo"
-        :src="$withBase(logo)"> -->
-      <a href="index.html">
-        <img class="logo" src="../dist/assets/img/logo.png" alt="Logo">
-      </a>
-      <!-- <span class="site-name"
-        v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }">
-        {{ $siteTitle }}
-      </span> -->
+      <img class="logo" :src="$withBase(logo)" alt="Logo">
     </router-link>
     <div class="links">
       <NavLinks class="can-hide"/>
@@ -38,7 +28,7 @@ export default {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
     },
     logo () {
-      return require('./../public/logo_berlinblockchainweek.png')
+      return require('./../public/logo.png')
     }
   }
 }
