@@ -28,12 +28,16 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: Sample Template
+title: Spacemesh Protocol Meetup
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: Calling all Blockchain tech developers and enthusiasts! Come and hear all about the Spacemesh protocol and open source project in our first Berlin meetup. We will provide a conceptual overview of the project, and present our ideas for using proofs of space time to solve the trustless consensus problem in the permissionless settings.
+description: Calling all Blockchain tech developers and enthusiasts! Come and
+  hear all about the Spacemesh protocol and open source project in our first
+  Berlin meetup. We will provide a conceptual overview of the project, and
+  present our ideas for using proofs of space time to solve the trustless
+  consensus problem in the permissionless settings.
 
 #####################
 ### EVENT DETAILS ###
@@ -49,14 +53,24 @@ name: Spacemesh Protocol Meetup
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    This event is part of Blockchain Week Berlin and is designed for blockchain tech developers and enthusiasts audience. We will give a conceptual overview of the project as well as some technical details about our use of proofs of space time to solve the trustless consensus problem in the permissionless settings.
+    This event is part of Blockchain Week Berlin and is designed for
+      blockchain tech developers and enthusiasts audience. We will give a
+      conceptual overview of the project as well as some technical details about
+      our use of proofs of space time to solve the trustless consensus problem
+      in the permissionless settings.
   -
-    Spacemesh is a fair blockmesh operating system designed to run general-purpose smart contracts at web-scale. It is powered by a novel consensus protocol that is secure, proof of work free and highly incentive-compatible. Spacemesh is designed to create a highly-decentralized p2p blockchain computer formed by individuals from around the globe running Spacemesh on their desktop PCs at home. Spacemesh is a free open source software that aims to become a core Internet protocol for blockchain computation.
+    Spacemesh is a fair blockmesh operating system designed to run
+      general-purpose smart contracts at web-scale. It is powered by a novel
+      consensus protocol that is secure, proof of work free and highly
+      incentive-compatible. Spacemesh is designed to create a
+      highly-decentralized p2p blockchain computer formed by individuals from
+      around the globe running Spacemesh on their desktop PCs at home. Spacemesh
+      is a free open source software that aims to become a core Internet
+      protocol for blockchain computation.
   -
-    Watch the Spacemesh video : https://www.youtube.com/watch?v=PB6ZPbxSxm0
+    'Watch the Spacemesh video: https://www.youtube.com/watch?v=PB6ZPbxSxm0'
   -
     For additional information check https://spacemesh.io
-  -
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -127,7 +141,7 @@ speakers:
 
     # The bio is a single line.
     # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: https://avive.github.io/
+    bio: https://avive.github.io
 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
