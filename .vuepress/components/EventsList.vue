@@ -167,8 +167,10 @@ function addDays (date, days) {
     background #000
     .datetime
       padding-top 5px
-      opacity: 1
-      color: #fff
+      font-size 16px
+      color #f1003e
+      text-transform uppercase
+
   .action-button
     cursor pointer
     display inline-block
@@ -187,12 +189,34 @@ function addDays (date, days) {
       font-size 1.3em
   div
     margin 2em 0 4em
+  
+.action-button
+  &:hover
+    text-decoration: none !important
+  
+h3 > .datetime
+  opacity: 1
+  color: #fff
+  
+h2
+  border-bottom: none
+  font-size 32px
+  margin 20px 0 10px
+  a
+    color #fff
+    font-weight 300 !important
+    transition .3s ease-in-out
+    &:hover
+      text-decoration: none !important
+      color #f1003e
+
   &>div
     border-bottom 1px solid rgba(255, 255, 255, .3)
+    
   .datetime
-    color: rgba(255, 255, 255, 0.8)
-  h2
-    border-bottom: none
+    color: rgba(255, 255, 255, 0.7)
+    font-size 14px
+  
   .filters
     margin-bottom 0
     border-bottom 0 none
@@ -206,4 +230,10 @@ function addDays (date, days) {
       margin-top -3px
       vertical-align middle
       cursor pointer
+      
+  @media(max-width:600px)
+  .filters
+    flex-direction column
+    > span
+      margin 3px 0
 </style>
