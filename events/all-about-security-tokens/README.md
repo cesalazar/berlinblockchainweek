@@ -43,6 +43,18 @@ synopsis:
         security token exchanges especially
     - 'Opportunities for the future growth: what do we expect to happen in the
         security tokens field in 2019'
+        
+        Speakers: 
+
+    - Gonzalo Sanchez Slik, Head of Investor Relations at Brickblock
+    - Alex Molé, Investor Relations Manager at Neufund
+    - Yamila Eraso, Partner at TLDR Capital, Lawyer at LACORE Rechtsanwälte LLP
+    - Colin Nimsz, Head of Finance and Business Operations at Brickblock
+    - Marc-Olivier Lücke, Partner at Atlantic Labs
+
+    The discussion will be moderated by Stefano Bernardi
+
+
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
