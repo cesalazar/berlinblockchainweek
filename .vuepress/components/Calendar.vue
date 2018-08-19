@@ -7,6 +7,11 @@
 
 <template>
   <div ref="wrapper">
+    <HeroInternalPage
+      title="Calendar"
+      link="https://github.com/cesalazar/berlinblockchainweek/issues/new"
+      linkText="Submit an Event"
+    />
     <table>
       <thead>
         <tr>
@@ -145,8 +150,14 @@ export default {
 }
 
 const scrollHeaders = function () {
+  let heroHeight = this.querySelector('.hero').offsetHeight
   let thead = this.querySelector('thead')
-  thead.style.transform = `translate(0, ${this.scrollTop}px)`
+
+  if (this.scrollTop >= heroHeight) {
+    thead.style.transform = `translate(0, ${this.scrollTop - heroHeight}px)`
+  } else {
+    thead.style.transform = `translate(0, 0)`
+  }
 
   let hours = this.querySelectorAll('.hour')
   let translateX = `translate(${this.scrollLeft}px, 0)`;
@@ -157,7 +168,7 @@ const scrollHeaders = function () {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 @import '../theme/styles/config.styl'
 
 $headerColor = #000
@@ -174,9 +185,11 @@ table
   border-spacing 0
   border-collapse separate
   margin 0 0 2em
+  position relative
+  z-index 4
   thead
     transition $headersTransition
-    z-index 1
+    z-index 3
     tr
       th
         background $headerColor
@@ -198,13 +211,14 @@ table
           display none
         .long
           display block
-        
+
   tbody
     tr
       .hour
         background $backgroundColor
         border-right $thinBorder
         transition $headersTransition
+        z-index 2
       background $backgroundColor
       td
         text-align left

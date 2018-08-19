@@ -6,15 +6,11 @@
 
 <template>
   <div class="events--container">
-    <h1>
-      Events
-      <a class="action-button" @click="reverseDates">
-        Sort
-        <span v-if="descending">↑</span>
-        <span v-else>↓</span>
-      </a>
-    </h1>
-
+    <HeroInternalPage
+      title="Events"
+      link="https://github.com/cesalazar/berlinblockchainweek/issues/new"
+      linkText="Submit an Event"
+    />
     <div class="filters">
       <span>
         <label>
@@ -160,6 +156,11 @@ function addDays (date, days) {
 <style scoped lang="stylus">
 @require './../theme/styles/config.styl'
 
+.hero
+  position absolute
+  top $navbarHeight - 2em
+  left 0
+
 .events--container
   .date-sticky
     position sticky
@@ -187,16 +188,15 @@ function addDays (date, days) {
       font-size 1.3em
   div
     margin 2em 0 4em
-  &>div
-    border-bottom 1px solid rgba(255, 255, 255, .3)
   .datetime
     color: rgba(255, 255, 255, 0.8)
   h2
     border-bottom: none
   .filters
+    margin-top $internalHeroHeight + $navbarHeight
     margin-bottom 0
     border-bottom 0 none
-    display: flex
+    display flex
     justify-content space-between
     flex-wrap wrap
   label
