@@ -1,3 +1,9 @@
+<!--
+  Created by: Carlos E. Salazar <ce.salazar@gmail.com>
+  Repository: https://github.com/cesalazar/berlinblockchainweek
+  License: MIT
+-->
+
 <template>
   <div class="hero">
     <h1>{{ title }}</h1>
