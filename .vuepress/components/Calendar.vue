@@ -10,7 +10,7 @@
     <table>
       <thead>
         <tr>
-          <th class="hour"></th>
+          <th></th>
           <th v-for="day in days" :key="day.number">
             <span class="day">{{ day.number }}</span>
             <span class="long">{{ day.longName }}</span>
@@ -28,7 +28,7 @@
 
           <!-- Each day column -->
           <td v-for="d in firstDay + 6" v-if="d >= firstDay">
-            <div v-for="event in checkEvents(d,t)" v-if="event">
+            <div v-for="event in checkEvents(d, t)" v-if="event">
               <a :href="$withBase(event.path)">{{ event.name }}</a>
             </div>
           </td>
@@ -39,6 +39,8 @@
 </template>
 
 <script>
+const debounce = require('debounce')
+
 export default {
   data: () => ({
     // First calendar day of the event (September 5)
@@ -94,11 +96,9 @@ export default {
           let i = 0
 
           // When the event spans more than one day
-          if (fm.endDate) {
-            if (fm.endDate !== fm.date) {
-              let endDay = new Date(fm.endDate).getUTCDate()
-              duration = (endDay - day) + 1
-            }
+          if (fm.endDate && fm.endDate !== fm.date) {
+            let endDay = new Date(fm.endDate).getUTCDate()
+            duration = (endDay - day) + 1
           }
 
           for (i; i < duration; i++){
@@ -114,6 +114,7 @@ export default {
       })
     },
 
+    // The wrapper needs a fixed height to allow the headers to move
     setWrapperHeight () {
       let body = document.getElementsByTagName('body')[0]
       let offset = document.getElementsByTagName('header')[0].offsetHeight
@@ -125,8 +126,8 @@ export default {
     },
 
     addListeners () {
-      this.$refs.wrapper.addEventListener('scroll', scrollHeaders)
-      window.addEventListener('resize', this.setWrapperHeight)
+      this.$refs.wrapper.addEventListener('scroll', debounce(scrollHeaders, 100))
+      window.addEventListener('resize', debounce(this.setWrapperHeight), 100)
     }
   },
 
@@ -144,11 +145,16 @@ export default {
 }
 
 const scrollHeaders = function () {
-  let translate = `translate(0,${this.scrollTop}px)`
-  this.querySelector('thead').style.transform = translate
-  this.querySelector('thead').style.zIndex = 2
-}
+  let thead = this.querySelector('thead')
+  thead.style.transform = `translate(0, ${this.scrollTop}px)`
 
+  let hours = this.querySelectorAll('.hour')
+  let translateX = `translate(${this.scrollLeft}px, 0)`;
+
+  for (let hour of hours) {
+    hour.style.transform = translateX
+  }
+}
 </script>
 
 <style lang="stylus">
@@ -160,6 +166,7 @@ $thickBorder = 2px solid $borderColor
 $thinBorder = 1px solid $borderColor
 $backgroundColor = #151515
 $lightColor = lighten($headerColor, 90%)
+$headersTransition = all 0.25s ease-out
 
 table
   width 100%
@@ -168,6 +175,8 @@ table
   border-collapse separate
   margin 0 0 2em
   thead
+    transition $headersTransition
+    z-index 1
     tr
       th
         background $headerColor
@@ -192,6 +201,10 @@ table
         
   tbody
     tr
+      .hour
+        background $backgroundColor
+        border-right $thinBorder
+        transition $headersTransition
       background $backgroundColor
       td
         text-align left
@@ -230,7 +243,7 @@ table
             width 90%
             content ' '
 
-  @media(max-width:60em)
+  @media(max-width: 64em)
     thead
       tr
         th
