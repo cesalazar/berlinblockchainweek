@@ -87,7 +87,7 @@ export default {
     alignRight () {
       const navCount = (this.$site.themeConfig.nav || []).length
       const repo = this.$site.repo ? 1 : 0
-      return navCount + repo <= 2
+      return navCount + repo <= 3
     }
   },
   methods: {
