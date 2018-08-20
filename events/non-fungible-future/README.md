@@ -31,7 +31,7 @@ synopsis:
     'We will be discussing:'
   -
     list:
-    - 'Beyond CryptoKitties: The impact of NFTs on gaming'
+    - 'Beyond CryptoKitties: The impact of non-fungible tokens (NFTs) on gaming'
     - 'The state of NFT tech: standards, scaling solutions and layer 2'
     - 'Emerging use cases and real asset tokenization with NFTs: from art, to
         invoices and business NFTs, to real estate transactions'
