@@ -115,10 +115,10 @@ export default {
       }
     },
     onTouchEnd (e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x
-      const dy = e.changedTouches[0].clientY - this.touchStart.y
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx > 0 && this.touchStart.x <= 80) {
+      const dx = this.touchStart.x - e.changedTouches[0].clientX
+      const dy = this.touchStart.y - e.changedTouches[0].clientY
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 200) {
+        if (dx > 0 && this.touchStart.x >= 280) {
           this.toggleSidebar(true)
         } else {
           this.toggleSidebar(false)
