@@ -4,6 +4,10 @@ module.exports = {
   // Leave the base as '/' if serving the content from a custom domain
   base: '/',
   title: 'Berlin Blockchain Week',
+  head: [
+    ['meta', { name: 'viewport', content: `width=device-width,initial-scale=1,
+      minimum-scale=1,maximum-scale=1,user-scalable=no` }]
+  ],
   themeConfig: {
     nav: [
       {
