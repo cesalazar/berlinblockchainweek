@@ -12,10 +12,18 @@
       link="https://github.com/cesalazar/berlinblockchainweek/issues/new"
       linkText="Submit an Event"
     />
+
     <table>
       <thead>
         <tr>
-          <th></th>
+          <th class="hour" @click="toggleHeadersLock">
+            <div class="headers--lock" v-if="lockHeaders">
+              <svg height="584.354" viewBox="80.994 1 423.365 584.354" width="423.365" xmlns="http://www.w3.org/2000/svg"><path d="m463.992 271.55c49.913-69.839 40.488-167.836-24.772-226.628-70.127-63.177-178.581-57.525-241.761 12.605l-56.459 62.67q44.222 39.67 43.737 39.39l56.455-62.666c41.455-46.015 112.615-49.724 158.629-8.27 46.015 41.453 49.729 112.616 8.274 158.632l-7.16 7.947c-31.314-6.585-70.217-12.563-108.256-12.563-87.065 0-172.554 29.266-173.631 29.624-9.257 3.087-16.775 5.762-23.657 8.415-8.207 3.164-14.397 12.259-14.397 21.157v224.641c0 8.837 6.15 17.94 14.305 21.172 63.097 25.003 129.505 37.678 197.379 37.678s134.282-12.678 197.382-37.681c8.152-3.231 14.299-12.332 14.299-21.169v-224.641c0-8.898-6.189-17.993-14.4-21.16-6.885-2.653-14.402-5.328-23.652-8.415-.091-.03-.809-.268-2.315-.738zm-217.939 98.731c0-25.769 20.875-46.622 46.623-46.622 25.746 0 46.621 20.851 46.621 46.622 0 17.075-9.629 31.371-23.311 39.475v77.081c0 12.886-10.426 23.311-23.311 23.311-12.886 0-23.311-10.425-23.311-23.311v-77.081c-13.681-8.104-23.311-22.4-23.311-39.475z" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="headers--lock" v-else>
+              <svg height="585.354" viewBox="80.994 0 423.365 585.354" width="423.365" xmlns="http://www.w3.org/2000/svg"><path d="m292.679 0c-94.389 0-171.183 76.791-171.183 171.183v97.767c0 1.111-1.371 2.983-2.448 3.341-9.257 3.087-16.775 5.762-23.657 8.415-8.207 3.164-14.397 12.259-14.397 21.157v224.641c0 8.837 6.15 17.94 14.305 21.172 63.097 25.003 129.505 37.678 197.379 37.678s134.282-12.678 197.382-37.681c8.152-3.231 14.299-12.332 14.299-21.169v-224.641c0-8.898-6.189-17.993-14.4-21.16-6.885-2.653-14.402-5.328-23.652-8.415-1.074-.358-2.445-2.231-2.445-3.342v-97.766c-.005-94.389-76.794-171.18-171.183-171.18zm-46.626 370.281c0-25.769 20.875-46.622 46.623-46.622 25.746 0 46.621 20.851 46.621 46.622 0 17.075-9.629 31.371-23.311 39.475v77.081c0 12.886-10.426 23.311-23.311 23.311-12.886 0-23.311-10.425-23.311-23.311v-77.081c-13.681-8.104-23.311-22.4-23.311-39.475zm158.947-199.101v84.355c-36.834-7.926-74.623-11.94-112.306-11.943-37.666 0-75.447 4.015-112.338 11.934v-84.346c0-61.935 50.386-112.32 112.32-112.32 61.933-.001 112.324 50.385 112.324 112.32z"/></svg>
+            </div>
+          </th>
           <th v-for="day in days" :key="day.number">
             <span class="day">{{ day.number }}</span>
             <span class="long">{{ day.longName }}</span>
@@ -59,18 +67,30 @@ export default {
       'Friday',
       'Saturday',
       'Sunday',
-      'Monday', 
-      'Tuesday',
+      'Monday',
+      'Tuesday'
     ],
     days: [],
     events: [],
+    lockHeaders: false
   }),
+
+  computed: {
+    debounceScroll () {
+      return debounce(scrollHeaders, 100)
+    },
+
+    debounceResize () {
+      return debounce(this.setWrapperHeight, 100)
+    }
+  },
 
   methods: {
     checkEvents (day, hour) {
       return this.events.map(event => {
-        if (event.day === day && event.hour === hour)
+        if (event.day === day && event.hour === hour) {
           return event
+        }
       })
     },
 
@@ -80,7 +100,7 @@ export default {
       this.dayNames.map(dayName => {
         this.days.push({
           number: dayNumber,
-          longName: dayName,
+          longName: dayName
         })
 
         dayNumber++
@@ -106,13 +126,13 @@ export default {
             duration = (endDay - day) + 1
           }
 
-          for (i; i < duration; i++){
+          for (i; i < duration; i++) {
             this.events.push({
               path: path,
               name: fm.name,
               time: fm.time,
               day: day + i,
-              hour,
+              hour
             })
           }
         }
@@ -122,17 +142,25 @@ export default {
     // The wrapper needs a fixed height to allow the headers to move
     setWrapperHeight () {
       let body = document.getElementsByTagName('body')[0]
-      let offset = document.getElementsByTagName('header')[0].offsetHeight
+      let header = document.getElementsByTagName('header')[0]
       let wrapper = this.$refs.wrapper
-      let wrapperHeight = window.innerHeight - offset
-      wrapper.style.height = `${wrapperHeight}px`
+
+      if (!body || !header || !wrapper) return
+
+      wrapper.style.height = `${window.innerHeight - header.offsetHeight}px`
       wrapper.style.overflow = 'auto'
       body.style.overflow = 'hidden'
     },
 
-    addListeners () {
-      this.$refs.wrapper.addEventListener('scroll', debounce(scrollHeaders, 100))
-      window.addEventListener('resize', debounce(this.setWrapperHeight), 100)
+    toggleHeadersLock () {
+      if (!this.lockHeaders) {
+        this.$refs.wrapper.addEventListener('scroll', this.debounceScroll)
+      } else {
+        this.$refs.wrapper.removeEventListener('scroll', this.debounceScroll)
+        resetHeadersPosition()
+      }
+
+      this.lockHeaders = !this.lockHeaders
     }
   },
 
@@ -140,18 +168,25 @@ export default {
     this.setDays()
     this.getEvents()
     this.setWrapperHeight()
-    this.addListeners()
+    this.toggleHeadersLock()
+    window.addEventListener('resize', this.debounceResize)
   },
 
   beforeDestroy () {
     let body = document.getElementsByTagName('body')[0]
     body.style.overflow = 'auto'
+    window.removeEventListener('resize', this.debounceResize)
   }
 }
 
 const scrollHeaders = function () {
-  let heroHeight = this.querySelector('.hero').offsetHeight
+  let hero = this.querySelector('.hero')
   let thead = this.querySelector('thead')
+  let hours = this.querySelectorAll('.hour')
+
+  if (!hero || !thead || !hours) return
+
+  let heroHeight = hero.offsetHeight
 
   if (this.scrollTop >= heroHeight) {
     thead.style.transform = `translate(0, ${this.scrollTop - heroHeight}px)`
@@ -159,11 +194,22 @@ const scrollHeaders = function () {
     thead.style.transform = `translate(0, 0)`
   }
 
-  let hours = this.querySelectorAll('.hour')
-  let translateX = `translate(${this.scrollLeft}px, 0)`;
+  for (let hour of hours) {
+    hour.style.transform = `translate(${this.scrollLeft}px, 0)`
+  }
+}
+
+const resetHeadersPosition = function () {
+  let hero = document.querySelector('.hero')
+  let thead = document.querySelector('thead')
+  let hours = document.querySelectorAll('.hour')
+
+  if (!hero || !thead || !hours) return
+
+  thead.style.transform = `translate(0, 0)`
 
   for (let hour of hours) {
-    hour.style.transform = translateX
+    hour.style.transform = `translate(0, 0)`
   }
 }
 </script>
@@ -211,6 +257,17 @@ table
           display none
         .long
           display block
+        .headers--lock
+          cursor pointer
+          svg
+            width 1.5em
+            height 1.5em
+            fill rgba(255, 255, 255, 0.5)
+            transition fill .3s ease-in-out
+            &:hover
+              fill $accentColor
+        &.hour
+          transition $headersTransition
 
   tbody
     tr
@@ -257,7 +314,16 @@ table
             width 90%
             content ' '
 
-  @media(max-width: 64em)
+@media(max-width: 64em)
+  .hero
+    width 100%
+    top $navbarHeight
+    left 0
+    pointer-events none
+    position fixed
+
+  table
+    margin-top $internalHeroHeight
     thead
       tr
         th
@@ -269,6 +335,11 @@ table
           .short
             font-size 18px
             display block
+          .headers--lock
+            svg
+              transition none
+              &:hover
+                fill rgba(255, 255, 255, 0.5)
 
     tbody
       tr

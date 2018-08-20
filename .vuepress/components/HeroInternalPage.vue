@@ -52,8 +52,10 @@ export default {
     transition all .2s ease-in-out
     border 1px solid #000
     box-sizing border-box
+    pointer-events all
     &:hover
       color #fff !important
+      text-decoration none !important
       border 1px solid $accentColor
 
 @media (max-width: $MQMobileNarrow)
