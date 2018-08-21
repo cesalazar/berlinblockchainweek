@@ -5,10 +5,9 @@ module.exports = {
   base: '/',
   title: 'Berlin Blockchain Week',
   head: [
-    ['link', { rel: 'manifest', href: 'manifest.json' }],
-    ['link', { rel: 'icon', href: 'logo.png' }],
-    ['meta', { name: 'viewport', content: `width=device-width,initial-scale=1,
-      minimum-scale=1,maximum-scale=1,user-scalable=no` }]
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   themeConfig: {
     nav: [
