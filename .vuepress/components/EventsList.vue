@@ -175,7 +175,14 @@ function addDays (date, days) {
   .datetime
     color rgba(255, 255, 255, 0.8)
   h2
-    border-bottom: none
+    border-bottom none
+    a
+      border-bottom 3px solid transparent
+      transition all .3s ease-out
+      text-decoration none !important
+      text-shadow 2px 2px 2px #000
+      &:hover
+        border-bottom 3px solid $accentColor
   .filters
     margin-top $internalHeroHeight + $navbarHeight
     margin-bottom 0
