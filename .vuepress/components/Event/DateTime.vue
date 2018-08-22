@@ -6,8 +6,9 @@
 
 <template>
   <p class="datetime">
+    <slot name="before"></slot>
     {{ datetime }}
-    <slot></slot>
+    <slot name="after"></slot>
   </p>
 </template>
 
