@@ -5,8 +5,9 @@
 -->
 
 <template>
-  <a :href="url" target="_blank" rel="noopener noreferrer">
+  <a :href="url" :title="title" target="_blank" rel="noopener noreferrer">
     {{ caption }}
+    <slot v-if="!caption"></slot>
     <OutboundLink v-if="indicator === 'true'"/>
   </a>
 </template>
@@ -20,9 +21,13 @@ export default {
       type: String,
       required: true
     },
+    title: {
+      type: String,
+      required: false
+    },
     caption: {
       type: String,
-      required: true
+      required: false
     },
     indicator: String
   }
