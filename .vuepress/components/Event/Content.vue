@@ -46,19 +46,44 @@ import Speakers from './Speakers'
 import Synopsis from './Synopsis'
 import TicketsLink from './TicketsLink'
 import { capitalizeWord } from './../../theme/util.js'
+const debounce = require('debounce')
 
 export default {
   components: { DateTime, MapLink, Speakers, Synopsis, TicketsLink },
   computed: {
     data () {
       return this.$page.frontmatter
+    },
+
+    debounce () {
+      return debounce(setContentOffset, 100)
     }
   },
   methods: {
     capitalizeWord (word) {
       return capitalizeWord(word)
     }
+  },
+  mounted () {
+    window.addEventListener('load', this.debounce)
+    window.addEventListener('resize', this.debounce)
+  },
+  destroyed () {
+    window.removeEventListener('load', this.debounce)
+    window.removeEventListener('resize', this.debounce)
   }
+}
+
+const setContentOffset = function () {
+  let header = document.querySelector('header')
+  let hero = document.querySelector('.hero')
+  let category = document.querySelector('.category')
+
+  if (!header || !hero || !category) return
+
+  let offset = header.offsetHeight + hero.offsetHeight
+
+  category.style.marginTop = `${offset}px`
 }
 </script>
 
