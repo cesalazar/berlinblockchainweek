@@ -168,28 +168,12 @@ function addDays (date, days) {
     background #000
     .datetime
       padding-top 5px
-      opacity: 1
-      color: #fff
-  .action-button
-    cursor pointer
-    display inline-block
-    font-size 1.2rem
-    vertical-align middle
-    margin-left 1em
-    padding 0 0.5em 0.2em
-    border-radius 4px
-    transition background-color .1s ease
-    box-sizing border-box
-    float right
-    margin-top 4px
-    &:hover
-      text-decoration: none !important
-    span
-      font-size 1.3em
+      opacity 1
+      color #fff
   div
     margin 2em 0 4em
   .datetime
-    color: rgba(255, 255, 255, 0.8)
+    color rgba(255, 255, 255, 0.8)
   h2
     border-bottom: none
   .filters
