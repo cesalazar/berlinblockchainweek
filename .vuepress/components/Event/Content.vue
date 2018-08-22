@@ -6,10 +6,14 @@
 
 <template>
   <div>
+    <HeroInternalPage
+      :title="data.name"
+    />
+
     <div class="category">
       <Badge :text="capitalizeWord(data.category)"/>
     </div>
-    <h1 id="name">{{ data.name }}</h1>
+
     <Synopsis/>
 
     <div v-if="data.speakers && data.speakers.length > 0">
@@ -58,9 +62,21 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
+@import './../../theme/styles/config.styl'
+
+.hero
+  position absolute
+  top $navbarHeight
+  left 0
+
+.badge
+  margin-left 0 !important
+  margin-right 0 !important
+
 .category
   text-align right
+  margin-top $internalHeroHeight + $navbarHeight
 h2
   margin-top 1.5em
 </style>
