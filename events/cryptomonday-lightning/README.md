@@ -33,8 +33,9 @@ title: CryptoMonday Lightning
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: This is a talk about blockchain. This field is indexed by search
-  engines and used to show a description on /events.
+description: CryptoMonday is a growing community all over Germany. We invite
+  experts like Andreas Antonopoulos, developers from RSK or law experts on the
+  current aspects of regulation and tax.
 
 
 #####################
@@ -53,9 +54,19 @@ synopsis:
   -
     CryptoMonday is a growing community all over Germany.
   -
-    We invite experts like Andreas Antonopoulos, developers from RSK or law experts on the current aspects of regulation and tax.
+    We invite experts like Andreas Antonopoulos, developers from RSK or law
+      experts on the current aspects of regulation and tax.
   -
-    'Today we’re hosting a Lightning-talk and focus on Layer2: We give an introduction to what the lightning network aims to provide to the community and how it is planning on achieving it. What might be current shortcomings and road blocks, how can those be overcome? We’ll follow an technical approach and like to give visitors an opportunity to get started on their own. We are happy to welcome our colleague, a vivid bitcoin and lightning, who has been visiting the Lightning Hackday by Fulmo only a couple days prior and also hosts the second biggest lightning node to share his gained insights. Join him for nice talks and drinks at the KI decentralized offices to celebrate the red crypto wedding.'
+    'Today we’re hosting a Lightning-talk and focus on Layer2: We give an
+      introduction to what the lightning network aims to provide to the
+      community and how it is planning on achieving it. What might be current
+      shortcomings and road blocks, how can those be overcome? We’ll follow an
+      technical approach and like to give visitors an opportunity to get started
+      on their own. We are happy to welcome our colleague, a vivid bitcoin and
+      lightning, who has been visiting the Lightning Hackday by Fulmo only a
+      couple days prior and also hosts the second biggest lightning node to
+      share his gained insights. Join him for nice talks and drinks at the KI
+      decentralized offices to celebrate the red crypto wedding.'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -79,12 +90,12 @@ tickets: https://www.eventbrite.de/e/cryptomonday-functionality-and-potential-of
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: KI Group office,
+venue: KI Group office
 
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Karl-Marx-Allee 90C, 5. floor, 10243 Berlin
+address: Karl-Marx-Allee 90C, 10243 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
@@ -123,19 +134,29 @@ speakers:
     twitter: vnnkl
 
     # The full URL, including http(s)://. Can be left empty.
-    website: 
+    website:
 
     # The bio is a single line.
     # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: Constantin took an early interest in cryptocurrencies end of 2011 and pursued as one of the first a Master Degree (MSc) in Digital Currencies to focus on related fields such as, Disruptive Innovation, Blockchain Technology and Applications, Open Financial Systems, Money and Banking. Before joining KI, he worked as a developer within the Bitcoin wallet and Ethereum energy related space.
+    bio: Constantin took an early interest in cryptocurrencies end of 2011 and
+      pursued as one of the first a Master Degree (MSc) in Digital Currencies
+      to focus on related fields such as, Disruptive Innovation, Blockchain
+      Technology and Applications, Open Financial Systems, Money and Banking.
+      Before joining KI, he worked as a developer within the Bitcoin wallet
+      and Ethereum energy related space.
   -
     name: Mirco Recksiek
     title: Cryptocurrency Researcher & Product Owner
     company: KI decentralized
     companyURL: https://www.ki-decentralized.com/
     twitter: mirconomy
-    website: https://twitter.com/mirconomy
-    bio: Mirco is a certified banker and graduated with a Master degree in Business Administration at the University of Cologne. In his thesis, he investigated the impact of blockchain and digital assets on current business models and industries. Since his first investments in Cryptocurrencies, he is enthusiastic for the disruptive potential of blockchain and always up to date about new projects in the crypto-scene.
+    website:
+    bio: Mirco is a certified banker and graduated with a Master degree in
+      Business Administration at the University of Cologne. In his thesis, he
+      investigated the impact of blockchain and digital assets on current
+      business models and industries. Since his first investments in
+      Cryptocurrencies, he is enthusiastic for the disruptive potential of
+      blockchain and always up to date about new projects in the crypto-scene.
 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
