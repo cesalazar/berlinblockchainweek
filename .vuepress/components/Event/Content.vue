@@ -12,23 +12,23 @@
     <h1 id="name">{{ data.name }}</h1>
     <Synopsis/>
 
-    <div id="speakers" v-if="data.speakers && data.speakers.length > 0">
+    <div v-if="data.speakers && data.speakers.length > 0">
       <h2>Speakers</h2>
       <Speakers/>
     </div>
 
-    <div id="date" v-if="data.date">
+    <div v-if="data.date">
       <h2>Date</h2>
       <DateTime/>
     </div>
 
-    <div id="address" v-if="data.venue || data.address">
+    <div v-if="data.venue || data.address">
       <h2 v-if="Array.isArray(data.address)">Venues</h2>
       <h2 v-else>Venue</h2>
       <MapLink/>
     </div>
 
-    <div id="tickets" v-if="data.tickets">
+    <div v-if="data.tickets">
       <h2>More information</h2>
       <TicketsLink/>
     </div>
