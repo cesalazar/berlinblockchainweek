@@ -51,7 +51,7 @@ export default {
       let month = this.monthNames[date.getUTCMonth()]
 
       // The full date
-      let datetime = `${day}, ${date.getUTCDate()} ${month}`
+      let datetime = `${day}, ${date.getUTCDate()}`
 
       // Last date of the event
       let endDate = this.endDate || this.$page.frontmatter.endDate
@@ -61,9 +61,11 @@ export default {
         endDate = new Date(endDate)
         if (endDate.toJSON() !== date.toJSON()) {
           day = this.dayNames[endDate.getUTCDay()]
-          datetime += ` - ${day}, ${endDate.getUTCDate()} ${month}`
+          datetime += ` - ${day}, ${endDate.getUTCDate()}`
         }
       }
+
+      datetime += ` ${month}`
 
       // Starting time
       let time = this.time || this.$page.frontmatter.time
