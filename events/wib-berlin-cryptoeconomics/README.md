@@ -17,7 +17,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: 'WIB Berlin: Cryptoeconomics'
+title: 'Women in Blockchain Berlin: Cryptoeconomics & Token Design'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -32,7 +32,7 @@ description: Why should we care about crypto economics and token design?
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'WIB Berlin: Cryptoeconomics'
+name: 'Women in Blockchain Berlin: Cryptoeconomics & Token Design'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -59,7 +59,7 @@ synopsis:
     In this session we will explore how these systems evolve and what aspects
       are important to take into account when doing so.
   -
-    'About WIB: By connecting across interests and backgrounds with a focus
+    'This event is part of the global Women in Blockchain Community which started out in New York and has evolved into a global network   with local chapters all over the world. By connecting across interests and backgrounds with a focus
       on females otherwise underrepresented in the blockchain world, we are
       working towards equality needed to build products, communities and
       economies that work for all. Everyone is invited to the meet-ups!'
@@ -80,7 +80,7 @@ time: '18:30'
 endTime: '22:00'
 
 # The URL where to acquire the tickets. Can be left empty.
-tickets:
+tickets: https://goo.gl/iJi5cE
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
@@ -115,14 +115,14 @@ speakers:
   -
     name: Simona Pop
     title: Community and Marketing
-    company: the Bounty Network
+    company: the Bounties Network
     companyURL: https://bounties.network/
     twitter:
     website:
     bio:
   -
     name: Anami Nguyen
-    title: Analyst
+    title: former Analyst
     company: J.P. Morgan
     companyURL:
     twitter:
