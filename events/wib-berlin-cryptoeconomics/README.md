@@ -17,7 +17,7 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: 'WIB Berlin: Cryptoeconomics'
+title: 'Women in Blockchain Berlin: Cryptoeconomics & Token Design'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
@@ -122,7 +122,7 @@ speakers:
     bio:
   -
     name: Anami Nguyen
-    title: Analyst
+    title: former Analyst
     company: J.P. Morgan
     companyURL:
     twitter:
