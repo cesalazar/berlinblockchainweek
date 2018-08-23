@@ -30,18 +30,26 @@ export default {
 
 .hero
   width 100%
-  height $internalHeroHeight
+  min-height $internalHeroHeight
   position relative
   background url("~/main-bg.jpg")
+  background-attachment fixed
+  background-size cover
+  background-position left top
+  background-repeat no-repeat
   display flex
   flex-direction column
   align-items center
   justify-content space-evenly
   z-index 1
+  padding 1.5em 0
+  box-sizing border-box
   h1
     margin 0
     padding 0
     font-size 48px
+    max-width $contentWidth
+    padding 0 1.5rem
   .action-button
     margin -2em 0 0
     font-size 18px
