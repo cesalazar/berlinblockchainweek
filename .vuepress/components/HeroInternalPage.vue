@@ -33,6 +33,10 @@ export default {
   min-height $internalHeroHeight
   position relative
   background url("~/main-bg.jpg")
+  background-attachment fixed
+  background-size cover
+  background-position left top
+  background-repeat no-repeat
   display flex
   flex-direction column
   align-items center

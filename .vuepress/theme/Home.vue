@@ -78,6 +78,7 @@ export default {
     margin 0px auto
   &_main
     background url('~/main-bg.jpg')
+    background-attachment fixed
     background-size cover
     background-position left bottom
     background-repeat no-repeat
@@ -100,6 +101,7 @@ export default {
       margin 0 0 38px 0
   &_features
     background url('~/features-bg.jpg')
+    background-attachment fixed
     background-size cover
     background-position left top
     background-repeat no-repeat
