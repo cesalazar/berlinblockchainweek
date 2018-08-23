@@ -59,10 +59,13 @@ synopsis:
     In this session we will explore how these systems evolve and what aspects
       are important to take into account when doing so.
   -
-    'This event is part of the global Women in Blockchain Community which started out in New York and has evolved into a global network   with local chapters all over the world. By connecting across interests and backgrounds with a focus
-      on females otherwise underrepresented in the blockchain world, we are
-      working towards equality needed to build products, communities and
-      economies that work for all. Everyone is invited to the meet-ups!'
+    'This event is part of the global Women in Blockchain Community which
+      started out in New York and has evolved into a global network with
+      local chapters all over the world. By connecting across interests and
+      backgrounds with a focus on females otherwise underrepresented in the
+      blockchain world, we are working towards equality needed to build
+      products, communities and economies that work for all. Everyone is
+      invited to the meet-ups!'
 
 
 # The date should be in the format year-month-day (ISO 8601).
