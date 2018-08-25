@@ -12,22 +12,28 @@
       linkText="Submit an Event"
     />
     <div class="filters">
-      <span>
+      <div>
         <label>
-          <input name="category" type="radio" value="All" checked
-            @click="filterEvents('All')"
+          <input class="hidden-radio" name="category" type="radio" value="All"
+            checked @click="filterEvents('All')"
           />
           <span>All</span>
         </label>
-      </span>
-      <span v-for="category in categories">
+      </div>
+      <div v-for="category in categories">
         <label>
-          <input name="category" type="radio" :value="category"
-            @click="filterEvents(category)"
+          <input class="hidden-radio" name="category" type="radio"
+            :value="category" @click="filterEvents(category)"
           />
           <span>{{ category }}s</span>
         </label>
-      </span>
+      </div>
+      <div>
+        <span class="date--sort" @click="reverseDates()">
+          Sort
+          <svg :class="{ descending: descending }" enable-background="new 0 0 292.362 292.362" height="292.362" viewBox="0 0 292.362 292.362" width="292.362" xmlns="http://www.w3.org/2000/svg"><path d="m286.935 69.377c-3.614-3.617-7.898-5.424-12.848-5.424h-255.813c-4.952 0-9.233 1.807-12.85 5.424-3.617 3.621-5.424 7.902-5.424 12.851 0 4.948 1.807 9.229 5.424 12.847l127.907 127.907c3.621 3.617 7.902 5.428 12.85 5.428s9.233-1.811 12.847-5.428l127.907-127.908c3.613-3.617 5.427-7.898 5.427-12.847 0-4.948-1.814-9.229-5.427-12.85z"/></svg>
+        </span>
+      </div>
     </div>
 
     <div v-for="day in days" :key="day">
@@ -157,21 +163,21 @@ function addDays (date, days) {
 
 <style scoped lang="stylus">
 @require './../theme/styles/config.styl'
-
-.hero
-  position absolute
-  top $navbarHeight - 2em
-  left 0
-
 .events--container
+  .hero
+    position absolute
+    top $navbarHeight - 2em
+    left 0
   .date-sticky
+    border-top 1px solid darken(#fff, 75%)
     position sticky
-    top $navbarHeight
+    top $navbarHeight - 1.5em
     background #000
     .datetime
-      padding-top 5px
       opacity 1
       color #fff
+      font-weight 400
+      text-transform uppercase
     svg
       fill #fff
       width 1rem
@@ -182,6 +188,7 @@ function addDays (date, days) {
     margin 2em 0 4em
   .datetime
     color rgba(255, 255, 255, 0.8)
+    font-size .9em
   h2
     border-bottom none
     a
@@ -193,16 +200,50 @@ function addDays (date, days) {
         border-bottom 3px solid $accentColor
   .filters
     margin-top $internalHeroHeight + $navbarHeight
-    margin-bottom 0
+    margin-bottom 2.5em
     border-bottom 0 none
     display flex
     justify-content space-between
     flex-wrap wrap
-  label
-    margin-right 1em
-    cursor pointer
-    input
-      margin-top -3px
-      vertical-align middle
+    .date--sort
       cursor pointer
+      svg
+        margin-left 0.2em
+        width 0.8em
+        height 0.8em
+        fill #fff
+        &.descending
+          transform rotate(180deg)
+    label
+      cursor pointer
+    div
+      display inline-block
+      margin 0
+    span
+      font-weight bold
+      padding-bottom 0.5em
+      border-bottom 1px solid transparent
+      transition border 0.2s ease-in-out
+      &:hover
+        border-bottom 1px solid $accentColor
+    input
+      cursor pointer
+      &.hidden-radio
+        display none
+    input:checked + span
+      border-bottom 1px solid $accentColor
+
+@media(max-width: $MQMobile)
+  .events--container
+    .filters
+      div
+        width 30%
+        margin 0.5em 0 1em
+
+@media(max-width: $MQMobileNarrow)
+  .events--container
+    .filters
+      div
+        width 40%
+        margin 0.5em 0 1em
 </style>

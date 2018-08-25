@@ -155,7 +155,7 @@ $border-radius = 10px
     background #000 url('~/search.svg') no-repeat 8px center
     border 1px solid #000
     padding 9px
-    border-radius $border-radius
+    border-radius 29px
     transition all .5s
     font-size: 12px
     &::-webkit-search-decoration,
