@@ -219,15 +219,16 @@ input.hidden-radio
     position relative
     span
       position relative
-      color #ccc
+      font-weight bold
+      font-size .9em
       &:after
         content ''
         position absolute
-        height 1.5px
+        height 1px
         width auto
         left 0
         right 0
-        top -10px
+        bottom -6px
         background #f1003e
         visibility hidden
         opacity 0
@@ -238,15 +239,14 @@ input.hidden-radio
           visibility visible
           opacity 1
     input:checked + span
-      color #fff
       &:before
         content ''
         position absolute
-        height 1.5px
+        height 1px
         width auto
         left 0
         right 0
-        top -10px
+        bottom -6px
         background #f1003e
 
 
