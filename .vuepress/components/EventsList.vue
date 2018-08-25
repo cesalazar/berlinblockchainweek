@@ -188,13 +188,12 @@ function addDays (date, days) {
   h2
     border-bottom none
     a
-      border-bottom 1.5px solid transparent
+      border-bottom 3px solid transparent
       transition all .3s ease-out
       text-decoration none !important
       text-shadow 2px 2px 2px #000
-      font-weight 400
       &:hover
-        border-bottom 1.5px solid $accentColor
+        border-bottom 3px solid $accentColor
   .filters
     margin-top $internalHeroHeight + $navbarHeight
     margin-bottom 0
