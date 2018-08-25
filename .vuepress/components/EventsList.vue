@@ -157,13 +157,11 @@ function addDays (date, days) {
 
 <style scoped lang="stylus">
 @require './../theme/styles/config.styl'
-
-.hero
-  position absolute
-  top $navbarHeight - 2em
-  left 0
-
 .events--container
+  .hero
+    position absolute
+    top $navbarHeight - 2em
+    left 0
   .date-sticky
     border-top 1px solid darken(#fff, 75%)
     position sticky
