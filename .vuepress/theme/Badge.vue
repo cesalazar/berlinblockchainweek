@@ -31,15 +31,15 @@ export default {
   padding 0 6px
   color white
   margin-right 5px
-  background-color #42b983
+  border-color #42b983
   &.middle
     vertical-align middle
   &.top
     vertical-align top
   &.tip, &.green
-    background-color #42b983
+    border-color #42b983
   &.error
-    background-color #DA5961 //#f66
+    border-color #DA5961 //#f66
   &.warning, &.warn, &.yellow
-    background-color darken(#ffe564, 35%)
+    border-color darken(#ffe564, 35%)
 </style>
