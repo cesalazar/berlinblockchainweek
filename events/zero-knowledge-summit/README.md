@@ -31,15 +31,15 @@ synopsis:
     'Join us in Berlin on Sept 5th for the Zero Knowledge Summit - ZK0x02.'
   -
     'This event will focus on zero knowledge topics, latest zkSNARK
-      applications and privacy. This one-day event is a “no- pitch” event, and
+      applications and privacy. This one-day event is a “no-pitch” event, and
       will only feature topic oriented talks and workshops. Attendees will
-      consist primarily of privacy  researchers, practitioners, influencers, and
+      consist primarily of privacy researchers, practitioners, influencers, and
       developers working on zero knowledge topics. If you fall into these
       categories, please follow the links to the application form here:
-      http://www.zeroknowledge.fm/summit'
+      [http://www.zeroknowledge.fm/summit](http://www.zeroknowledge.fm/summit/)'
   -
     Unfortunately space is very limited, and so we encourage you apply early.
-      It is hosted by the ZeroKnowledge Podcast - http://www.zeroknowledge.fm/
+      It is hosted by the [ZeroKnowledge Podcast](http://www.zeroknowledge.fm/)
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28

@@ -68,9 +68,10 @@ synopsis:
       is a free open source software that aims to become a core Internet
       protocol for blockchain computation.
   -
-    'Watch the Spacemesh video: https://www.youtube.com/watch?v=PB6ZPbxSxm0'
+    '[Watch the Spacemesh video](https://www.youtube.com/watch?v=PB6ZPbxSxm0)'
   -
-    For additional information check https://spacemesh.io
+    For additional information check
+      [https://spacemesh.io](https://spacemesh.io)
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
