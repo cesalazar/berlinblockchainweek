@@ -12,22 +12,22 @@
       linkText="Submit an Event"
     />
     <div class="filters">
-      <span>
+      <div>
         <label>
-          <input class="hidden-radio" name="category" type="radio" value="All" checked
-            @click="filterEvents('All')"
+          <input class="hidden-radio" name="category" type="radio" value="All"
+            checked @click="filterEvents('All')"
           />
           <span>All</span>
         </label>
-      </span>
-      <span v-for="category in categories">
+      </div>
+      <div v-for="category in categories">
         <label>
-          <input class="hidden-radio" name="category" type="radio" :value="category"
-            @click="filterEvents(category)"
+          <input class="hidden-radio" name="category" type="radio"
+            :value="category" @click="filterEvents(category)"
           />
           <span>{{ category }}s</span>
         </label>
-      </span>
+      </div>
     </div>
 
     <div v-for="day in days" :key="day">
@@ -202,54 +202,22 @@ function addDays (date, days) {
     display flex
     justify-content space-between
     flex-wrap wrap
-  label
-    margin-right 1em
-    cursor pointer
-    input
-      margin-top -3px
-      vertical-align middle
+    label
       cursor pointer
-input.hidden-radio
-  position absolute
-  left -99999em
-  top -99999em
-.filters
-  label
-    cursor pointer
-    position relative
+    div
+      display inline-block
+      margin 0
     span
-      position relative
       font-weight bold
-      font-size .9em
-      &:after
-        content ''
-        position absolute
-        height 1px
-        width auto
-        left 0
-        right 0
-        bottom -6px
-        background #f1003e
-        visibility hidden
-        opacity 0
-        transition all .3s ease-in-out
+      padding-bottom 0.5em
+      border-bottom 1px solid transparent
+      transition border 0.2s ease-in-out
       &:hover
-        color #fff
-        &:after
-          visibility visible
-          opacity 1
+        border-bottom 1px solid $accentColor
+    input
+      cursor pointer
+      &.hidden-radio
+        display none
     input:checked + span
-      &:before
-        content ''
-        position absolute
-        height 1px
-        width auto
-        left 0
-        right 0
-        bottom -6px
-        background #f1003e
-
-
-
-
+      border-bottom 1px solid $accentColor
 </style>
