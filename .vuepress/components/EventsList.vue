@@ -14,7 +14,7 @@
     <div class="filters">
       <span>
         <label>
-          <input name="category" type="radio" value="All" checked
+          <input class="hidden-radio" name="category" type="radio" value="All" checked
             @click="filterEvents('All')"
           />
           <span>All</span>
@@ -22,7 +22,7 @@
       </span>
       <span v-for="category in categories">
         <label>
-          <input name="category" type="radio" :value="category"
+          <input class="hidden-radio" name="category" type="radio" :value="category"
             @click="filterEvents(category)"
           />
           <span>{{ category }}s</span>
@@ -172,6 +172,8 @@ function addDays (date, days) {
       padding-top 5px
       opacity 1
       color #fff
+      font-weight 400
+      text-transform uppercase
     svg
       fill #fff
       width 1rem
@@ -182,15 +184,17 @@ function addDays (date, days) {
     margin 2em 0 4em
   .datetime
     color rgba(255, 255, 255, 0.8)
+    font-size .9em
   h2
     border-bottom none
     a
-      border-bottom 3px solid transparent
+      border-bottom 1.5px solid transparent
       transition all .3s ease-out
       text-decoration none !important
       text-shadow 2px 2px 2px #000
+      font-weight 400
       &:hover
-        border-bottom 3px solid $accentColor
+        border-bottom 1.5px solid $accentColor
   .filters
     margin-top $internalHeroHeight + $navbarHeight
     margin-bottom 0
@@ -205,4 +209,47 @@ function addDays (date, days) {
       margin-top -3px
       vertical-align middle
       cursor pointer
+input.hidden-radio
+  position absolute
+  left -99999em
+  top -99999em
+.filters
+  label
+    cursor pointer
+    position relative
+    span
+      position relative
+      color #ccc
+      &:after
+        content ''
+        position absolute
+        height 1.5px
+        width auto
+        left 0
+        right 0
+        top -10px
+        background #f1003e
+        visibility hidden
+        opacity 0
+        transition all .3s ease-in-out
+      &:hover
+        color #fff
+        &:after
+          visibility visible
+          opacity 1
+    input:checked + span
+      color #fff
+      &:before
+        content ''
+        position absolute
+        height 1.5px
+        width auto
+        left 0
+        right 0
+        top -10px
+        background #f1003e
+
+
+
+
 </style>
