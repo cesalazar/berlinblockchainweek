@@ -32,7 +32,7 @@ synopsis:
       push UX & Usability standards forward for the decentralized eco-system.
   -
     'Find more information regarding the event at:
-      http://discuss.conflux.network/t/web3-ux-unconf-september-10th-berlin-blockchain-week-full-node-berlin'
+      [http://discuss.conflux.network/t/web3-ux-unconf-september-10th-berlin-blockchain-week-full-node-berlin](http://discuss.conflux.network/t/web3-ux-unconf-september-10th-berlin-blockchain-week-full-node-berlin)'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28

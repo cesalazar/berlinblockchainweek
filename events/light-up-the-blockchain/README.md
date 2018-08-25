@@ -45,7 +45,7 @@ synopsis:
       into recent compelling on-chain events, with a specific focus on
       decentralized exchanges, & spin-up Alethio’s real-time Ethereum
       visualization & sonification based on our API.
-      (https://vimeo.com/272871263).
+      [https://vimeo.com/272871263](https://vimeo.com/272871263)
   -
     Hope to see you there!
   -
@@ -54,13 +54,11 @@ synopsis:
     'Recent Entries into the Alethio Analytics Series:'
   -
     list:
-    - 'Alethio: Lighting Up the Blockchain with Real Time Data'
-    - Are Miners Centralized? A Look into Mining Pools
-    - Alethio Links up with SANSA Semantic Analytics Stack to Analyze Ethereum
-        at New Scales
-    - Analyzing Activities on Decentralized Exchanges
-    - The Hubs & Authorities in Transaction Network - Powered by SANSA and
-        Graph Analysis
+    - '[Alethio: Lighting Up the Blockchain with Real Time Data](https://media.consensys.net/alethio-lighting-up-the-blockchain-with-real-time-stats-a80bb30576db)'
+    - '[Are Miners Centralized? A Look into Mining Pools](https://media.consensys.net/are-miners-centralized-a-look-into-mining-pools-b594425411dc)'
+    - '[Alethio Links up with SANSA Semantic Analytics Stack to Analyze Ethereum at New Scales](https://media.consensys.net/alethio-links-up-with-sansa-semantic-analytics-stack-to-analyze-ethereum-at-new-scales-b26055540167)'
+    - '[Analyzing Activities on Decentralized Exchanges](https://media.consensys.net/analyzing-activities-on-decentralized-exchanges-847e95570444)'
+    - '[The Hubs & Authorities in Transaction Network-Powered by SANSA and Graph Analysis](https://media.consensys.net/the-hubs-authorities-in-transaction-network-powered-by-sansa-and-graph-analysis-9bf271c2e5f9)'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
