@@ -232,4 +232,18 @@ function addDays (date, days) {
         display none
     input:checked + span
       border-bottom 1px solid $accentColor
+
+@media(max-width: $MQMobile)
+  .events--container
+    .filters
+      div
+        width 30%
+        margin 0.5em 0 1em
+
+@media(max-width: $MQMobileNarrow)
+  .events--container
+    .filters
+      div
+        width 40%
+        margin 0.5em 0 1em
 </style>
