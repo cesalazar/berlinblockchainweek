@@ -165,11 +165,11 @@ function addDays (date, days) {
 
 .events--container
   .date-sticky
+    border-top 1px solid darken(#fff, 75%)
     position sticky
-    top $navbarHeight
+    top $navbarHeight - 1.5em
     background #000
     .datetime
-      padding-top 5px
       opacity 1
       color #fff
       font-weight 400
@@ -196,7 +196,7 @@ function addDays (date, days) {
         border-bottom 3px solid $accentColor
   .filters
     margin-top $internalHeroHeight + $navbarHeight
-    margin-bottom 0
+    margin-bottom 2.5em
     border-bottom 0 none
     display flex
     justify-content space-between
