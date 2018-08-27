@@ -38,7 +38,7 @@ synopsis:
     -
       In this talk, we present radicle, the language used by the open source coin platform to give developers full control over their code hosting, collaboration, and project governance. Radicle has some unique characteristics - most notably self-amendment, or evaluation-redefinition - that are interesting in their own right. But more importantly, it makes it easy for individuals or groups to collectively determine how they interact with one another, and with their code.
     -
-      After an overview of radicle, we will look at examples, such as custom formats and behaviors for issues, access rights, and voting. We will also see how radicle can be used not just as a way of defining the semantics of chains, but as as way of interacting *with* them (via scripting or a REPL).
+      After an overview of radicle, we will look at examples, such as custom formats and behaviors for issues, access rights, and voting. We will also see how radicle can be used not just as a way of defining the semantics of chains, but as as way of interacting with them (via scripting or a REPL).
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
