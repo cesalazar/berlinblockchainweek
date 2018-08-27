@@ -28,8 +28,6 @@ synopsis:
   -
     Open source coin is a decentralized network and currency for OSS collaboration and incentivisation, that is community owned. It's a protocol not an app. It operates one layer underneath an app like Github. As a protocol, it extends Git with economic primitives. As a network, it aims to be both architecturally and economically decentralized.
   -
-    '[RSVP](https://goo.gl/5BnCMa)'
-  -
     'We will discuss:' 
   -
     list:
@@ -51,7 +49,7 @@ time: '18:00'
 endTime: '20:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-# tickets:
+tickets: [RSVP](https://goo.gl/5BnCMa)
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
