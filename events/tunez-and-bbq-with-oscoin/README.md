@@ -50,7 +50,7 @@ venue: Oscoin Office
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Pfuelstraße 5, 10997 Berlin. Germany
+address: Pfuelstraße 5, 10997 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
