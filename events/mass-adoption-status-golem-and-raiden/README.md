@@ -79,7 +79,7 @@ time: '18:00'
 endTime: '21:00'
 
 # The URL where to acquire the tickets. Can be left empty.
-tickets:
+tickets: https://www.eventbrite.com/e/mass-adapption-use-cases-golem-raiden-status-tickets-49559434603
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
