@@ -7,7 +7,7 @@
 title: 'Decoding Token Economics: A Token Engineering and Token Economy Design
   Workshop'
 
-# Description for this event. This will be rendered as a <meta> tag in the HTML, 
+# Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
 description: Join us for a comprehensive workshop featuring the token experts
@@ -44,7 +44,7 @@ synopsis:
         tokenization
     - Best practices and models for token engineering frameworks
     - How to align your business goals to design a token economy
-   
+
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -66,11 +66,11 @@ tickets: https://www.meetup.com/de-DE/Token-Engineering/events/253174971/
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Ocean Protocol
+venue: betahaus
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Chausseestrasse 19, 10115 Berlin, Germany
+address: Köpenicker Straße 154, 10997 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
@@ -81,7 +81,7 @@ address: Chausseestrasse 19, 10115 Berlin, Germany
 # Use _only_ one, and don't capitalize.
 category: workshop
 
- 
+
 #################
 ### SPEAKERS ####
 #################
@@ -92,37 +92,37 @@ category: workshop
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
   -
-    name: Dimitri De Jonghe 
+    name: Dimitri De Jonghe
     title: Head of Product and Research
     company: Ocean Protocol
     companyURL: https://oceanprotocol.com/
-    twitter: 
-    website: 
-    bio: 
+    twitter:
+    website:
+    bio:
   -
     name: Trent McConaghy
     title: Founder
     company: Ocean Protocol
     companyURL: https://oceanprotocol.com/
-    twitter: 
-    website: 
-    bio: 
+    twitter:
+    website:
+    bio:
   -
-    name: Mohit Anand 
-    title: Director of Blockchain Strategy Consultancy 
+    name: Mohit Anand
+    title: Director of Blockchain Strategy Consultancy
     company: OST
     companyURL: https://ost.com/
-    twitter: 
-    website: 
-    bio: 
+    twitter:
+    website:
+    bio:
   -
     name: Benjamin Bollen
     title: Founder and Chief Blockchain Strategist
-    company: OST 
+    company: OST
     companyURL: https://ost.com/
-    twitter: 
-    website: 
-    bio: 
+    twitter:
+    website:
+    bio:
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
