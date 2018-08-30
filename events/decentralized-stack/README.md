@@ -55,11 +55,11 @@ synopsis:
     - 'Technology adoption challenges: building developer communities'
     - Future of decentralised data economy
   -
-    'The Panel Discussion is hosted & moderated by Jack Platts, Web3 Foundation.'
+    The Panel discussion is hosted & moderated by Jack Platts, Web3 Foundation.
   -
     'Projects presenting: Fluence, Streamr, NuCypher, Ocean Protocol.'
   -
-    'The event is hosted by Fluence.'
+    The event is hosted by Fluence.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -96,7 +96,7 @@ address: Engeldamm 60, 10179 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: event
+category: panel
 
 
 #################
