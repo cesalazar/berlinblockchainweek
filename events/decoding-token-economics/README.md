@@ -66,11 +66,11 @@ tickets: https://www.meetup.com/de-DE/Token-Engineering/events/253174971/
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Ocean Protocol
+venue: betahaus
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Chausseestrasse 19, 10115 Berlin, Germany
+address: Köpenicker Straße 154, 10997 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
