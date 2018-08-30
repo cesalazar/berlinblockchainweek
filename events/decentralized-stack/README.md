@@ -55,8 +55,11 @@ synopsis:
     - 'Technology adoption challenges: building developer communities'
     - Future of decentralised data economy
   -
+    The Panel discussion is hosted & moderated by Jack Platts, Web3 Foundation.
+  -
     'Projects presenting: Fluence, Streamr, NuCypher, Ocean Protocol.'
- 
+  -
+    The event is hosted by Fluence.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -93,7 +96,34 @@ address: Engeldamm 60, 10179 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: event
+category: panel
+
+
+#################
+### SPEAKERS ####
+#################
+# There _needs_ to be one hyphen before each entry.
+# Linebreaks are ignored, but they _must_ start with two spaces.
+# Indentation is crucial:
+# Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
+# Add or remove speakers as needed, but remember the hyphen before each entry.
+speakers:
+  -
+    name: Alexander Demidko
+    title: Co-Founder & Chief Research Officer
+    company: Fluence
+  -
+    name: Mikhael Santos
+    title: DevOps & Backend Developer
+    company: Streamr
+  -
+    name: Michael Egorov
+    title: Co-Founder & CTO
+    company: NuCypher
+  -
+    name: Dimitri De Jonghe
+    title: Co-Founder & Head of Research
+    company: Ocean Protocol
 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
