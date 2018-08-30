@@ -42,7 +42,13 @@ name: IoT & Blockchain with AnyLedger
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    In this event we will answer questions like: Which benefits will the blockchain bring to the physical world? Which problems of IoT can be fixed using a blockchain stack? What is missing at the moment? We will also outline how AnyLedger is solving existing problems in order to create an industry-level infrastructure layer between connected devices and blockchains. The talk will last 20-30 minutes, and there will be room for as many questions as you want to ask afterwards.
+    'In this event we will answer questions like: Which benefits will the
+      blockchain bring to the physical world? Which problems of IoT can be
+      fixed using a blockchain stack? What is missing at the moment? We will
+      also outline how AnyLedger is solving existing problems in order to
+      create an industry-level infrastructure layer between connected devices
+      and blockchains. The talk will last 20-30 minutes, and there will be
+      room for as many questions as you want to ask afterwards.'
 
 
 # The date should be in the format year-month-day (ISO 8601).
@@ -64,14 +70,14 @@ tickets: https://www.eventbrite.com/e/iot-blockchain-with-anyledger-tickets-4959
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0 
+price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: rent24
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Oberwallstrasse 6, 10117 Berlin
+address: Oberwallstrasse 6, 10117 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
