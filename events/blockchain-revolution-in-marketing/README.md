@@ -35,7 +35,7 @@ description: Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen,
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'Base58 Session #4: Blockchain in Marketing: WOM Token'
+name: Blockchain Revolution in Marketing
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
