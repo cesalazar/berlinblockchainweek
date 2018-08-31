@@ -17,12 +17,16 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: 'Base58 Session #4: Blockchain in Marketing: WOM Token @ Berlin Blockchain Week'
+title: 'Base58 Session #4: Blockchain in Marketing: WOM Token'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen, Blockchain Economics Designer, and Conner Howe, Lead Blockchain Developer, for a journey into the ecosystem that will enable any brand, advertiser, and content distribution platform to adopt the WOM Token and connect with content creators and their peers on a global scale.
+description: Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen,
+  Blockchain Economics Designer, and Conner Howe, Lead Blockchain Developer,
+  for a journey into the ecosystem that will enable any brand, advertiser, and
+  content distribution platform to adopt the WOM Token and connect with
+  content creators and their peers on a global scale.
 
 
 
@@ -31,7 +35,7 @@ description: Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen, Blo
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'Base58 Session #4: Blockchain in Marketing: WOM Token @ Berlin Blockchain Week'
+name: 'Base58 Session #4: Blockchain in Marketing: WOM Token'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -39,10 +43,26 @@ name: 'Base58 Session #4: Blockchain in Marketing: WOM Token @ Berlin Blockchain
 # Two spaces before the hyphen, four spaces before the text. _No_ tabs allowed.
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
-  - Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen, Blockchain Economics Designer, and Conner Howe, Lead Blockchain Developer, for a journey into the ecosystem that will enable any brand, advertiser, and content distribution platform to adopt the WOM Token and connect with content creators and their peers on a global scale.
-  - An estimated 2.1 billion daily product recommendations are made online, yet brands and advertisers do not have an effective and scalable way to properly incentivize, monetize, and measure peer-to-peer recommendations. Until now.
-  - We are introducing the WOM Token as a simple and transparent means for rewarding peer-to-peer recommendations in a scalable and robust economy leveraging the power of the blockchain.
-  - Based on blockchain technology, the WOM Token enables brands and advertisers to connect directly to these 2.1 billion digital word-of-mouth conversations and rewards the creator for their product recommendations.
+  -
+    Please join Melanie, Founder & CEO of WOM Token, Daniel Wingen,
+      Blockchain Economics Designer, and Conner Howe, Lead Blockchain
+      Developer, for a journey into the ecosystem that will enable any brand,
+      advertiser, and content distribution platform to adopt the WOM Token and
+      connect with content creators and their peers on a global scale.
+  -
+    An estimated 2.1 billion daily product recommendations are made online,
+      yet brands and advertisers do not have an effective and scalable way to
+      properly incentivize, monetize, and measure peer-to-peer
+      recommendations. Until now.
+  -
+    We are introducing the WOM Token as a simple and transparent means for
+      rewarding peer-to-peer recommendations in a scalable and robust economy
+      leveraging the power of the blockchain.
+  -
+    Based on blockchain technology, the WOM Token enables brands and
+      advertisers to connect directly to these 2.1 billion digital
+      word-of-mouth conversations and rewards the creator for their product
+      recommendations.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -113,7 +133,12 @@ speakers:
 
     # The bio is a single line.
     # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: Melanie Mohr is a Berlin-based digital media entrepreneur with 20 years of experience in editorial strategy, content creation, digital marketing and mobile applications. In 2016 she founded YEAY - the leading video m-commerce platform providing GenZ with a space to share and shop. In 2018 she became the founder and CEO of WOM Token Ltd., the blockchain company helping brands tap into peer-to-peer recommendations.
+    bio: Melanie Mohr is a Berlin-based digital media entrepreneur with 20
+      years of experience in editorial strategy, content creation, digital
+      marketing and mobile applications. In 2016 she founded YEAY - the
+      leading video m-commerce platform providing GenZ with a space to share
+      and shop. In 2018 she became the founder and CEO of WOM Token Ltd., the
+      blockchain company helping brands tap into peer-to-peer recommendations.
 
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
