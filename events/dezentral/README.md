@@ -32,8 +32,8 @@ synopsis:
       newcomers, builders and longtime hodlers from all over the world together
       in the heart of Berlin.
   -
-    With over 800 attendees, including founders of prime projects and partners
-      of tier 1 funds.
+    Featuring attendees from traditional industry, founders of blockchain projects, media and partners
+      of top tier funds from Asia, Europe and the US.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -43,7 +43,7 @@ endDate: 2018-09-06
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '10:00'
+time: '9:00'
 endTime: '19:00'
 
 # The URL where to adquire the tickets. Can be left empty.
@@ -51,7 +51,7 @@ tickets: https://www.dezentral.io/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 50-150
+price: 50-180
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: KOSMOS Berlin
@@ -80,7 +80,7 @@ category: conference
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
   -
-    name: Kathleen Breitmann
+    name: Arthur Breitmann
     title: CEO
     company: Tezos
   -
@@ -102,6 +102,14 @@ speakers:
     name: Nader Al-Naji
     title: CEO
     company: Basis
+  -
+    name: Noah Johnson
+    title: COO
+    company: Oasis Labs
+  -
+    name: Do Kwon
+    title: COO
+    company: Terra
 # -
 #   # Required.
 #   name: 
