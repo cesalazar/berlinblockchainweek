@@ -9,14 +9,19 @@ title: Mathematics behind verified computing a la Pinocchio
 # Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: In this workshop, Mirco Richter from zkSystems will go over mathematical principles of verified computing as described in the Pinocchio protocol. The session will include circuits, quadratic arithmetic programs and verified computation. Be prepared for some math! We will get our hands dirty and do some actual computations in pen&paper style.
+description: In this workshop, Mirco Richter from zkSystems will go over
+  mathematical principles of verified computing as described in the Pinocchio
+  protocol. The session will include circuits, quadratic arithmetic programs
+  and verified computation. Be prepared for some math! We will get our hands
+  dirty and do some actual computations in pen&paper style.
 
 #####################
 ### EVENT DETAILS ###
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'LedgerZ.org workshop: Mathematics behind verified computing a la Pinocchio'
+name: 'LedgerZ.org workshop: Mathematics behind verified computing a la
+  Pinocchio'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -25,9 +30,12 @@ name: 'LedgerZ.org workshop: Mathematics behind verified computing a la Pinocchi
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    In this workshop, Mirco Richter from zkSystems will go over mathematical principles of verified computing as described in the Pinocchio protocol.
-  - 
-    The session will include circuits, quadratic arithmetic programs and verified computation. Be prepared for some math! We will get our hands dirty and do some actual computations in pen&paper style.
+    In this workshop, Mirco Richter from zkSystems will go over mathematical
+      principles of verified computing as described in the Pinocchio protocol.
+  -
+    The session will include circuits, quadratic arithmetic programs and
+      verified computation. Be prepared for some math! We will get our hands
+      dirty and do some actual computations in pen&paper style.
   -
     'Agenda:'
   -
@@ -38,8 +46,8 @@ synopsis:
   -
     'Notes:'
   -
-    'About the moderator:
-    Mirco is a mathematician with academic background who co-founded zkSystems.io, a scalable layer-one DLT.'
+    'About the moderator: Mirco is a mathematician with academic background
+      who co-founded zkSystems.io, a scalable layer-one DLT.'
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
 date: 2018-09-05
@@ -66,7 +74,7 @@ venue: '@ Zero Knowledge Summit'
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: 'Karl-Liebknecht-Straße 9, 10178 Berlin'
+address: Karl-Liebknecht-Straße 9, 10178 Berlin, Germany
 
 # The category of the event. Valid options:
 # - conference
@@ -89,10 +97,11 @@ category: workshop
 speakers:
   -
     name: Mirco Richter
-    title: Mathematician and Cofounder of zkSystems.io
+    title: Mathematician and Cofounder
     company: zkSystems.io
-    companyURL: http://zksystems.io/
-    bio: Mirco is a mathematician with academic background who co-founded zkSystems.io, a scalable layer-one DLT.
+    companyURL: http://zksystems.io
+    bio: Mirco is a mathematician with academic background who co-founded
+      zkSystems.io, a scalable layer-one DLT.
 
 # Sample:
 # -
