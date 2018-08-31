@@ -16,6 +16,9 @@ synopsis:
   -
     We will kick off with the presentation by Andrey Sobol on the topic
       ‘Randomness in POS blockchains’.
+  -
+    Afterwards, Sergey Korostelyov will shed some light on how blockchain
+      can help build decentralized AI systems.
 
 date: 2018-09-05
 endDate: 2018-09-05
@@ -47,6 +50,18 @@ speakers:
       distributed technologies, artificial intelligence and cryptography. He
       also holds expertise in Game Theory, Austrian Theory on Business Cycle,
       and Decentralization Law.
+  -
+    name: Sergey Korostelyov
+    title: Researcher and developer
+    company: Pandora Boxchain
+    companyURL: https://pandoraboxchain.ai/
+    twitter:
+    website:
+    bio: Sergey Korostelyov is a researcher and developer at Pandora Boxchain,
+      co-author of pynode computing kernels on Ethereum based PoCW consensus,
+      blockchain and machine learning expert. Sergey has more than 10 years of
+      experience in software architecture design and development focused on
+      building complex enterprise systems.
 
 ---
 <!-- ### DON'T MAKE CHANGES BELOW THIS LINE! ### -->
