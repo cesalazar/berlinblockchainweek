@@ -32,8 +32,9 @@ synopsis:
       newcomers, builders and longtime hodlers from all over the world together
       in the heart of Berlin.
   -
-    Featuring attendees from traditional industry, founders of blockchain projects, media and partners
-      of top tier funds from Asia, Europe and the US.
+    Featuring attendees from traditional industry, founders of blockchain
+      projects, media and partners of top tier funds from Asia, Europe and the
+      US.
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
