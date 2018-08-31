@@ -79,7 +79,7 @@ time: '11:00'
 endTime: '13:00'
 
 # The URL where to akquire the tickets. Can be left empty.
-tickets:
+tickets: https://www.meetup.com/Blockchain-peaq-and-beyond-Berlin/events/254267891/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
