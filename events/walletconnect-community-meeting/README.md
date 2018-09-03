@@ -52,7 +52,7 @@ synopsis:
   -
     This is a community event to informally meet and talk about WalletConnect standard
   -
-    WalletConnect is an open source standard to connect desktop dapps to mobile wallets. If you are interested to know more about WalletConnect or to simply meet and hang out with the community. Join us for a drink and chat more web3 user experience
+    WalletConnect is an open source standard to connect desktop dapps to mobile wallets. If you are interested to know more about WalletConnect or to simply meet and hang out with the community. Join us for a drink and chat about web3 user experience
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -69,7 +69,7 @@ time: '17:00'
 endTime: '19:00'
 
 # The URL where to acquire the tickets. Can be left empty.
-tickets: 
+tickets: https://www.eventbrite.com/e/walletconnect-community-meetup-tickets-49814736217
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
