@@ -7,11 +7,7 @@
 
 <template>
   <div ref="wrapper">
-    <HeroInternalPage
-      title="Calendar"
-      link="https://github.com/cesalazar/berlinblockchainweek/issues/new"
-      linkText="Submit an Event"
-    />
+    <HeroInternalPage title="Calendar" />
 
     <table>
       <thead>

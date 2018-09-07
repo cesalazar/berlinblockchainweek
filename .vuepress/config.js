@@ -18,11 +18,11 @@ module.exports = {
       {
         text: 'Calendar',
         link: '/calendar/'
-      },
-      {
-        text: 'Submit an Event',
-        link: 'https://github.com/cesalazar/berlinblockchainweek/issues/new'
       }
+      // {
+      //   text: 'Submit an Event',
+      //   link: 'https://github.com/cesalazar/berlinblockchainweek/issues/new'
+      // }
     ],
     logo: 'logo.png',
     // Assumes GitHub. Can also be a full GitLab url.
