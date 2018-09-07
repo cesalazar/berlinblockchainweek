@@ -6,11 +6,7 @@
 
 <template>
   <div class="events--container">
-    <HeroInternalPage
-      title="Events"
-      link="https://github.com/cesalazar/berlinblockchainweek/issues/new"
-      linkText="Submit an Event"
-    />
+    <HeroInternalPage title="Events" />
     <div class="filters">
       <div>
         <label>
