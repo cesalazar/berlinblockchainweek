@@ -1,3 +1,10 @@
+```
+
+No new submission accepted.
+Enjoy Berlin Blockchain Week 2018!
+
+```
+
 # Berlin Blockchain Week
 
 Berlin Blockchain Week is a community-organized initiative. We have no single
