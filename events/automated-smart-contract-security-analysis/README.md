@@ -75,7 +75,7 @@ time: '13:00'
 endTime: '19:00'
 
 # The URL where to akquire the tickets. Can be left empty.
-tickets: https://docs.google.com/forms/d/e/1FAIpQLScId2v45NHt2-Dd4lPpq3oXKyaEZI0XJsvCtpoWcnqIEN9Jfw/viewform
+tickets: https://docs.google.com/forms/d/e/1FAIpQLScek6mwTCRc5-9AiBF8PgZiq7U1l4maXuym4nMqhyyI1RT1dQ/viewform
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
