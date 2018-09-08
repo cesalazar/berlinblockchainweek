@@ -26,7 +26,7 @@ title: 'Crypto4Good #3: Blockchain for Financial Inclusion - Including the
 description: When it comes to financial inclusion, major challenges include
   poor financial and digital literacy as well as the lack of identification
   documents. However, DLT can also be leveraged to restructure control over
-  personal data, such as identification and empower users to participate in
+  personal data, such as identification, and empower users to participate in
   financial markets.
 
 
@@ -45,11 +45,12 @@ name: 'Crypto4Good #3: Blockchain for Financial Inclusion - Including the
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    DSTOQ, GIZ Blockchain Lab, and Jolocom are partnering for the 3rd
+    GIZ Blockchain Lab, Tempo, DSTOQ and and Jolocom are partnering for the 3rd
       Crypto4Good panel discussion, featuring experts from both the tech world
       and the international development sector. This event will aim to define
       practical answers to a global issue, financial exclusion, and uncover
       how DLT (distributed ledger technology) could bring positive change.
+      
   -
     Around two billion people worldwide do not have access to the financial
       services that meet their needs. Whether as individuals or small and
@@ -60,16 +61,18 @@ synopsis:
       tamper-proof infrastructure, with intermediary-free remittances,
       credit-history for micro-loans or innovative and accessible
       tokenized-assets investments.
+      
   -
     Though the features of blockchain-based solutions might sound very
       promising, there are several issues to be tackled. When it comes to
       financial inclusion, major challenges include poor financial and digital
       literacy as well as the lack of identification documents. However, DLT
       can also be leveraged to restructure control over personal data, such as
-      identification and empower users to participate in financial markets.
+      identification, and empower users to participate in financial markets.
+      
   -
-    This event will be the occasion to discuss both the opportunities the
-      technology offers and its possible challenges while assessing the
+    This event will be an occasion to discuss both the opportunities the
+      technology offers and its possible challenges, while assessing the
       conditions in which these solutions could be implemented and what might
       hinder their widespread adoption.
 
@@ -85,7 +88,7 @@ endDate: 2018-09-10
 # Example: '18:00'
 time: '18:00'
 # Time when the event ends. Can be left empty.
-endTime: '22:00'
+endTime: '21:00'
 
 # The URL where to acquire the tickets. Can be left empty.
 tickets: https://www.meetup.com/DSTOQ-Exchange-Without-Borders/events/253975157/
@@ -148,19 +151,45 @@ speakers:
     name: Anthony Barker
     title: CTO
     company: Tempo
-    companyURL:
+    companyURL: https://tempo.eu.com/
     twitter:
-    website:
-    bio:
+    website: https://tempo.eu.com/
+    bio: Blockchain visionary, entrepreneur and crypto influencer with
+      more than 20 years of experience in the field of IT, banking,
+      trading and fintech.
+      
   -
     name: Kai Wagner
     title: Business Development
     company: Jolocom
-    companyURL:
+    companyURL: http://jolocom.io/
+    twitter: https://twitter.com/getjolocom
+    website: http://jolocom.io/
+    bio: Sustainability scientist with a background in political science
+      & public administration. Involved in blockchain for identity management
+      since 2016.
+      
+  -
+    name: Franz von Weizsäcker
+    title: Head of GIZ Blockchain Lab
+    company: GIZ Blockchain Lab
+    companyURL: http://giz.de/
     twitter:
-    website:
-    bio:
+    website: http://giz.de/
+    bio: Advisor to several governments on digital and innovation policies
+      including Germany, Palestine and Saudi Arabia. Previously worked as management
+      consultant in the telecommunications industry.
 
+  -
+    name: Salomé Eggler (Moderator)
+    title: Blockchain Governance Expert
+    company: GIZ Blockchain Lab
+    companyURL: http://giz.de/
+    twitter:
+    website: http://giz.de/
+    bio: Worked for the United Nations Department of Economic and Social Affairs and
+      UNHCR prior to joining the GIZ.
+      
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
 <!-- ### DON'T MAKE CHANGES BELOW THIS LINE! ### -->
