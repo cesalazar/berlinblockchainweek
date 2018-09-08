@@ -38,7 +38,7 @@ module.exports = {
     // if your docs are in a specific branch (defaults to 'master'):
     docsBranch: 'master',
     // defaults to false, set to true to enable
-    editLinks: true
+    editLinks: false
     // custom text for edit link. Defaults to "Edit this page"
     // editLinkText: 'Help us improve this page!'
   }
