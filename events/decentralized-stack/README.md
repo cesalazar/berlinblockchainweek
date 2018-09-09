@@ -41,9 +41,9 @@ name: Decentralized Stack. Developers Meetup
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    This event is targeted at technical discussions around the decentralized
-      protocols and Dapp development. Projects will share the latest dev
-      insights, and answer the most asked engineering questions.
+    This event is a tech breakdown from 4 projects: Fluence, Ocean Protocol, Streamr, NuCypher.
+    The teams will present their experience in data processing infrastructure; proxy re-encryption scheme, network code, and the latest research on Fully Homomorphic Encryption, which is intended to make encrypted data even more usable; incentivisation of public intelligence networks for the commons; technology stack for Dapps' mass adoption.  
+    This event is targeted at technical discussions around the decentralized protocols and Dapp development. Projects will share the latest dev insights, and answer the most asked engineering questions.
   -
     'During the panel "Decentralized tech stack, are we there yet?" we will
       discuss:'
@@ -51,11 +51,11 @@ synopsis:
     list:
     - Building decentralized infrastructure
     - Dapps' consumer adoption obstacles and challenges
-    - Decentralized data & global regulations (GDPR, HIPPA)
+    - Decentralized data & global regulations (GDPR, HIPAA)
     - 'Technology adoption challenges: building developer communities'
     - Future of decentralised data economy
   -
-    The Panel discussion is hosted & moderated by Jack Platts, Web3 Foundation.
+    The Panel discussion is hosted & moderated by Jack Platts, Web3 Foundation. Peter Czaban is joining the panel as well.
   -
     'Projects presenting: Fluence, Streamr, NuCypher, Ocean Protocol.'
   -
@@ -96,7 +96,7 @@ address: Engeldamm 60, 10179 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: panel
+category: event
 
 
 #################
