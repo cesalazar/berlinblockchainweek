@@ -12,7 +12,7 @@ is the backbone of the ecosystem. We invite projects, individuals and anyone
 interested in fruitful and educational discussions to join us.
 
 This repository contains the code for the website, which can be reached at
-[blockchainweek.berlin](https://blockchainweek.fr/).
+[blockchainweek.fr](https://blockchainweek.fr/).
 
 ## Contributing
 
