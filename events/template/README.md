@@ -11,7 +11,7 @@
 # and edit the README.md file inside that new folder just created.
 #
 # The name of the folder will be used on the URL. Example:
-# https://blockchainweek.berlin/my-event-name
+# https://blockchainweek.fr/my-event-name
 #
 # _Don't_ rename the new file (README.md), only edit its content.
 # _Don't_ remove any text before the colons at the beginning of each line,
@@ -61,10 +61,10 @@ synopsis:
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
-date: 2018-09-05
+date: 2019-03-01
 # The date when the event ends. Can be left empty or set to the same day the
 # event starts.
-endDate: 2018-09-05
+endDate: 2019-03-01
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
