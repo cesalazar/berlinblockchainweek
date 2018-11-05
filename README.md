@@ -3,8 +3,8 @@ home: true
 actionText: View the Events →
 actionLink: /events/
 
-description: Paris Blockchain Week(s) is a community-organized initiative. We
-  have no single owner. It is an agnostic movement based on the premise that
+description: Paris Blockchain Week(s) is a community-organized initiative.
+  It is an agnostic movement based on the premise that
   self-organization is the backbone of the ecosystem. We invite projects,
   individuals and anyone interested in fruitful and educational discussions to
   join us.
