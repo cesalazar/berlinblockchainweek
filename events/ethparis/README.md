@@ -4,23 +4,21 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: 'Sustainable Everything - When blockchain, supply chain, and inclusive
-financing come together'
+title: 'ETH Paris - Ethereum Hackathon'
 
 # Description for this event. This will be rendered as a <meta> tag in the HTML, 
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard
-  are hosting an evening of cross-pollination and discussion around the
-  impact of blockchain technology in supply chains.
+description: Part of ETH Global hackathon series, and after taking place in the 
+  US, India, Argentina and Germany, the 6th Hackathon of ETH Global is finally coming to France. ETH Paris is committed to inclusion, diversity, education, and above all, to the Ethereum Community improvement.
+
 
 #####################
 ### EVENT DETAILS ###
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'Sustainable Everything - When blockchain, supply chain, and inclusive
-  financing come together'
+name: 'ETH Paris - Ethereum Hackathon'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -29,41 +27,53 @@ name: 'Sustainable Everything - When blockchain, supply chain, and inclusive
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    'In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard are
-      hosting an evening of cross-pollination and discussion around the impact
-      of blockchain technology in supply chains. To what extent is blockchain
-      innovation a driver for sustainability and inclusive financing in
-      international trade? Blockchain not only allows more secure and
-      transparent transactions, immutable traceability and reputation, but also
-      provides the infrastructure on top of which to build inclusive financial
-      instruments. We have invited progressive companies and institutions
-      working on the frontiers of their fields: Provenance, Einhorn, GIZ
-      (Blockchain Lab) and Token Economy, for an evening of vibrant
-      discussion.'
+    6th Hackathon of the ETH Global series.
+  -
+    ETH Paris is committed to
+      inclusion, diversity, education, and above all, to the Ethereum Community
+      improvement.
+  -
+    'Some tickets will be available for free for things such as Day 1:
+      conferences, or the Day 2 workshops. We will release separate applications
+      in due time.'
+  -
+    Volunteers, Speakers, Sponsors and Hackers will have access to all events
+      (although they will need to sign up for some due to capacity 
+      restrictions).
+ 
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
-date: 2018-09-06
+date: 2019-03-08
+# Leave this field if your event is held only during one day.
+endDate: 2018-03-10
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '18:30'
-endTime: '21:30'
+time: '18:00'
+#endTime: '23:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: https://www.eventbrite.com/e/sustainable-everything-when-blockchain-supply-chain-and-inclusive-financing-come-together-tickets-48687181671
+tickets: https://ethparis.com/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Blue Yard
+venue: 
+  -
+    Paris
+  -
+    CNAM
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Grimmstraße 13, 10967 Berlin, Germany
+address: 
+  -
+    292 Rue Saint-Martin
+    75003 Paris, France
 
 # The category of the event. Valid options:
 # - conference
@@ -72,7 +82,7 @@ address: Grimmstraße 13, 10967 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: panel
+category: hackathon 
 
 
 #################
