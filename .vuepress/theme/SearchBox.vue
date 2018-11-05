@@ -166,7 +166,7 @@ $border-radius = 10px
       padding-left 32px
       color #fff
       background-color #000
-      border-color #f1003e
+      border-color #0000ff
       cursor auto
   .suggestions
     background #000

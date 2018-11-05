@@ -28,7 +28,7 @@ export default {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
     },
     logo () {
-      return require('./../public/logo.png')
+      return require('./../public/eiffel-logo.png')
     }
   }
 }

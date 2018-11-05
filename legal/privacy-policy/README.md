@@ -4,13 +4,13 @@ title: Privacy Policy
 
 # Privacy Policy
 
-The blockchainweek.berlin website provides information about Berlin Blockchain
-Week , a series of independent events organized by individuals, in order to
+The blockchainweek.fr website provides information about Paris Blockchain
+Week, a series of independent events organized by individuals, in order to
 promote blockchain technology.
 
 This page is used to inform website visitors regarding our policies with the
 collection, use, and disclosure of Personal Information if anyone decided to
-use our Service, the berlinblockchainweek.com website.
+use our Service, the blockchainweek.fr website.
 
 ## Information Collection and Use
 
@@ -18,7 +18,7 @@ We don’t store your data, period.
 
 ## Cookies
 
-blockchainweek.berlin does not use cookies to collect information.
+blockchainweek.fr does not use cookies to collect information.
 
 ## Links to Other Sites
 

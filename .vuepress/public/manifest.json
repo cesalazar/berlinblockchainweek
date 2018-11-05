@@ -1,14 +1,14 @@
 {
-  "name": "Berlin Blockchain Week",
-  "short_name": "BERBlockWeek",
+  "name": "Paris Blockchain Week(s)",
+  "short_name": "BlockWeekFR",
   "icons": [
     {
-      "src": "/logo-192x192.png",
+      "src": "/eiffel-logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/logo-512x512.png",
+      "src": "/eiffel-logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -16,5 +16,5 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#F1003E"
+  "theme_color": "#0000ff"
 }

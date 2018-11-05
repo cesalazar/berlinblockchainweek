@@ -1,12 +1,12 @@
 module.exports = {
   // Use the name of the repo if the content is served from GitHub Pages
-  // base: '/berlinblockchainweek/',
+  // base: '/blockchainweek.fr/',
   // Leave the base as '/' if serving the content from a custom domain
   base: '/',
-  title: 'Berlin Blockchain Week',
+  title: 'Paris Blockchain Week',
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/eiffel-logo.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   themeConfig: {
@@ -21,12 +21,12 @@ module.exports = {
       }
       // {
       //   text: 'Submit an Event',
-      //   link: 'https://github.com/cesalazar/berlinblockchainweek/issues/new'
+      //   link: 'https://github.com/nsexer/blockchainweek.fr/issues/new'
       // }
     ],
-    logo: 'logo.png',
+    logo: 'eiffel-logo.png',
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'cesalazar/berlinblockchainweek',
+    repo: 'nsexer/blockchainweek.fr',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     // repoLabel: 'Contribute!',
