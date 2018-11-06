@@ -79,8 +79,8 @@ address:
 # - conference
 # - event
 # - hackaton
-# - panel
 # - workshop
+# - drink
 # Use _only_ one, and don't capitalize.
 category: hackathon 
 

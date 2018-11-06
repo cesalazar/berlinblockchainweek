@@ -18,15 +18,15 @@ module.exports = {
       {
         text: 'Calendar',
         link: '/calendar/'
+      },
+      {
+        text: 'Submit an Event',
+        link: 'https://nathansexer.typeform.com/to/j5Ila2'
       }
-      // {
-      //   text: 'Submit an Event',
-      //   link: 'https://github.com/nsexer/blockchainweek.fr/issues/new'
-      // }
     ],
     logo: 'eiffel-logo.png',
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'nsexer/blockchainweek.fr',
+    // repo: 'nsexer/blockchainweek.fr',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     // repoLabel: 'Contribute!',

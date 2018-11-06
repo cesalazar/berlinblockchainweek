@@ -41,17 +41,9 @@ footer:
 
 <hr /><br />
 
-Paris Blockchain Week(s) is a community-organized initiative. We have no single
-owner. It is an agnostic movement based on the premise that self-organization
-is the backbone of the ecosystem. We invite projects, individuals and anyone
-interested in fruitful and educational discussions to join us.
+Paris Blockchain Week is a Blockchain tech-focused initiative organized voluntarily by the community.
 
-Paris Blockchain Week(s) is committed to reduce the noise from the market and
-focus on education, in order to push mass adoption via providing first hand
-information about the industry.
+After similar editions occured aml over the world, this French edition will showcase all the brightest minds and latest improvements with flagship events such as _[EthCC]_ or _[BreakingBitcoin]_.
 
-Our concept is simple: keep it educational, try to be as cost friendly for the
-community as you can (bearing in mind, we all need to pay bills - so not all
-events are free!) and to create a welcoming environment, so interested parties
-at any knowledge level feel comfortable to join.
+The goal is to bring blockchain communities together and foster communication within and without crypto communities.
 <br />

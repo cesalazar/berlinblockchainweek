@@ -50,12 +50,9 @@ name: EthCC — Ethereum Community Conference
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    Test
+    'EthCC (Ethereum Community Conference) is a conference that will take place in Paris at the Conservatoire Nationale des Arts et Métiers (CNAM) on the 8th to 10th March 2018.'
   -
-    Test 1212
-      This is a test
-  -
-    This is the test paragraph. Add more as needed...
+    'It features: 4 amphitheaters Multiple streams : Scalability, Anonymity, Development tools, Governance Compliance... Small workshops for developers & researchers Networking and experience sharing'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -89,8 +86,8 @@ address: 292 Rue Saint-Martin, Paris 75001
 # - conference
 # - event
 # - hackathon
-# - panel
 # - workshop
+# - drink
 # Use _only_ one, and don't capitalize.
 category: conference
 

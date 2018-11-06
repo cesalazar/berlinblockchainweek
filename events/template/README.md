@@ -91,8 +91,8 @@ address: Skalitzer Strasse 85-86, 10997 Berlin, Germany
 # - conference
 # - event
 # - hackathon
-# - panel
 # - workshop
+# - drink
 # Use _only_ one, and don't capitalize.
 category: event
 
