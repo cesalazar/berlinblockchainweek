@@ -3,7 +3,7 @@ home: true
 actionText: View the Events →
 actionLink: /events/
 
-description: Paris Blockchain Week(s) is a community-organized initiative.
+description: Paris Blockchain Week is a community-organized initiative.
   It is an agnostic movement based on the premise that
   self-organization is the backbone of the ecosystem. We invite projects,
   individuals and anyone interested in fruitful and educational discussions to
@@ -43,7 +43,7 @@ footer:
 
 Paris Blockchain Week is a Blockchain tech-focused initiative organized voluntarily by the community.
 
-After similar editions occured aml over the world, this French edition will showcase all the brightest minds and latest improvements with flagship events such as _[EthCC]_ or _[BreakingBitcoin]_.
+After similar editions occured all over the world, this one will take place in France, gathering all the brightest minds and latest improvements with flagship events such as _[EthCC]_ or _[BreakingBitcoin]_.
 
 The goal is to bring blockchain communities together and foster communication within and without crypto communities.
 <br />

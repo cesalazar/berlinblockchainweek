@@ -16,5 +16,8 @@
   "devDependencies": {
     "debounce": "^1.2.0",
     "vuepress": "^0.12.0"
+  },
+  "dependencies": {
+    "surge": "^0.20.1"
   }
 }
