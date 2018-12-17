@@ -32,4 +32,4 @@ third-party sites or services.
 ## Contact Us
 
 If you have any questions or suggestions about our Privacy Policy, do not
-hesitate to contact us.
+hesitate to contact us (ASSETH).

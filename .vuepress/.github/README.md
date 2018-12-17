@@ -1,6 +1,6 @@
-# Paris Blockchain Week - Live Website
+# Community Blockchain Week - Live Website
 
-This branch is the live website of the Paris Blockchain Week, which is
+This branch is the live website of the Community Blockchain Week, which is
 reachable at [blockchainweek.fr] (https://blockchainweek.fr). *Do not*
 try to edit the content on this branch, or you're going to have a bad time.
 

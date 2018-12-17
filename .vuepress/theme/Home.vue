@@ -16,7 +16,7 @@
     </div>
     <div class="home_about">
       <div class="home-wrap">
-        <h2 class="home_about-title"><b>About</b> Paris Blockchain Week</h2>
+        <h2 class="home_about-title"><b>About</b> the Community Blockchain Week</h2>
         <Content custom/>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="home-wrap">
         <div class="features" v-if="data.features && data.features.length">
           <div class="title">
-            <h2><b>Venues</b> of Paris Blockchain Week</h2>
+            <h2><b>Venues</b> of the Community Blockchain Week</h2>
           </div>
           <div class="feature" v-for="feature in data.features">
             <h2>{{ feature.title }}</h2>
@@ -100,7 +100,7 @@ export default {
       border-bottom none
       margin 0 0 38px 0
   &_features
-    background url('~/features-bg.jpg')
+    background url('~/main-bg.jpg')
     background-attachment fixed
     background-size cover
     background-position left top
@@ -166,9 +166,12 @@ export default {
       padding-bottom 0
       color #fff
       margin 15px 0
+      text-shadow: 2px 2px #000;
     p
       color #fff
       margin 15px 0
+      text-shadow: 1px 1px #000;
+      
   .footer
     padding 0.9rem 3.9rem
     background #000

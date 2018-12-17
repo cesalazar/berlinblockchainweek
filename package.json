@@ -11,7 +11,8 @@
   "homepage": "https://cesalazar.github.com/berlinblockchainweek",
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build"
+    "build": "vuepress build",
+    "deploy": "aws s3 sync /Users/nsexer/Coding/Websites/blockchainweek.fr/.vuepress/dist s3://blockchainweek.fr"
   },
   "devDependencies": {
     "debounce": "^1.2.0",

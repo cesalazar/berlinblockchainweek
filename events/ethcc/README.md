@@ -52,7 +52,7 @@ synopsis:
   -
     'EthCC (Ethereum Community Conference) is a conference that will take place in Paris at the Conservatoire Nationale des Arts et Métiers (CNAM) on the 8th to 10th March 2018.'
   -
-    'It features: 4 amphitheaters Multiple streams : Scalability, Anonymity, Development tools, Governance Compliance... Small workshops for developers & researchers Networking and experience sharing'
+    'It features: 4 amphitheaters, multiple streams, small workshops for developers & researchers, networking and experience sharing'
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
@@ -69,11 +69,11 @@ time: '08:00'
 endTime: '22:00'
 
 # The URL where to akquire the tickets. Can be left empty.
-tickets: https://eventbrite.com/my-event
+tickets: https://ethcc.io/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0
+price: TBD
 
 # The name of the venue where the event will be held. Can be left empty.
 venue: CNAM
@@ -102,55 +102,46 @@ category: conference
 # Add or remove speakers as needed, but remember the hyphen before each entry.
 speakers:
   -
-    # Required.
-    name: Nathan S.
+    # # Required.
+    name: Nathan Sexer
 
-    # Can be left empty.
-    title: Coordinator
+    # # Can be left empty.
+    #title: Title?
 
-    # Can be left empty.
-    company: Blockchain.fr
+    # # Can be left empty.
+    company: Blockchainweek.fr
 
-    # The full URL, including http(s)://. Can be left empty.
-    companyURL: https://blockchain.fr
+    # # The full URL, including http(s)://. Can be left empty.
+    companyURL: https://ethcc.io/
 
-    # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
-    # Can be left empty.
+    # # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
+    # # Can be left empty.
     twitter: nathansexer
 
-    # The full URL, including http(s)://. Can be left empty.
+    # # The full URL, including http(s)://. Can be left empty.
     website: https://blockchainweek.fr
 
-    # The bio is a single line.
-    # Linebreaks are ignored, but they _must_ start with two spaces.
-    bio: Hi.
-      This is Nathan. 
+    # # The bio is a single line.
+    # # Linebreaks are ignored, but they _must_ start with two spaces.
+    #bio: Hi.
+    #   This is Nathan. 
   -
     name: Jerome De Tychey
-    title: President
+    #title: President
     company: Asseth
     companyURL: https://asseth.fr
     twitter: jdetychey
-    website: https://jdetychey.com
-    bio: Jerome De Tychey is Jerome,
-      known as Jerome, he co-founded Asseth and leads Asseth with other asseths.
+    #website: https://jdetychey.com
+    #bio: Jerome De Tychey is Jerome,
+    #  known as Jerome, he co-founded Asseth and leads Asseth with other asseths.
   -
     name: Simon Polrot
-    title: Founder
+    #title: Founder
     company: Ethereum-france
     companyURL: https://www.ethereum-france.com
     twitter: spolrot
-    website: http://simonpolrot.com
-    bio: Co-founder Ethereum-france, CEO of Ethereum, soon head of blockchains.
-  -
-    name: Jerome De Tychey
-    title: President
-    company: Asseth
-    companyURL: https://asseth.fr
-    twitter: jdetychey
-    website: https://jdetychey.com
-    bio: Jerome De Tychey is Jerome,
-      known as Jerome, he co-founded Asseth and leads Asseth with other asseths.
+    #website: http://simonpolrot.com
+    #bio: Ethereum-france Founder, CEO of Ethereum, soon head of blockchains.
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---

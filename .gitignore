@@ -2,3 +2,4 @@
 # Use `git add -f .vuepress/dist` and commit before pushing to the repo.
 .vuepress/dist
 node_modules/
+instructions.txt
