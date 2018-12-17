@@ -100,11 +100,12 @@ export default {
       border-bottom none
       margin 0 0 38px 0
   &_features
-    background url('~/main-bg.jpg')
+    background linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/main-bg.jpg')
     background-attachment fixed
     background-size cover
     background-position left top
     background-repeat no-repeat
+    
     color #fff
     .home-wrap
       padding 80px 1.5rem 55px
@@ -166,11 +167,9 @@ export default {
       padding-bottom 0
       color #fff
       margin 15px 0
-      text-shadow: 2px 2px #000;
     p
       color #fff
       margin 15px 0
-      text-shadow: 1px 1px #000;
       
   .footer
     padding 0.9rem 3.9rem
