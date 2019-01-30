@@ -22,7 +22,7 @@ features:
   details: Founded in 2014 in Paris, Coinhouse (formerly La Maison du Bitcoin) is a pioneer in cryptoassets investments. Both an online platform and a brick-and-mortar location, they are a trusted partner for individuals and institutional investors looking to analyse, acquire, sell, and securely store cryptoassets.
 
 - title: Le Square Paris
-  details: Le Square Paris est une association loi 1901 qui regroupe des entreprises et des associations, dans le but d’explorer de nouvelles offres de mobilités et de nouvelles manières de travailler.
+  details: “Le Square Paris” is an association that gathers companies and groups in order to explore the future of work and mobility.
 
 footer:
   -
