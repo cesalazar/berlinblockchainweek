@@ -103,45 +103,36 @@ category: conference
 speakers:
   -
     # # Required.
-    name: Nathan Sexer
+    #name: Nathan Sexer
 
     # # Can be left empty.
     #title: Title?
 
     # # Can be left empty.
-    company: Blockchainweek.fr
+    #company: Blockchainweek.fr
 
     # # The full URL, including http(s)://. Can be left empty.
-    companyURL: https://ethcc.io/
+    #companyURL: https://ethcc.io/
 
     # # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
     # # Can be left empty.
-    twitter: nathansexer
+    #twitter: nathansexer
 
     # # The full URL, including http(s)://. Can be left empty.
-    website: https://blockchainweek.fr
+    #website: https://blockchainweek.fr
 
     # # The bio is a single line.
     # # Linebreaks are ignored, but they _must_ start with two spaces.
     #bio: Hi.
     #   This is Nathan. 
-  -
-    name: Jerome De Tychey
+    name: See all speakers
     #title: President
-    company: Asseth
-    companyURL: https://asseth.fr
-    twitter: jdetychey
+    company: HERE
+    companyURL: http://ethcc.io
+    twitter: ComBlockWeek
     #website: https://jdetychey.com
     #bio: Jerome De Tychey is Jerome,
     #  known as Jerome, he co-founded Asseth and leads Asseth with other asseths.
-  -
-    name: Simon Polrot
-    #title: Founder
-    company: Ethereum-france
-    companyURL: https://www.ethereum-france.com
-    twitter: spolrot
-    #website: http://simonpolrot.com
-    #bio: Ethereum-france Founder, CEO of Ethereum, soon head of blockchains.
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
