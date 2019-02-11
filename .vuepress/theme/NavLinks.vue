@@ -127,8 +127,8 @@ export default {
   .nav-links a
     &:hover, &.router-link-active
       color inherit
-      border-bottom 1px solid #0000ff
+      border-bottom 1px solid #70d0e2
   // .nav-item > a
   //   &:hover, &.router-link-active
-  //     border-bottom 1px solid #0000ff
+  //     border-bottom 1px solid #70d0e2
 </style>

@@ -36,7 +36,7 @@ footer:
 #    text: Terms and conditions
 ---
 
-<hr /><br />
+<hr /><br /> 
 
 The Community Blockchain Week is a blockchain tech-focused initiative organized voluntarily by the community.
 
