@@ -22,6 +22,10 @@ module.exports = {
       {
         text: 'Submit an Event',
         link: 'https://nathansexer.typeform.com/to/j5Ila2'
+      },
+      {
+        text: 'Paris Crypto Guide',
+        link: 'https://nsexer.gitbooks.io/paris-crypto-guide/content/'
       }
     ],
     logo: 'eiffel-logo.png',
