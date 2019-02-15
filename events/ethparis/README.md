@@ -52,7 +52,8 @@ endDate: 2018-03-10
 # _Only_ the starting time!
 # Example: '18:00'
 time: '18:00'
-#endTime: '23:00'
+
+endTime: '23:00'
 
 # The URL where to adquire the tickets. Can be left empty.
 tickets: https://ethparis.com/

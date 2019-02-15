@@ -19,6 +19,7 @@
     "vuepress": "^0.12.0"
   },
   "dependencies": {
+    "moment": "^2.24.0",
     "surge": "^0.20.1"
   }
 }
