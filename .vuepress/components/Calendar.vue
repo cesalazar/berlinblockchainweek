@@ -7,19 +7,19 @@
 
 <template>
   <div ref="wrapper">
-    <HeroInternalPage title="Calendar" />
+    <HeroInternalPage title="Calendar - March 2019" />
 
     <table>
       <thead>
         <tr>
-          <th class="hour" @click="toggleHeadersLock">
+          <!-- <th class="hour" @click="toggleHeadersLock">
             <div class="headers--lock" v-if="lockHeaders">
               <svg height="584.354" viewBox="80.994 1 423.365 584.354" width="423.365" xmlns="http://www.w3.org/2000/svg"><path d="m463.992 271.55c49.913-69.839 40.488-167.836-24.772-226.628-70.127-63.177-178.581-57.525-241.761 12.605l-56.459 62.67q44.222 39.67 43.737 39.39l56.455-62.666c41.455-46.015 112.615-49.724 158.629-8.27 46.015 41.453 49.729 112.616 8.274 158.632l-7.16 7.947c-31.314-6.585-70.217-12.563-108.256-12.563-87.065 0-172.554 29.266-173.631 29.624-9.257 3.087-16.775 5.762-23.657 8.415-8.207 3.164-14.397 12.259-14.397 21.157v224.641c0 8.837 6.15 17.94 14.305 21.172 63.097 25.003 129.505 37.678 197.379 37.678s134.282-12.678 197.382-37.681c8.152-3.231 14.299-12.332 14.299-21.169v-224.641c0-8.898-6.189-17.993-14.4-21.16-6.885-2.653-14.402-5.328-23.652-8.415-.091-.03-.809-.268-2.315-.738zm-217.939 98.731c0-25.769 20.875-46.622 46.623-46.622 25.746 0 46.621 20.851 46.621 46.622 0 17.075-9.629 31.371-23.311 39.475v77.081c0 12.886-10.426 23.311-23.311 23.311-12.886 0-23.311-10.425-23.311-23.311v-77.081c-13.681-8.104-23.311-22.4-23.311-39.475z" fill-rule="evenodd"/></svg>
             </div>
             <div class="headers--lock" v-else>
               <svg height="585.354" viewBox="80.994 0 423.365 585.354" width="423.365" xmlns="http://www.w3.org/2000/svg"><path d="m292.679 0c-94.389 0-171.183 76.791-171.183 171.183v97.767c0 1.111-1.371 2.983-2.448 3.341-9.257 3.087-16.775 5.762-23.657 8.415-8.207 3.164-14.397 12.259-14.397 21.157v224.641c0 8.837 6.15 17.94 14.305 21.172 63.097 25.003 129.505 37.678 197.379 37.678s134.282-12.678 197.382-37.681c8.152-3.231 14.299-12.332 14.299-21.169v-224.641c0-8.898-6.189-17.993-14.4-21.16-6.885-2.653-14.402-5.328-23.652-8.415-1.074-.358-2.445-2.231-2.445-3.342v-97.766c-.005-94.389-76.794-171.18-171.183-171.18zm-46.626 370.281c0-25.769 20.875-46.622 46.623-46.622 25.746 0 46.621 20.851 46.621 46.622 0 17.075-9.629 31.371-23.311 39.475v77.081c0 12.886-10.426 23.311-23.311 23.311-12.886 0-23.311-10.425-23.311-23.311v-77.081c-13.681-8.104-23.311-22.4-23.311-39.475zm158.947-199.101v84.355c-36.834-7.926-74.623-11.94-112.306-11.943-37.666 0-75.447 4.015-112.338 11.934v-84.346c0-61.935 50.386-112.32 112.32-112.32 61.933-.001 112.324 50.385 112.324 112.32z"/></svg>
             </div>
-          </th>
+          </th> -->
           <th v-for="day in days" :key="day.number">
             <span class="day">{{ day.number }}</span>
             <span class="long">{{ day.longName }}</span>
@@ -31,12 +31,13 @@
       <tbody v-for="t in lastHour" v-if="t >= firstHour">
         <tr>
           <!-- Hour column -->
-          <td class="hour">
-            <span>{{ t < 10 ? '0' + t : t }}:00</span>
-          </td>
+          <!-- <td class="hour">
+            <span></span>
+            <span>{{ t < 10 ? '0' + t : t }}h</span>
+          </td> -->
 
-          <!-- Each day column -->
-          <td v-for="d in firstDay + 13" v-if="d >= firstDay">
+          <!-- Each day column-->
+          <td v-for="d in firstDay + 9" v-if="d >= firstDay">
             <div v-for="event in checkEvents(d, t)" v-if="event">
               <a :href="$withBase(event.path)">{{ event.name }}</a>
             </div>
@@ -48,15 +49,16 @@
 </template>
 
 <script>
-const debounce = require('debounce')
+  const debounce = require('debounce')
+  const moment  = require('moment' )
 
 export default {
   data: () => ({
-    // First calendar day of the event (March 1)
+    // First"calendar day of the event (March 1)
     firstDay: 1,
     // Hours without the leading zero nor trailing minutes
-    firstHour: 8,
-    lastHour: 23,
+    firstHour: 9,
+    lastHour: 9,
     dayNames: [
       'Friday',
       'Saturday',
@@ -68,14 +70,14 @@ export default {
       'Friday',
       'Saturday',
       'Sunday',
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
+      // 'Monday',
+      // 'Tuesday',
+      // 'Wednesday',
+      // 'Thursday',
     ],
     days: [],
     events: [],
-    lockHeaders: false
+    lockHeaders: true
   }),
 
   computed: {
@@ -120,24 +122,30 @@ export default {
         if (fm.name && fm.time && fm.name !== 'Sample Template') {
           let day = new Date(fm.date).getUTCDate()
           let hour = Number(fm.time.split(':')[0])
-          let duration = 1
-          let i = 0
+          let dayDuration = 1
+          // let eventDuration = 1
 
           // When the event spans more than one day
           if (fm.endDate && fm.endDate !== fm.date) {
             let endDay = new Date(fm.endDate).getUTCDate()
-            duration = (endDay - day) + 1
+            dayDuration = (endDay - day) + 1
           }
 
-          for (i; i < duration; i++) {
-            this.events.push({
-              path: path,
-              name: fm.name,
-              time: fm.time,
-              day: day + i,
-              hour
-            })
-          }
+
+          const eventDuration = (Number(fm.endTime.split(':')[0]) - Number(fm.time.split(':')[0]) + (dayDuration * 15))
+            for (let i = 0; i < dayDuration; i++){
+              for (let j = 0; j < eventDuration; j++) {
+                const hour = 9
+                // const day = (fm.time + eventDuration) > 24 || i + 1 
+                this.events.push({
+                  path: path,
+                  name: fm.name,
+                  time: fm.time,
+                  day: day +i,
+                  hour: hour +j,
+                })
+              }
+            }
         }
       })
     },
@@ -168,6 +176,7 @@ export default {
   },
 
   mounted () {
+    console.log(moment)
     this.setDays()
     this.getEvents()
     this.setWrapperHeight()
@@ -218,7 +227,7 @@ const resetHeadersPosition = function () {
 </script>
 
 <style scoped lang="stylus">
-@import '../theme/styles/config.styl'
+  @import '../theme/styles/config.styl'
 
 $headerColor = #000
 $borderColor = #222
@@ -356,4 +365,5 @@ table
             span
               writing-mode vertical-rl
               transform rotate(180deg)
+
 </style>
