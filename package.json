@@ -2,13 +2,13 @@
   "name": "berlinblockchainweek",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:cesalazar/berlinblockchainweek.git",
+  "repository": "git@github.com:HeyChristopher/berlinblockchainweek.git",
   "author": "Carlos E. Salazar <ce.salazar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cesalazar/berlinblockchainweek/issues"
+    "url": "https://github.com/HeyChristopher/berlinblockchainweek/issues"
   },
-  "homepage": "https://cesalazar.github.com/berlinblockchainweek",
+  "homepage": "https://HeyChristopher.github.com/berlinblockchainweek",
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build"

@@ -26,7 +26,7 @@ module.exports = {
     ],
     logo: 'logo.png',
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'cesalazar/berlinblockchainweek',
+    repo: 'HeyChristopher/berlinblockchainweek',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     // repoLabel: 'Contribute!',
