@@ -36,7 +36,7 @@
           </td>
 
           <!-- Each day column -->
-          <td v-for="d in firstDay + 6" v-if="d >= firstDay">
+          <td v-for="d in firstDay + 8" v-if="d >= firstDay">
             <div v-for="event in checkEvents(d, t)" v-if="event">
               <a :href="$withBase(event.path)">{{ event.name }}</a>
             </div>
@@ -53,18 +53,20 @@ const debounce = require('debounce')
 export default {
   data: () => ({
     // First calendar day of the event (September 5)
-    firstDay: 5,
+    firstDay: 20,
     // Hours without the leading zero nor trailing minutes
     firstHour: 8,
     lastHour: 22,
     dayNames: [
+      'Tuesday',
       'Wednesday',
       'Thursday',
       'Friday',
       'Saturday',
       'Sunday',
       'Monday',
-      'Tuesday'
+      'Tuesday',
+      'Wednesday'
     ],
     days: [],
     events: [],
