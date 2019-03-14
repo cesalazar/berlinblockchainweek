@@ -4,23 +4,20 @@
 ###########
 # The title of the page, displayed by the browser on the title of the window.
 # Ideally this is the same as the name of the event.
-title: 'Sustainable Everything - When blockchain, supply chain, and inclusive
-financing come together'
+title: 'DappCon'
 
-# Description for this event. This will be rendered as a <meta> tag in the HTML, 
+# Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard
-  are hosting an evening of cross-pollination and discussion around the
-  impact of blockchain technology in supply chains.
+description: A global developer conference for Ethereum Dapps & Infrastructure
+
 
 #####################
 ### EVENT DETAILS ###
 #####################
 # The name of the event you're creating.
 # Ideally this is the same as the title.
-name: 'Sustainable Everything - When blockchain, supply chain, and inclusive
-  financing come together'
+name: 'DappCon BERLIN - Ethereum Dapps & Infrastructure'
 
 # There _needs_ to be one hyphen before each paragraph.
 # Linebreaks are ignored, but they _must_ start with two spaces.
@@ -29,41 +26,44 @@ name: 'Sustainable Everything - When blockchain, supply chain, and inclusive
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    'In the frame of Berlin Blockchain Week, Centrifuge and Blue Yard are
-      hosting an evening of cross-pollination and discussion around the impact
-      of blockchain technology in supply chains. To what extent is blockchain
-      innovation a driver for sustainability and inclusive financing in
-      international trade? Blockchain not only allows more secure and
-      transparent transactions, immutable traceability and reputation, but also
-      provides the infrastructure on top of which to build inclusive financial
-      instruments. We have invited progressive companies and institutions
-      working on the frontiers of their fields: Provenance, Einhorn, GIZ
-      (Blockchain Lab) and Token Economy, for an evening of vibrant
-      discussion.'
+    DappCon is a nonprofit global developer conference focusing on decentralized applications, tooling, and foundational infrastructure on Ethereum.
+  -
+    Organized by developers for developers, the conference aims to open critical discussions on the next generation of dapps and provide a learning opportunity for developers who strive to build Ethereum’s core infrastructure and applications.
+  -
+    In a series of panel discussions and presentations, the conference will facilitate discussions around different governance mechanisms, usability and security of self-sovereign authentication models, next steps in the development of decentralized exchanges, as well as recent developments and the way forward for different scaling solutions.
+  -
+    For developers and researchers, a series of workshops on developer tools will present updates and provide learning opportunities on dapp development and scaling solutions on Ethereum.
+
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
-date: 2018-09-06
+date: 2019-08-21
+# Leave this field if your event is held only during one day.
+endDate: 2019-08-22
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
 # Example: '18:00'
-time: '18:30'
-endTime: '21:30'
+time: '09:00'
+endTime: '18:00'
 
 # The URL where to adquire the tickets. Can be left empty.
-tickets: https://www.eventbrite.com/e/sustainable-everything-when-blockchain-supply-chain-and-inclusive-financing-come-together-tickets-48687181671
+tickets: https://dappcon.io/
 
 # If the entrance is free, set zero (0) as the price, or leave it empty.
 # _Don't_ write the currency symbol (Euro symbol will be used).
-price: 0
+price:
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: Blue Yard
+venue:
+  - Funkhaus Berlin
+
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: Grimmstraße 13, 10967 Berlin, Germany
+address:
+  - Nalepastr. 18, 12459 Berlin, Germany
+
 
 # The category of the event. Valid options:
 # - conference
@@ -72,7 +72,7 @@ address: Grimmstraße 13, 10967 Berlin, Germany
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: panel
+category: conference
 
 
 #################
@@ -86,27 +86,27 @@ category: panel
 speakers:
 # -
 #   # Required.
-#   name: 
+#   name:
 #
 #   # Can be left empty.
-#   title: 
+#   title:
 #
 #   # Can be left empty.
-#   company: 
+#   company:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   companyURL: 
+#   companyURL:
 #
 #   # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
 #   # Can be left empty.
-#   twitter: 
+#   twitter:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   website: 
+#   website:
 #
-#   # The bio is a single line. 
+#   # The bio is a single line.
 #   # Linebreaks are ignored, but they _must_ start with two spaces.
-#   bio: 
+#   bio:
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---

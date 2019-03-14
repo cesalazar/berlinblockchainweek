@@ -6,10 +6,10 @@
 # Ideally this is the same as the name of the event.
 title: 'ETH BERLIN - Ethereum Hackathon'
 
-# Description for this event. This will be rendered as a <meta> tag in the HTML, 
+# Description for this event. This will be rendered as a <meta> tag in the HTML,
 # and displayed on the /events page. Keep it short.
 # Linebreaks are ignored, but they _must_ start with two spaces.
-description: 4th Hackathon of the ETH Global series. ETHBerlin is committed to
+description: ETHBerlin is committed to
   inclusion, diversity, education, and above all, to the Ethereum Community
   improvement.
 
@@ -28,8 +28,6 @@ name: 'ETH BERLIN - Ethereum Hackathon'
 # Add or remove paragraphs as needed, but remember the hyphen before each entry.
 synopsis:
   -
-    4th Hackathon of the ETH Global series.
-  -
     ETHBerlin is committed to inclusion, diversity, education, and above all,
       to the Ethereum Community improvement. We will not sell any tickets for
       this event.
@@ -39,15 +37,15 @@ synopsis:
       in due time.'
   -
     Volunteers, Speakers, Sponsors and Hackers will have access to all events
-      (although they will need to sign up for some due to capacity 
+      (although they will need to sign up for some due to capacity
       restrictions).
- 
+
 
 # The date should be in the format year-month-day (ISO 8601).
 # Example: 2018-02-28
-date: 2018-09-07
+date: 2019-08-23
 # Leave this field if your event is held only during one day.
-endDate: 2018-09-09
+endDate: 2019-08-25
 
 # Set the time in 24 hours format, surrounded by quotes.
 # _Only_ the starting time!
@@ -63,17 +61,13 @@ tickets: https://ethberlin.com/
 price: 0
 
 # The name of the venue where the event will be held. Can be left empty.
-venue: 
-  -
-    Factory Mitte
+venue:
   -
     Factory Görlitzer Park
 
 # The address to link to a Google map. Please test the address on Google Maps.
 # Example: Skalitzer Strasse 85-86, 10997 Berlin, Germany
-address: 
-  -
-    Rheinsberger Straße 76, 10115 Berlin, Germany
+address:
   -
     Lohmühlenstraße 65, 12435 Berlin, Germany
 
@@ -84,7 +78,7 @@ address:
 # - panel
 # - workshop
 # Use _only_ one, and don't capitalize.
-category: hackathon 
+category: hackathon
 
 
 #################
@@ -98,27 +92,27 @@ category: hackathon
 speakers:
 # -
 #   # Required.
-#   name: 
+#   name:
 #
 #   # Can be left empty.
-#   title: 
+#   title:
 #
 #   # Can be left empty.
-#   company: 
+#   company:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   companyURL: 
+#   companyURL:
 #
 #   # Just the twitter handle, without Twitter's URL, nor the '@' symbol.
 #   # Can be left empty.
-#   twitter: 
+#   twitter:
 #
 #   # The full URL, including http(s)://. Can be left empty.
-#   website: 
+#   website:
 #
-#   # The bio is a single line. 
+#   # The bio is a single line.
 #   # Linebreaks are ignored, but they _must_ start with two spaces.
-#   bio: 
+#   bio:
 
 ### DON'T MAKE CHANGES BELOW THIS LINE! ###
 ---
