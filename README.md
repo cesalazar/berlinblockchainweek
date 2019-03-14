@@ -9,7 +9,7 @@ description: Berlin Blockchain Week is a community-organized initiative. We
   individuals and anyone interested in fruitful and educational discussions to
   join us.
 
-tagline: 5-11 September 2018
+tagline: 20-29th August 2019
 
 features:
 - title: Full Node
